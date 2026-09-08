@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+twilio
+websockets
+python-dotenv
+anthropic
