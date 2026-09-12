@@ -15,6 +15,8 @@ from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException, Request, WebSocket, WebSocketDisconnect
 from telnyx import APIError, Telnyx, TelnyxError
 
+from analyze_evidence import DEFAULT_MODEL as DEFAULT_ANALYSIS_MODEL
+from analyze_evidence import analyze_scenario_async
 from evidence import EvidenceStore, RECORDING_OPTIONS
 import media_transport
 from media_transport import (
@@ -43,6 +45,8 @@ ELEVENLABS_API_KEY = os.getenv("ELEVENLABS_API_KEY")
 ELEVENLABS_MODEL_ID = os.getenv("ELEVENLABS_MODEL_ID", "eleven_flash_v2_5")
 LOG_CONVERSATION = os.getenv("LOG_CONVERSATION", "false").strip().lower() == "true"
 AUDIO_DIAGNOSTICS = os.getenv("AUDIO_DIAGNOSTICS", "false").strip().lower() == "true"
+AUTO_ANALYZE_EVIDENCE = os.getenv("AUTO_ANALYZE_EVIDENCE", "false").strip().lower() == "true"
+ANTHROPIC_ANALYSIS_MODEL = os.getenv("ANTHROPIC_ANALYSIS_MODEL", DEFAULT_ANALYSIS_MODEL)
 DEBUG_AUDIO_ROOT = Path(__file__).resolve().with_name("debug_audio")
 
 telnyx_client = Telnyx(api_key=TELNYX_API_KEY) if TELNYX_API_KEY else None
@@ -169,7 +173,7 @@ def _outbound_channel_mapping(scenario):
     }
 
 
-async def _transcribe_downloaded_recording(event):
+async def _transcribe_downloaded_recording(event, analyzer_client=None):
     try:
         payload = event["data"]["payload"]
         directory = await asyncio.to_thread(evidence_store.resolve, payload)
@@ -189,6 +193,33 @@ async def _transcribe_downloaded_recording(event):
             f"scenario={scenario.scenario_id}",
             f"segments={len(result['segments'])}",
         )
+        if AUTO_ANALYZE_EVIDENCE:
+            if analyzer_client is None:
+                print(
+                    "EVIDENCE analysis skipped:",
+                    "reason=anthropic_not_configured",
+                    f"scenario={scenario.scenario_id}",
+                )
+            else:
+                try:
+                    analysis = await analyze_scenario_async(
+                        scenario.scenario_id,
+                        root=evidence_store.root,
+                        client=analyzer_client,
+                        model=ANTHROPIC_ANALYSIS_MODEL,
+                    )
+                    print(
+                        "EVIDENCE analysis completed:",
+                        f"scenario={scenario.scenario_id}",
+                        f"verdict={analysis['verdict']}",
+                        f"findings={len(analysis['findings'])}",
+                    )
+                except Exception as exc:
+                    print(
+                        "EVIDENCE analysis failed:",
+                        f"scenario={scenario.scenario_id}",
+                        f"error_type={type(exc).__name__}",
+                    )
     except Exception as exc:
         print(
             "EVIDENCE transcription failed:",
@@ -197,8 +228,10 @@ async def _transcribe_downloaded_recording(event):
         )
 
 
-def _schedule_transcription(event):
-    task = asyncio.create_task(_transcribe_downloaded_recording(event))
+def _schedule_transcription(event, analyzer_client=None):
+    task = asyncio.create_task(
+        _transcribe_downloaded_recording(event, analyzer_client)
+    )
     transcription_tasks.add(task)
     task.add_done_callback(transcription_tasks.discard)
 
@@ -231,7 +264,8 @@ async def telnyx_webhook(request: Request):
         # Metadata is already durable; a retry can reattempt the MP3 download.
         raise HTTPException(status_code=503, detail="Recording download pending retry")
     if result == "downloaded":
-        _schedule_transcription(event)
+        state = getattr(getattr(request, "app", None), "state", None)
+        _schedule_transcription(event, getattr(state, "anthropic_client", None))
     return {"status": "ok", "evidence": result}
 
 
@@ -243,6 +277,8 @@ def config_check():
         "TELNYX_CONNECTION_ID": bool(TELNYX_CONNECTION_ID),
         "PUBLIC_BASE_URL": bool(PUBLIC_BASE_URL),
         "ELEVENLABS_API_KEY": bool(ELEVENLABS_API_KEY),
+        "AUTO_ANALYZE_EVIDENCE": AUTO_ANALYZE_EVIDENCE,
+        "ANTHROPIC_ANALYSIS_MODEL": bool(ANTHROPIC_ANALYSIS_MODEL),
         "ELEVENLABS_VOICE_ID_SCENARIO_01": bool(_scenario_voice_id("scenario_01")),
         "ELEVENLABS_VOICE_ID_SCENARIO_02": bool(_scenario_voice_id("scenario_02")),
         "ELEVENLABS_VOICE_ID_SCENARIO_02_SECONDARY": bool(
