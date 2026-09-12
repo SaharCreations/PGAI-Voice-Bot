@@ -4,7 +4,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Real_Calls-13-5E34A3?style=for-the-badge" alt="13 real calls">
-  <img src="https://img.shields.io/badge/Tests-138_Passed-A349A0?style=for-the-badge" alt="138 tests passed">
+  <img src="https://img.shields.io/badge/Tests-139_Passed-A349A0?style=for-the-badge" alt="139 tests passed">
   <img src="https://img.shields.io/badge/Subtests-27_Passed-AEA4D4?style=for-the-badge" alt="27 subtests passed">
   <img src="https://img.shields.io/badge/Budget-Under_$20-3A1D54?style=for-the-badge" alt="Under 20 dollar budget">
 </p>
@@ -45,7 +45,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/13-REAL_CALLS-5E34A3?style=for-the-badge" alt="13 real calls">
   <img src="https://img.shields.io/badge/13-EVIDENCE_PACKAGES-A349A0?style=for-the-badge" alt="13 evidence packages">
-  <img src="https://img.shields.io/badge/138-TESTS_PASSING-5E34A3?style=for-the-badge" alt="138 tests passing">
+  <img src="https://img.shields.io/badge/139-TESTS_PASSING-5E34A3?style=for-the-badge" alt="139 tests passing">
   <img src="https://img.shields.io/badge/COST-$10.33-A349A0?style=for-the-badge" alt="$10.33 total cost">
 </p>
 
@@ -96,7 +96,7 @@ I also documented the scenarios the agent handled correctly. A credible evaluati
 | MP3 recordings | **13** |
 | Audio-derived transcripts | **13** |
 | Diagnostic metadata packages | **13** |
-| Automated tests | **138 tests + 27 subtests passing** |
+| Automated tests | **139 tests + 27 subtests passing** |
 | Paid project cost | **$10.33** |
 
 The system also supports multiple patient identities and voices, in-call speaker transitions, interruption handling, cross-call state verification, dual-channel recordings, and measured latency diagnostics.
@@ -116,7 +116,7 @@ The system also supports multiple patient identities and voices, in-call speaker
 | Audio-derived, dual-speaker transcripts | **13** |
 | Primary product findings | **9** |
 | Additional voice-quality observations | **4** |
-| Automated tests | **138 passed** |
+| Automated tests | **139 passed** |
 | Additional subtests | **27 passed** |
 | Total challenge spend | **Within the $20 budget** |
 
@@ -262,8 +262,8 @@ For each scenario it creates:
 
 The evaluator is deliberately conservative:
 
-- Every finding must use a timestamp that exists in the transcript.
-- Every evidence quote must appear verbatim in the transcript.
+- Claude cites a numbered transcript segment instead of generating evidence text.
+- The program derives the exact timestamp and verbatim quote from that segment.
 - Unsupported backend actions cannot be treated as proven.
 - Possible speech-recognition artifacts must be distinguished from confirmed agent behavior.
 - Existing analysis is protected unless `--overwrite` is explicitly supplied.
@@ -435,7 +435,7 @@ I completed the project for **$10.33 in direct paid services**, using only **51.
 
 ### How I controlled cost
 
-- Built and ran **138 automated tests and 27 subtests** without placing telephone calls.
+- Built and ran **139 automated tests and 27 subtests** without placing telephone calls.
 - Created a separate STT connectivity preflight that makes no phone call.
 - Measured Claude and ElevenLabs latency offline before spending money on another live call.
 - Used Claude Haiku 4.5 with concise patient responses and bounded output.
@@ -482,7 +482,7 @@ Run the complete offline suite:
 Expected result:
 
 ~~~text
-138 passed, 27 subtests passed
+139 passed, 27 subtests passed
 ~~~
 
 The test suite covers:
@@ -506,7 +506,7 @@ The test suite covers:
 - Path traversal rejection.
 - Duplicate and out-of-order events.
 - Evaluator evidence-hash verification.
-- Rejection of hallucinated timestamps and quotes.
+- Code-derived timestamps and verbatim quotes from validated segment citations.
 - Automatic-analysis output protection and human-review labeling.
 
 Tests use mocks and temporary evidence directories. Running the suite does **not** place a telephone call.

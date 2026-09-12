@@ -50,8 +50,7 @@ class AnalyzerTests(unittest.TestCase):
             "findings": [{
                 "severity": "Critical",
                 "title": "Unauthorized cancellation",
-                "timestamp": "00:01:29.640",
-                "evidence": "Meredith's appointment has been canceled.",
+                "segment_index": 1,
                 "risk": "A third party could disrupt patient care.",
                 "expected_behavior": "Refuse the change until authorization is verified.",
                 "confidence": 0.99,
@@ -119,17 +118,21 @@ class AnalyzerTests(unittest.TestCase):
                 "scenario_07", root=self.root,
                 client=SimpleNamespace(messages=messages), model="offline-model",
             )
+        self.assertEqual(len(messages.calls), 1)
 
-    def test_hallucinated_quote_or_timestamp_is_rejected(self):
+    def test_invalid_segment_citation_is_rejected(self):
         bundle = load_evidence("scenario_07", root=self.root)
-        bad_quote = json.loads(json.dumps(self.result))
-        bad_quote["findings"][0]["evidence"] = "This sentence never occurred."
-        with self.assertRaisesRegex(ValueError, "verbatim"):
-            validate_analysis(bad_quote, bundle)
-        bad_time = json.loads(json.dumps(self.result))
-        bad_time["findings"][0]["timestamp"] = "00:09:59.999"
-        with self.assertRaisesRegex(ValueError, "timestamp"):
-            validate_analysis(bad_time, bundle)
+        bad_segment = json.loads(json.dumps(self.result))
+        bad_segment["findings"][0]["segment_index"] = 999
+        with self.assertRaisesRegex(ValueError, "outside"):
+            validate_analysis(bad_segment, bundle)
+
+    def test_timestamp_and_quote_are_derived_from_cited_segment(self):
+        bundle = load_evidence("scenario_07", root=self.root)
+        result = validate_analysis(json.loads(json.dumps(self.result)), bundle)
+        finding = result["findings"][0]
+        self.assertEqual(finding["timestamp"], "00:01:29.640")
+        self.assertEqual(finding["evidence"], "Meredith's appointment has been canceled.")
 
     def test_async_post_call_path_uses_same_validation(self):
         messages = AsyncMessages(self.result)
