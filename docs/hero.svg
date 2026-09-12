@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">PGAI Voice Bot</title>
+  <desc id="desc">Automated adversarial healthcare voice agent testing</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111827"/>
+      <stop offset="0.48" stop-color="#312E81"/>
+      <stop offset="1" stop-color="#0F766E"/>
+    </linearGradient>
+    <linearGradient id="wave" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#A78BFA"/>
+      <stop offset="0.5" stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#34D399"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="360" rx="26" fill="url(#bg)"/>
+  <circle cx="90" cy="65" r="145" fill="#8B5CF6" opacity=".12"/>
+  <circle cx="1120" cy="325" r="210" fill="#14B8A6" opacity=".13"/>
+
+  <g transform="translate(82 79)" fill="none" stroke="url(#wave)" stroke-width="10" stroke-linecap="round" filter="url(#glow)">
+    <path d="M0 98 L22 98 L36 62 L52 135 L69 35 L87 156 L105 74 L123 121 L142 52 L160 145 L178 88 L200 98"/>
+  </g>
+
+  <g transform="translate(325 0)">
+    <text x="0" y="118" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="700">PGAI Voice Bot</text>
+    <text x="2" y="169" fill="#C4B5FD" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="600">Adversarial testing for healthcare voice agents</text>
+    <text x="2" y="215" fill="#E5E7EB" font-family="Arial, Helvetica, sans-serif" font-size="19">Real calls • Natural conversation • Reproducible evidence</text>
+
+    <g transform="translate(0 255)">
+      <rect width="155" height="43" rx="21" fill="#7C3AED"/>
+      <text x="77" y="28" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-size="16" font-weight="700">13 REAL CALLS</text>
+
+      <rect x="170" width="175" height="43" rx="21" fill="#059669"/>
+      <text x="257" y="28" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-size="16" font-weight="700">133 TESTS PASSED</text>
+
+      <rect x="360" width="165" height="43" rx="21" fill="#D97706"/>
+      <text x="442" y="28" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-size="16" font-weight="700">UNDER $20</text>
+
+      <rect x="540" width="205" height="43" rx="21" fill="#0891B2"/>
+      <text x="642" y="28" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-size="16" font-weight="700">DUAL-CHANNEL AUDIO</text>
+    </g>
+  </g>
+</svg>

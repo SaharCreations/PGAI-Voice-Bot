@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650" role="img" aria-labelledby="title desc">
+  <title id="title">PGAI Voice Bot architecture</title>
+  <desc id="desc">Telnyx, FastAPI, Deepgram, Claude, ElevenLabs, playback, and evidence pipeline</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F8FAFC"/>
+      <stop offset="1" stop-color="#EEF2FF"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#334155" flood-opacity=".18"/>
+    </filter>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0 0 L12 6 L0 12 Z" fill="#64748B"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="650" rx="25" fill="url(#background)"/>
+  <text x="600" y="52" text-anchor="middle" fill="#0F172A" font-family="Arial" font-size="31" font-weight="700">Live Voice + Evidence Architecture</text>
+  <text x="600" y="82" text-anchor="middle" fill="#64748B" font-family="Arial" font-size="16">Measured, interruptible, and independently auditable</text>
+
+  <g filter="url(#shadow)">
+    <rect x="45" y="135" width="170" height="115" rx="18" fill="#FFFFFF" stroke="#14B8A6" stroke-width="4"/>
+    <circle cx="130" cy="165" r="22" fill="#CCFBF1"/>
+    <text x="130" y="172" text-anchor="middle" font-family="Arial" font-size="22">☎</text>
+    <text x="130" y="205" text-anchor="middle" fill="#0F766E" font-family="Arial" font-size="19" font-weight="700">PGAI Test Line</text>
+    <text x="130" y="229" text-anchor="middle" fill="#475569" font-family="Arial" font-size="13">Clinic agent audio</text>
+
+    <rect x="250" y="135" width="170" height="115" rx="18" fill="#FFFFFF" stroke="#22C55E" stroke-width="4"/>
+    <text x="335" y="177" text-anchor="middle" fill="#15803D" font-family="Arial" font-size="20" font-weight="700">TELNYX</text>
+    <text x="335" y="205" text-anchor="middle" fill="#475569" font-family="Arial" font-size="14">Call Control</text>
+    <text x="335" y="228" text-anchor="middle" fill="#475569" font-family="Arial" font-size="13">8 kHz PCMU WebSocket</text>
+
+    <rect x="455" y="135" width="170" height="115" rx="18" fill="#FFFFFF" stroke="#0EA5E9" stroke-width="4"/>
+    <text x="540" y="177" text-anchor="middle" fill="#0369A1" font-family="Arial" font-size="20" font-weight="700">FASTAPI</text>
+    <text x="540" y="205" text-anchor="middle" fill="#475569" font-family="Arial" font-size="14">Async media session</text>
+    <text x="540" y="228" text-anchor="middle" fill="#475569" font-family="Arial" font-size="13">turns • barge-in • state</text>
+
+    <rect x="660" y="135" width="170" height="115" rx="18" fill="#FFFFFF" stroke="#10B981" stroke-width="4"/>
+    <text x="745" y="177" text-anchor="middle" fill="#047857" font-family="Arial" font-size="20" font-weight="700">DEEPGRAM</text>
+    <text x="745" y="205" text-anchor="middle" fill="#475569" font-family="Arial" font-size="14">Nova-3 streaming STT</text>
+    <text x="745" y="228" text-anchor="middle" fill="#475569" font-family="Arial" font-size="13">interim + final text</text>
+
+    <rect x="865" y="135" width="170" height="115" rx="18" fill="#FFFFFF" stroke="#F97316" stroke-width="4"/>
+    <text x="950" y="177" text-anchor="middle" fill="#C2410C" font-family="Arial" font-size="20" font-weight="700">CLAUDE</text>
+    <text x="950" y="205" text-anchor="middle" fill="#475569" font-family="Arial" font-size="14">Haiku 4.5</text>
+    <text x="950" y="228" text-anchor="middle" fill="#475569" font-family="Arial" font-size="13">patient reasoning</text>
+  </g>
+
+  <g stroke="#64748B" stroke-width="3" fill="none" marker-end="url(#arrow)">
+    <path d="M215 192 L242 192"/>
+    <path d="M420 192 L447 192"/>
+    <path d="M625 192 L652 192"/>
+    <path d="M830 192 L857 192"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="865" y="315" width="170" height="115" rx="18" fill="#FFFFFF" stroke="#8B5CF6" stroke-width="4"/>
+    <text x="950" y="357" text-anchor="middle" fill="#6D28D9" font-family="Arial" font-size="20" font-weight="700">ELEVENLABS</text>
+    <text x="950" y="385" text-anchor="middle" fill="#475569" font-family="Arial" font-size="14">Turbo v2.5 TTS</text>
+    <text x="950" y="408" text-anchor="middle" fill="#475569" font-family="Arial" font-size="13">native ulaw_8000</text>
+
+    <rect x="660" y="315" width="170" height="115" rx="18" fill="#FFFFFF" stroke="#EC4899" stroke-width="4"/>
+    <text x="745" y="357" text-anchor="middle" fill="#BE185D" font-family="Arial" font-size="20" font-weight="700">PLAYBACK</text>
+    <text x="745" y="385" text-anchor="middle" fill="#475569" font-family="Arial" font-size="14">marks + clear events</text>
+    <text x="745" y="408" text-anchor="middle" fill="#475569" font-family="Arial" font-size="13">interruptible audio</text>
+
+    <rect x="455" y="315" width="170" height="115" rx="18" fill="#FFFFFF" stroke="#6366F1" stroke-width="4"/>
+    <text x="540" y="357" text-anchor="middle" fill="#4338CA" font-family="Arial" font-size="20" font-weight="700">TELNYX</text>
+    <text x="540" y="385" text-anchor="middle" fill="#475569" font-family="Arial" font-size="14">Return media</text>
+    <text x="540" y="408" text-anchor="middle" fill="#475569" font-family="Arial" font-size="13">patient voice reaches clinic</text>
+  </g>
+
+  <g stroke="#64748B" stroke-width="3" fill="none" marker-end="url(#arrow)">
+    <path d="M950 250 L950 306"/>
+    <path d="M865 372 L838 372"/>
+    <path d="M660 372 L633 372"/>
+    <path d="M455 372 C360 372 335 310 335 258"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="110" y="500" width="980" height="105" rx="20" fill="#0F172A"/>
+    <text x="150" y="538" fill="#A78BFA" font-family="Arial" font-size="19" font-weight="700">AUDITABLE EVIDENCE</text>
+
+    <rect x="365" y="520" width="190" height="55" rx="12" fill="#1E293B" stroke="#22D3EE"/>
+    <text x="460" y="543" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-size="15" font-weight="700">Dual-channel MP3</text>
+    <text x="460" y="563" text-anchor="middle" fill="#94A3B8" font-family="Arial" font-size="12">both sides preserved</text>
+
+    <rect x="580" y="520" width="190" height="55" rx="12" fill="#1E293B" stroke="#34D399"/>
+    <text x="675" y="543" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-size="15" font-weight="700">Timestamped transcript</text>
+    <text x="675" y="563" text-anchor="middle" fill="#94A3B8" font-family="Arial" font-size="12">generated from recording</text>
+
+    <rect x="795" y="520" width="245" height="55" rx="12" fill="#1E293B" stroke="#FBBF24"/>
+    <text x="917" y="543" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-size="15" font-weight="700">Metadata + SHA-256</text>
+    <text x="917" y="563" text-anchor="middle" fill="#94A3B8" font-family="Arial" font-size="12">provenance and lifecycle</text>
+  </g>
+
+  <path d="M335 250 L335 470 L255 470 L255 492" stroke="#64748B" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+</svg>
