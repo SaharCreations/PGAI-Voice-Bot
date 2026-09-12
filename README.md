@@ -35,6 +35,77 @@
 
 ---
 
+<!-- CRUSH_SECTION_START -->
+
+---
+
+## ⚡ Kevin Said “Crush It.” So I Did.
+
+<p align="center">
+  <img src="https://img.shields.io/badge/13-REAL_CALLS-5E34A3?style=for-the-badge" alt="13 real calls">
+  <img src="https://img.shields.io/badge/13-EVIDENCE_PACKAGES-A349A0?style=for-the-badge" alt="13 evidence packages">
+  <img src="https://img.shields.io/badge/133-TESTS_PASSING-5E34A3?style=for-the-badge" alt="133 tests passing">
+  <img src="https://img.shields.io/badge/COST-$10.33-A349A0?style=for-the-badge" alt="$10.33 total cost">
+</p>
+
+> **Call volume alone does not establish evaluation quality. A large collection of shallow calls can repeat the same happy path without discovering a meaningful failure. I chose depth, impact, and proof.**
+
+My 13 calls were designed as connected experiments targeting the failures that matter most in a healthcare voice system:
+
+| Testing principle | Question the call was designed to answer |
+|---|---|
+| **Wrong patient** | Can shared phone numbers or identity corrections contaminate the active record? |
+| **Wrong authority** | Can a friend or spouse access or change another patient’s care? |
+| **Wrong state** | Does the database match what the agent confidently told the caller? |
+| **False success** | Did the cancellation, reschedule, callback, or escalation actually happen? |
+| **Unsafe routing** | Does routine scheduling stop when symptoms become potentially urgent? |
+
+### What those calls uncovered
+
+- An openly identified **friend accessed Meredith’s appointment information and cancelled her appointment**.
+- An **unverified husband inherited Meredith’s authenticated session** and completed her rescheduling transaction.
+- A caller using the **wrong DOB received patient-associated contact information**.
+- The impossible DOB `19/24/1902` was converted into a plausible date instead of being rejected.
+- A shared-number twin scenario exposed a patient-matching weakness.
+- A rescheduling call produced contradictory success and failure messages, which I investigated through a separate **cross-call database audit**.
+- Several calls exposed unsupported callback, ticket, and transfer claims.
+- An emergency escalation still offered routine scheduling after identifying potentially serious symptoms.
+
+Every significant finding is connected directly to its:
+
+- Recording
+- Audio-derived transcript
+- Timestamp
+- Diagnostic metadata
+- Expected safe behavior
+- Recommended engineering fix
+- Possible legal or compliance exposure
+
+I also documented the scenarios the agent handled correctly. A credible evaluation must distinguish real failures from successful safeguards instead of treating every unusual response as a bug.
+
+### What I optimized for
+
+<p align="center">
+  <strong>IMPACT × REPRODUCIBILITY × EVIDENCE × PATIENT RISK</strong>
+</p>
+
+| Delivered | Verified result |
+|---|---:|
+| Complete real calls | **13** |
+| MP3 recordings | **13** |
+| Audio-derived transcripts | **13** |
+| Diagnostic metadata packages | **13** |
+| Automated tests | **133 tests + 27 subtests passing** |
+| Paid project cost | **$10.33** |
+
+The system also supports multiple patient identities and voices, in-call speaker transitions, interruption handling, cross-call state verification, dual-channel recordings, and measured latency diagnostics.
+
+> **I did not just prove that my bot could talk. I used it to prove where a healthcare voice agent could fail.**
+
+---
+
+<!-- CRUSH_SECTION_END -->
+
 ## 🌟 Results at a glance
 
 | Result | Delivered |
