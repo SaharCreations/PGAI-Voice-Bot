@@ -529,3 +529,16 @@ I built this project as an end-to-end exercise in voice AI, async Python, teleph
 The finished result is not the first architecture I attempted. It is the result of listening to failed calls, measuring individual latency stages, isolating audio-format problems, improving turn-taking, protecting evidence, building offline tests, and verifying fixes before spending money on another call.
 
 That process—observe, measure, isolate, fix, and prove—is the strongest part of this submission.
+
+<!-- LOOM_SECTION_START -->
+## 🎥 Video walkthroughs
+
+> **Loom videos are being added soon.** The repository is currently available as a technical portfolio project. The Pretty Good AI challenge submission will be finalized only after both required public videos are recorded and linked here.
+
+| Video | Status |
+|---|---|
+| Project and architecture walkthrough | 🎬 Coming soon |
+| AI-assisted debugging and iteration session | 🎬 Coming soon |
+
+See the [final submission checklist](SUBMISSION_CHECKLIST.md) for the remaining challenge-submission steps.
+<!-- LOOM_SECTION_END -->
