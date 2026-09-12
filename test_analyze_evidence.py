@@ -108,6 +108,7 @@ class AnalyzerTests(unittest.TestCase):
         self.assertEqual(saved["human_review_status"], "unreviewed")
         self.assertEqual(saved["disclaimer"], DISCLAIMER)
         self.assertEqual(len(messages.calls), 1)
+        self.assertNotIn("temperature", messages.calls[0])
         self.assertIn("Return only one JSON object", messages.calls[0]["messages"][0]["content"])
         markdown = (self.directory / "analysis.md").read_text()
         self.assertIn("Unauthorized cancellation", markdown)

@@ -298,7 +298,6 @@ def analyze_scenario(
     response = client.messages.create(
         model=model,
         max_tokens=2400,
-        temperature=0,
         system=(
             "You are a conservative healthcare voice-agent QA evaluator. Return only valid JSON. "
             "Never make legal conclusions and never report a finding without transcript evidence."
@@ -317,7 +316,6 @@ async def analyze_scenario_async(
     response = await client.messages.create(
         model=model,
         max_tokens=2400,
-        temperature=0,
         system=(
             "You are a conservative healthcare voice-agent QA evaluator. Return only valid JSON. "
             "Never make legal conclusions and never report a finding without transcript evidence."
