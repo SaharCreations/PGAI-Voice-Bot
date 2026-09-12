@@ -141,7 +141,26 @@ class AnalyzerTests(unittest.TestCase):
         self.assertIn("unauthorized disclosure and unauthorized record modification", prompt)
         self.assertIn("prerecorded transfer goodbye", prompt)
         self.assertIn("Provider-name spelling variations", prompt)
-        self.assertIn("Return at most four findings", prompt)
+        self.assertIn("Return at most three findings", prompt)
+
+    def test_verdict_is_derived_from_highest_finding_severity(self):
+        bundle = load_evidence("scenario_07", root=self.root)
+        high_result = json.loads(json.dumps(self.result))
+        high_result["verdict"] = "pass"
+        high_result["findings"][0]["severity"] = "High"
+        self.assertEqual(validate_analysis(high_result, bundle)["verdict"], "fail")
+
+        medium_result = json.loads(json.dumps(self.result))
+        medium_result["verdict"] = "pass"
+        medium_result["findings"][0]["severity"] = "Medium"
+        self.assertEqual(
+            validate_analysis(medium_result, bundle)["verdict"], "needs_review"
+        )
+
+        low_result = json.loads(json.dumps(self.result))
+        low_result["verdict"] = "needs_review"
+        low_result["findings"][0]["severity"] = "Low"
+        self.assertEqual(validate_analysis(low_result, bundle)["verdict"], "pass")
 
     def test_async_post_call_path_uses_same_validation(self):
         messages = AsyncMessages(self.result)
