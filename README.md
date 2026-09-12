@@ -282,22 +282,48 @@ After iteration:
 
 ---
 
-## 💰 Cost-conscious engineering
+## 💰 Cost breakdown
 
-The full project remained within the challenge’s **$20 reimbursement budget**.
+I completed the project for **$10.33 in direct paid services**, using only **51.65%** of the challenge’s $20 reimbursement allowance.
 
-| Cost source | How I controlled it |
-|---|---|
-| Telnyx calls and recording | Placed calls only after offline verification and only to the authorized assessment number |
-| Claude | Used Haiku 4.5, short prompts, bounded replies, and one request per completed turn |
-| ElevenLabs | Used Turbo v2.5, persistent connections, concise speech, and scenario-specific voices only when needed |
-| Transcription | Used local faster-whisper instead of paying for a second post-call transcription service |
-| Infrastructure | Used local FastAPI and a free Cloudflare quick tunnel |
-| Debugging | Built 133 tests, 27 subtests, STT preflight, and offline latency benchmarks that place zero calls |
+<p align="center">
+  <img src="https://img.shields.io/badge/Total_Paid-$10.33-10B981?style=for-the-badge" alt="Total paid: 10 dollars and 33 cents">
+  <img src="https://img.shields.io/badge/Budget_Remaining-$9.67-2563EB?style=for-the-badge" alt="Budget remaining: 9 dollars and 67 cents">
+</p>
 
-Exact provider receipts remain the authoritative billing record, but the engineering strategy deliberately treated cost as a system constraint rather than an afterthought.
+| Service | Purpose | Plan or charge | Paid cost |
+|---|---|---:|---:|
+| **Telnyx** | Outbound calls, telephone number, bidirectional media, recording, and Telnyx-hosted streaming STT | Usage funded with $5.00 | **$5.00** |
+| **Anthropic Claude** | Scenario-aware patient reasoning and conversation decisions | API usage | **$5.33** |
+| **ElevenLabs** | Natural scenario-specific voices and streaming TTS | Free plan with 10,000 included credits | **$0.00** |
+| **Cloudflare Quick Tunnel** | Public HTTPS/WSS connection to the local FastAPI server | Free account-less tunnel | **$0.00** |
+| **faster-whisper** | Local transcription of the final dual-channel MP3 recordings | Open-source, executed locally | **$0.00** |
+| **FastAPI, pytest, and Python libraries** | Application runtime and offline verification | Open-source | **$0.00** |
+| **GitHub** | Source code and evidence hosting | Free repository | **$0.00** |
+| **Loom** | Required walkthrough and AI-debugging recordings | Free plan | **$0.00** |
+|  |  | **Total direct paid cost** | **$10.33** |
 
----
+### Budget result
+
+| Challenge allowance | Amount spent | Remaining |
+|---:|---:|---:|
+| **$20.00** | **$10.33** | **$9.67** |
+
+### How I controlled cost
+
+- Built and ran **133 automated tests and 27 subtests** without placing telephone calls.
+- Created a separate STT connectivity preflight that makes no phone call.
+- Measured Claude and ElevenLabs latency offline before spending money on another live call.
+- Used Claude Haiku 4.5 with concise patient responses and bounded output.
+- Reused the ElevenLabs connection instead of creating a new connection for every turn.
+- Used the ElevenLabs free-plan credits for all synthesized voices.
+- Transcribed recordings locally with faster-whisper.
+- Used a free Cloudflare tunnel and local FastAPI server.
+- Called only the authorized assessment number.
+- Preserved successful recordings so completed evidence never needed to be recreated.
+
+The submitted Telnyx and Anthropic receipts are the authoritative reimbursement records. Free-plan credits and open-source/local services did not create a reimbursable charge.
+
 
 ## 🔐 Safety and evidence integrity
 
