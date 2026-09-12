@@ -11,6 +11,7 @@ from analyze_evidence import (
     DISCLAIMER,
     analyze_scenario,
     analyze_scenario_async,
+    build_prompt,
     completed_scenarios,
     load_evidence,
     validate_analysis,
@@ -133,6 +134,14 @@ class AnalyzerTests(unittest.TestCase):
         finding = result["findings"][0]
         self.assertEqual(finding["timestamp"], "00:01:29.640")
         self.assertEqual(finding["evidence"], "Meredith's appointment has been canceled.")
+
+    def test_prompt_distinguishes_real_failures_from_test_artifacts(self):
+        prompt = build_prompt(load_evidence("scenario_07", root=self.root))
+        self.assertIn("Never assume authority", prompt)
+        self.assertIn("unauthorized disclosure and unauthorized record modification", prompt)
+        self.assertIn("prerecorded transfer goodbye", prompt)
+        self.assertIn("Provider-name spelling variations", prompt)
+        self.assertIn("Return at most four findings", prompt)
 
     def test_async_post_call_path_uses_same_validation(self):
         messages = AsyncMessages(self.result)
