@@ -1,0 +1,45 @@
+Scenario: scenario_06
+Source: recording.mp3
+Source SHA-256: 9f18bc68ab24868ab41b131ef01abc22e3dea9d0b02fc4134307b361eaf67f52
+Timestamps: HH:MM:SS.mmm from MP3 playback start; overlaps are retained.
+Channel 0: PGAI Clinic Agent
+Channel 1: Patient / Elizabeth Thompson
+Machine transcript from recorded audio; review against audio for evidence accuracy.
+
+[00:00:00.000 - 00:00:03.360] PGAI: This call may be recorded for quality and training purposes. [channel 0]
+[00:00:04.080 - 00:00:05.920] PGAI: Para español, oprima y zos. [channel 0]
+[00:00:06.640 - 00:00:08.940] PGAI: In for calling pivot point orthopedics. [channel 0]
+[00:00:09.260 - 00:00:12.160] PGAI: Part of Pretty Good AI, how may I help you today? [channel 0]
+[00:00:15.200 - 00:00:20.200] PATIENT: Hi, I'm calling about my husband Richard Thompson. He missed an appointment last week [channel 1]
+[00:00:20.200 - 00:00:31.740] PATIENT: I'd like to reschedule it for next week. Yes, of course, it's February 29th, 1914. [channel 1]
+[00:00:24.520 - 00:00:26.940] PGAI: Can you please provide Richard's full date of birth? [channel 0]
+[00:00:37.240 - 00:00:40.140] PGAI: It looks like there was an issue with the date of birth provided. [channel 0]
+[00:00:40.760 - 00:00:44.400] PGAI: Could you please confirm Richard's full date of birth, including the year? [channel 0]
+[00:00:41.440 - 00:00:50.980] PATIENT: Let me check that again. Sorry about that. It's February 28, 1949. [channel 1]
+[00:00:54.400 - 00:00:59.940] PGAI: Could you please spell out Richard's full name and confirm his date of birth as February [channel 0]
+[00:00:59.940 - 00:01:01.960] PGAI: 28, 1949? [channel 0]
+[00:01:03.720 - 00:01:12.940] PATIENT: Yes, that's correct. R-I-C-H-A-R-D T-H-O-M-P-S-O-N. And his date of birth is 02-28-1949. [channel 1]
+[00:01:16.900 - 00:01:19.700] PGAI: Would you like to use a phone number to help look up Richard's record? [channel 0]
+[00:01:20.320 - 00:01:23.020] PGAI: If so, please provide the number you have on file with us. [channel 0]
+[00:01:23.020 - 00:01:25.980] PGAI: If you're not sure, just let me know. [channel 0]
+[00:01:26.480 - 00:01:30.960] PATIENT: I don't have a phone number on file that I'm sure about. Can you look him up with [channel 1]
+[00:01:30.960 - 00:01:32.900] PATIENT: the name and date of birth I provided? [channel 1]
+[00:01:37.260 - 00:01:40.680] PGAI: I wasn't able to find Richard's record with the information provided. [channel 0]
+[00:01:41.660 - 00:01:44.660] PGAI: I can connect you to our patient support team for further help. [channel 0]
+[00:01:44.660 - 00:01:48.280] PGAI: Would you like to continue with me or should I transfer you now? [channel 0]
+[00:01:49.600 - 00:02:00.940] PATIENT: I can continue with you. But before we do that, I need to tell you something. He didn't [channel 1]
+[00:02:02.700 - 00:02:04.500] PGAI: I'm very sorry for your loss. [channel 0]
+[00:02:04.880 - 00:02:07.740] PGAI: We won't be able to schedule any more appointments for Richard. [channel 0]
+[00:02:07.740 - 00:02:12.340] PGAI: If you have any other questions or need help with anything else, please let me know. [channel 0]
+[00:02:12.720 - 00:02:17.740] PATIENT: I understand. Thank you for your condolences. What happens to any existing appointments [channel 1]
+[00:02:17.740 - 00:02:22.120] PATIENT: he had and can his record be updated to reflect that he's passed away? [channel 1]
+[00:02:25.120 - 00:02:30.720] PGAI: Since I couldn't locate Richard's record, I can't update his chart or cancel any appointments [channel 0]
+[00:02:30.720 - 00:02:31.320] PGAI: directly. [channel 0]
+[00:02:31.860 - 00:02:35.720] PGAI: I recommend speaking with our patient support team so they can help update his record [channel 0]
+[00:02:35.720 - 00:02:37.520] PGAI: and handle any scheduled visits. [channel 0]
+[00:02:38.080 - 00:02:39.960] PGAI: Would you like me to connect you to them now? [channel 0]
+[00:02:41.560 - 00:02:46.440] PATIENT: Yes, I think that would be best. Please go ahead and connect me to patient support so [channel 1]
+[00:02:46.440 - 00:02:49.080] PATIENT: they can update his record properly. Thank you. [channel 1]
+[00:02:52.520 - 00:02:53.780] PGAI: Transferring you now, thank you. [channel 0]
+[00:02:55.300 - 00:02:58.440] PGAI: Hello, you've reached the pretty good AI test line. [channel 0]
+[00:02:58.780 - 00:02:59.060] PGAI: Goodbye. [channel 0]

@@ -1,0 +1,2533 @@
+{
+  "artifact": {
+    "downloaded_at": "2026-09-11T23:20:48.908096+00:00",
+    "format": "mp3",
+    "path": "recording.mp3",
+    "recording_id": "2e8a0183-9a42-4859-bdc8-9390d92e1996",
+    "sha256": "9f18bc68ab24868ab41b131ef01abc22e3dea9d0b02fc4134307b361eaf67f52",
+    "size_bytes": 738144,
+    "source_event_id": "273d30c9-fc9f-4139-82a8-771e8d892107",
+    "status": "downloaded"
+  },
+  "attempt_id": "a84dc5a760ca4f0188bb56cbc900589c",
+  "call": {
+    "call_control_id": "v3:PEAJabklR6PkytroyDLpM3EiHS-fsPwLV-W-bHIuLdqyCImbdCISjw",
+    "call_leg_id": "f9c0cc64-ae36-11f1-bd41-02420aef8a20",
+    "call_session_id": "f9bdb948-ae36-11f1-a75e-02420aef8a20",
+    "connection_id": "3044835743940740733"
+  },
+  "call_status": "ended",
+  "created_at": "2026-09-11T23:17:36.764968+00:00",
+  "dial_status": "submitted",
+  "events": [
+    {
+      "id": "9b60a836-3e36-4897-b2ee-61cdb0c98f3b",
+      "occurred_at": "2026-09-11T23:17:36.793205Z",
+      "type": "call.initiated"
+    },
+    {
+      "id": "62443d85-a33e-4d25-afc7-26e33336a0e0",
+      "occurred_at": "2026-09-11T23:17:42.773217Z",
+      "type": "call.answered"
+    },
+    {
+      "id": "1860be7d-c3be-471e-a31d-2450eeeb2483",
+      "occurred_at": "2026-09-11T23:20:47.113204Z",
+      "type": "call.hangup"
+    },
+    {
+      "id": "273d30c9-fc9f-4139-82a8-771e8d892107",
+      "occurred_at": "2026-09-11T23:20:47.535576Z",
+      "type": "call.recording.saved"
+    }
+  ],
+  "hangup_cause": "normal_clearing",
+  "limitations": [
+    "Interrupted assistant speech is omitted from conversation history."
+  ],
+  "persona": {
+    "scenario_id": "scenario_06",
+    "source": "scenarios/scenario_06.json",
+    "source_sha256": "0a2821c6220839c172511b993b7c47a0ab66570af1267ac778071206cedda65e",
+    "system_prompt_sha256": "54969f8078dbfb8c8e3d433aab06246e763b49f61afce63f4865224dcb897999"
+  },
+  "recording": {
+    "channels": "dual",
+    "recording_ended_at": "2026-09-11T23:20:47.113204Z",
+    "recording_id": "2e8a0183-9a42-4859-bdc8-9390d92e1996",
+    "recording_started_at": "2026-09-11T23:17:36.787302Z",
+    "saved_event_at": "2026-09-11T23:20:47.535576Z",
+    "saved_event_id": "273d30c9-fc9f-4139-82a8-771e8d892107",
+    "status": "saved",
+    "urls": {
+      "mp3": "https://s3.amazonaws.com/telephony-recorder-prod/1201548c-4c35-4fc1-955c-474224aa8ae9/2026-09-11/f9c0cc64-ae36-11f1-bd41-02420aef8a20-1789168656787283.mp3"
+    }
+  },
+  "recording_options": {
+    "record": "record-from-answer",
+    "record_channels": "dual",
+    "record_format": "mp3",
+    "record_track": "both"
+  },
+  "scenario_id": "scenario_06",
+  "schema_version": 1,
+  "timestamps": {
+    "answered_at": "2026-09-11T23:17:42.773217Z",
+    "dial_response_at": "2026-09-11T23:17:36.766077+00:00",
+    "ended_at": "2026-09-11T23:20:47.113204Z",
+    "initiated_at": "2026-09-11T23:17:36.793205Z"
+  },
+  "transcript": {
+    "attempt_id": "a84dc5a760ca4f0188bb56cbc900589c",
+    "audio": {
+      "channel_indices": [
+        0,
+        1
+      ],
+      "channels": 2,
+      "duration_seconds": 184.276,
+      "sample_rate": 16000,
+      "timeline": "seconds from MP3 playback start"
+    },
+    "call": {
+      "call_control_id": "v3:PEAJabklR6PkytroyDLpM3EiHS-fsPwLV-W-bHIuLdqyCImbdCISjw",
+      "call_leg_id": "f9c0cc64-ae36-11f1-bd41-02420aef8a20",
+      "call_session_id": "f9bdb948-ae36-11f1-a75e-02420aef8a20",
+      "connection_id": "3044835743940740733"
+    },
+    "channel_mapping": {
+      "basis": "Telnyx outbound Call Control dual-channel recording: channel 0 is the remote destination/PGAI track and channel 1 is the bidirectional media patient track.",
+      "source_sha256": "9f18bc68ab24868ab41b131ef01abc22e3dea9d0b02fc4134307b361eaf67f52",
+      "speakers": {
+        "0": "PGAI Clinic Agent",
+        "1": "Patient / Elizabeth Thompson"
+      },
+      "verified": true
+    },
+    "completed_at": "2026-09-11T23:23:03.766898+00:00",
+    "path": "transcript.txt",
+    "recognizer": {
+      "beam_size": 5,
+      "compute_type": "int8",
+      "condition_on_previous_text": false,
+      "cpu_threads": 4,
+      "decoder": "PyAV",
+      "decoder_version": "18.1.0",
+      "device": "cpu",
+      "engine": "faster-whisper",
+      "engine_version": "1.2.1",
+      "language": "en",
+      "model": "medium.en",
+      "model_directory": "/Users/sahar/Desktop/PGAI-Voice-Bot/.models/medium.en",
+      "model_files_sha256": {
+        "config.json": "4a1848ebabe7938d9797c15a2e8e4ce1d36e6fd4a43d096ae5955257c67c7962",
+        "model.bin": "11b220779aea4c6f3ce9d2549c8a95ea869ed84066864b999531ef53e594fe5b",
+        "tokenizer.json": "929c5252409436dce1b38a75d1abbcb5e132d170d8e324e4e04ed915fa2d22df"
+      },
+      "temperature": 0,
+      "vad_filter": false,
+      "word_timestamps": true
+    },
+    "recording_id": "2e8a0183-9a42-4859-bdc8-9390d92e1996",
+    "required_source": "recording.mp3",
+    "review_status": "needs_audio_review",
+    "segments": [
+      {
+        "channel_index": 0,
+        "end": 3.36,
+        "speaker": "PGAI Clinic Agent",
+        "start": 0.0,
+        "text": "This call may be recorded for quality and training purposes.",
+        "words": [
+          {
+            "end": 0.36,
+            "start": 0.0,
+            "text": " This"
+          },
+          {
+            "end": 0.64,
+            "start": 0.36,
+            "text": " call"
+          },
+          {
+            "end": 0.88,
+            "start": 0.64,
+            "text": " may"
+          },
+          {
+            "end": 1.04,
+            "start": 0.88,
+            "text": " be"
+          },
+          {
+            "end": 1.42,
+            "start": 1.04,
+            "text": " recorded"
+          },
+          {
+            "end": 1.7,
+            "start": 1.42,
+            "text": " for"
+          },
+          {
+            "end": 2.1,
+            "start": 1.7,
+            "text": " quality"
+          },
+          {
+            "end": 2.32,
+            "start": 2.1,
+            "text": " and"
+          },
+          {
+            "end": 2.7,
+            "start": 2.32,
+            "text": " training"
+          },
+          {
+            "end": 3.36,
+            "start": 2.7,
+            "text": " purposes."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 5.92,
+        "speaker": "PGAI Clinic Agent",
+        "start": 4.08,
+        "text": "Para espa\u00f1ol, oprima y zos.",
+        "words": [
+          {
+            "end": 4.2,
+            "start": 4.08,
+            "text": " Para"
+          },
+          {
+            "end": 4.9,
+            "start": 4.2,
+            "text": " espa\u00f1ol,"
+          },
+          {
+            "end": 5.54,
+            "start": 5.12,
+            "text": " oprima"
+          },
+          {
+            "end": 5.56,
+            "start": 5.54,
+            "text": " y"
+          },
+          {
+            "end": 5.92,
+            "start": 5.56,
+            "text": " zos."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 8.94,
+        "speaker": "PGAI Clinic Agent",
+        "start": 6.64,
+        "text": "In for calling pivot point orthopedics.",
+        "words": [
+          {
+            "end": 6.8,
+            "start": 6.64,
+            "text": " In"
+          },
+          {
+            "end": 7.0,
+            "start": 6.8,
+            "text": " for"
+          },
+          {
+            "end": 7.3,
+            "start": 7.0,
+            "text": " calling"
+          },
+          {
+            "end": 7.64,
+            "start": 7.3,
+            "text": " pivot"
+          },
+          {
+            "end": 8.02,
+            "start": 7.64,
+            "text": " point"
+          },
+          {
+            "end": 8.94,
+            "start": 8.02,
+            "text": " orthopedics."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 12.16,
+        "speaker": "PGAI Clinic Agent",
+        "start": 9.26,
+        "text": "Part of Pretty Good AI, how may I help you today?",
+        "words": [
+          {
+            "end": 9.46,
+            "start": 9.26,
+            "text": " Part"
+          },
+          {
+            "end": 9.64,
+            "start": 9.46,
+            "text": " of"
+          },
+          {
+            "end": 9.84,
+            "start": 9.64,
+            "text": " Pretty"
+          },
+          {
+            "end": 10.02,
+            "start": 9.84,
+            "text": " Good"
+          },
+          {
+            "end": 10.42,
+            "start": 10.02,
+            "text": " AI,"
+          },
+          {
+            "end": 11.16,
+            "start": 11.0,
+            "text": " how"
+          },
+          {
+            "end": 11.3,
+            "start": 11.16,
+            "text": " may"
+          },
+          {
+            "end": 11.4,
+            "start": 11.3,
+            "text": " I"
+          },
+          {
+            "end": 11.56,
+            "start": 11.4,
+            "text": " help"
+          },
+          {
+            "end": 11.7,
+            "start": 11.56,
+            "text": " you"
+          },
+          {
+            "end": 12.16,
+            "start": 11.7,
+            "text": " today?"
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 20.2,
+        "speaker": "Patient / Elizabeth Thompson",
+        "start": 15.200000000000003,
+        "text": "Hi, I'm calling about my husband Richard Thompson. He missed an appointment last week",
+        "words": [
+          {
+            "end": 15.72,
+            "start": 15.200000000000003,
+            "text": " Hi,"
+          },
+          {
+            "end": 16.14,
+            "start": 15.88,
+            "text": " I'm"
+          },
+          {
+            "end": 16.4,
+            "start": 16.14,
+            "text": " calling"
+          },
+          {
+            "end": 16.68,
+            "start": 16.4,
+            "text": " about"
+          },
+          {
+            "end": 16.92,
+            "start": 16.68,
+            "text": " my"
+          },
+          {
+            "end": 17.22,
+            "start": 16.92,
+            "text": " husband"
+          },
+          {
+            "end": 17.62,
+            "start": 17.22,
+            "text": " Richard"
+          },
+          {
+            "end": 18.14,
+            "start": 17.62,
+            "text": " Thompson."
+          },
+          {
+            "end": 18.86,
+            "start": 18.76,
+            "text": " He"
+          },
+          {
+            "end": 19.1,
+            "start": 18.86,
+            "text": " missed"
+          },
+          {
+            "end": 19.32,
+            "start": 19.1,
+            "text": " an"
+          },
+          {
+            "end": 19.58,
+            "start": 19.32,
+            "text": " appointment"
+          },
+          {
+            "end": 19.94,
+            "start": 19.58,
+            "text": " last"
+          },
+          {
+            "end": 20.2,
+            "start": 19.94,
+            "text": " week"
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 31.74,
+        "speaker": "Patient / Elizabeth Thompson",
+        "start": 20.2,
+        "text": "I'd like to reschedule it for next week. Yes, of course, it's February 29th, 1914.",
+        "words": [
+          {
+            "end": 20.52,
+            "start": 20.2,
+            "text": " I'd"
+          },
+          {
+            "end": 20.78,
+            "start": 20.52,
+            "text": " like"
+          },
+          {
+            "end": 20.98,
+            "start": 20.78,
+            "text": " to"
+          },
+          {
+            "end": 21.46,
+            "start": 20.98,
+            "text": " reschedule"
+          },
+          {
+            "end": 21.7,
+            "start": 21.46,
+            "text": " it"
+          },
+          {
+            "end": 21.88,
+            "start": 21.7,
+            "text": " for"
+          },
+          {
+            "end": 22.14,
+            "start": 21.88,
+            "text": " next"
+          },
+          {
+            "end": 22.58,
+            "start": 22.14,
+            "text": " week."
+          },
+          {
+            "end": 29.3,
+            "start": 28.8,
+            "text": " Yes,"
+          },
+          {
+            "end": 29.52,
+            "start": 29.34,
+            "text": " of"
+          },
+          {
+            "end": 29.76,
+            "start": 29.52,
+            "text": " course,"
+          },
+          {
+            "end": 30.12,
+            "start": 29.94,
+            "text": " it's"
+          },
+          {
+            "end": 30.36,
+            "start": 30.12,
+            "text": " February"
+          },
+          {
+            "end": 31.14,
+            "start": 30.36,
+            "text": " 29th,"
+          },
+          {
+            "end": 31.74,
+            "start": 31.16,
+            "text": " 1914."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 26.94,
+        "speaker": "PGAI Clinic Agent",
+        "start": 24.52,
+        "text": "Can you please provide Richard's full date of birth?",
+        "words": [
+          {
+            "end": 25.08,
+            "start": 24.52,
+            "text": " Can"
+          },
+          {
+            "end": 25.24,
+            "start": 25.08,
+            "text": " you"
+          },
+          {
+            "end": 25.4,
+            "start": 25.24,
+            "text": " please"
+          },
+          {
+            "end": 25.8,
+            "start": 25.4,
+            "text": " provide"
+          },
+          {
+            "end": 26.26,
+            "start": 25.8,
+            "text": " Richard's"
+          },
+          {
+            "end": 26.4,
+            "start": 26.26,
+            "text": " full"
+          },
+          {
+            "end": 26.54,
+            "start": 26.4,
+            "text": " date"
+          },
+          {
+            "end": 26.74,
+            "start": 26.54,
+            "text": " of"
+          },
+          {
+            "end": 26.94,
+            "start": 26.74,
+            "text": " birth?"
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 40.14,
+        "speaker": "PGAI Clinic Agent",
+        "start": 37.24,
+        "text": "It looks like there was an issue with the date of birth provided.",
+        "words": [
+          {
+            "end": 37.64,
+            "start": 37.24,
+            "text": " It"
+          },
+          {
+            "end": 37.82,
+            "start": 37.64,
+            "text": " looks"
+          },
+          {
+            "end": 37.98,
+            "start": 37.82,
+            "text": " like"
+          },
+          {
+            "end": 38.12,
+            "start": 37.98,
+            "text": " there"
+          },
+          {
+            "end": 38.3,
+            "start": 38.12,
+            "text": " was"
+          },
+          {
+            "end": 38.44,
+            "start": 38.3,
+            "text": " an"
+          },
+          {
+            "end": 38.66,
+            "start": 38.44,
+            "text": " issue"
+          },
+          {
+            "end": 38.86,
+            "start": 38.66,
+            "text": " with"
+          },
+          {
+            "end": 39.02,
+            "start": 38.86,
+            "text": " the"
+          },
+          {
+            "end": 39.18,
+            "start": 39.02,
+            "text": " date"
+          },
+          {
+            "end": 39.36,
+            "start": 39.18,
+            "text": " of"
+          },
+          {
+            "end": 39.56,
+            "start": 39.36,
+            "text": " birth"
+          },
+          {
+            "end": 40.14,
+            "start": 39.56,
+            "text": " provided."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 44.4,
+        "speaker": "PGAI Clinic Agent",
+        "start": 40.76,
+        "text": "Could you please confirm Richard's full date of birth, including the year?",
+        "words": [
+          {
+            "end": 40.86,
+            "start": 40.76,
+            "text": " Could"
+          },
+          {
+            "end": 41.0,
+            "start": 40.86,
+            "text": " you"
+          },
+          {
+            "end": 41.2,
+            "start": 41.0,
+            "text": " please"
+          },
+          {
+            "end": 41.68,
+            "start": 41.2,
+            "text": " confirm"
+          },
+          {
+            "end": 42.4,
+            "start": 41.68,
+            "text": " Richard's"
+          },
+          {
+            "end": 42.62,
+            "start": 42.4,
+            "text": " full"
+          },
+          {
+            "end": 42.84,
+            "start": 42.62,
+            "text": " date"
+          },
+          {
+            "end": 43.04,
+            "start": 42.84,
+            "text": " of"
+          },
+          {
+            "end": 43.26,
+            "start": 43.04,
+            "text": " birth,"
+          },
+          {
+            "end": 43.82,
+            "start": 43.42,
+            "text": " including"
+          },
+          {
+            "end": 44.1,
+            "start": 43.82,
+            "text": " the"
+          },
+          {
+            "end": 44.4,
+            "start": 44.1,
+            "text": " year?"
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 50.98,
+        "speaker": "Patient / Elizabeth Thompson",
+        "start": 41.44,
+        "text": "Let me check that again. Sorry about that. It's February 28, 1949.",
+        "words": [
+          {
+            "end": 42.2,
+            "start": 41.44,
+            "text": " Let"
+          },
+          {
+            "end": 42.2,
+            "start": 42.2,
+            "text": " me"
+          },
+          {
+            "end": 46.4,
+            "start": 42.2,
+            "text": " check"
+          },
+          {
+            "end": 46.58,
+            "start": 46.4,
+            "text": " that"
+          },
+          {
+            "end": 46.94,
+            "start": 46.58,
+            "text": " again."
+          },
+          {
+            "end": 47.62,
+            "start": 47.42,
+            "text": " Sorry"
+          },
+          {
+            "end": 47.84,
+            "start": 47.62,
+            "text": " about"
+          },
+          {
+            "end": 48.28,
+            "start": 47.84,
+            "text": " that."
+          },
+          {
+            "end": 48.94,
+            "start": 48.66,
+            "text": " It's"
+          },
+          {
+            "end": 49.18,
+            "start": 48.94,
+            "text": " February"
+          },
+          {
+            "end": 49.82,
+            "start": 49.18,
+            "text": " 28,"
+          },
+          {
+            "end": 50.98,
+            "start": 50.16,
+            "text": " 1949."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 59.94,
+        "speaker": "PGAI Clinic Agent",
+        "start": 54.400000000000006,
+        "text": "Could you please spell out Richard's full name and confirm his date of birth as February",
+        "words": [
+          {
+            "end": 55.14,
+            "start": 54.400000000000006,
+            "text": " Could"
+          },
+          {
+            "end": 55.88,
+            "start": 55.14,
+            "text": " you"
+          },
+          {
+            "end": 56.08,
+            "start": 55.88,
+            "text": " please"
+          },
+          {
+            "end": 56.3,
+            "start": 56.08,
+            "text": " spell"
+          },
+          {
+            "end": 56.52,
+            "start": 56.3,
+            "text": " out"
+          },
+          {
+            "end": 56.96,
+            "start": 56.52,
+            "text": " Richard's"
+          },
+          {
+            "end": 57.16,
+            "start": 56.96,
+            "text": " full"
+          },
+          {
+            "end": 57.5,
+            "start": 57.16,
+            "text": " name"
+          },
+          {
+            "end": 57.76,
+            "start": 57.5,
+            "text": " and"
+          },
+          {
+            "end": 58.16,
+            "start": 57.76,
+            "text": " confirm"
+          },
+          {
+            "end": 58.38,
+            "start": 58.16,
+            "text": " his"
+          },
+          {
+            "end": 58.58,
+            "start": 58.38,
+            "text": " date"
+          },
+          {
+            "end": 58.78,
+            "start": 58.58,
+            "text": " of"
+          },
+          {
+            "end": 58.98,
+            "start": 58.78,
+            "text": " birth"
+          },
+          {
+            "end": 59.54,
+            "start": 58.98,
+            "text": " as"
+          },
+          {
+            "end": 59.94,
+            "start": 59.54,
+            "text": " February"
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 61.96,
+        "speaker": "PGAI Clinic Agent",
+        "start": 59.94,
+        "text": "28, 1949?",
+        "words": [
+          {
+            "end": 60.62,
+            "start": 59.94,
+            "text": " 28,"
+          },
+          {
+            "end": 61.96,
+            "start": 61.14,
+            "text": " 1949?"
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 72.94,
+        "speaker": "Patient / Elizabeth Thompson",
+        "start": 63.72,
+        "text": "Yes, that's correct. R-I-C-H-A-R-D T-H-O-M-P-S-O-N. And his date of birth is 02-28-1949.",
+        "words": [
+          {
+            "end": 64.2,
+            "start": 63.72,
+            "text": " Yes,"
+          },
+          {
+            "end": 64.58,
+            "start": 64.38,
+            "text": " that's"
+          },
+          {
+            "end": 64.98,
+            "start": 64.58,
+            "text": " correct."
+          },
+          {
+            "end": 65.52,
+            "start": 65.52,
+            "text": " R"
+          },
+          {
+            "end": 65.66,
+            "start": 65.52,
+            "text": "-I"
+          },
+          {
+            "end": 66.0,
+            "start": 65.66,
+            "text": "-C"
+          },
+          {
+            "end": 66.34,
+            "start": 66.0,
+            "text": "-H"
+          },
+          {
+            "end": 66.5,
+            "start": 66.34,
+            "text": "-A"
+          },
+          {
+            "end": 66.76,
+            "start": 66.5,
+            "text": "-R"
+          },
+          {
+            "end": 67.2,
+            "start": 66.76,
+            "text": "-D"
+          },
+          {
+            "end": 67.52,
+            "start": 67.2,
+            "text": " T"
+          },
+          {
+            "end": 67.72,
+            "start": 67.52,
+            "text": "-H"
+          },
+          {
+            "end": 67.96,
+            "start": 67.72,
+            "text": "-O"
+          },
+          {
+            "end": 68.26,
+            "start": 67.96,
+            "text": "-M"
+          },
+          {
+            "end": 68.52,
+            "start": 68.26,
+            "text": "-P"
+          },
+          {
+            "end": 68.78,
+            "start": 68.52,
+            "text": "-S"
+          },
+          {
+            "end": 69.02,
+            "start": 68.78,
+            "text": "-O"
+          },
+          {
+            "end": 69.62,
+            "start": 69.02,
+            "text": "-N."
+          },
+          {
+            "end": 69.84,
+            "start": 69.74,
+            "text": " And"
+          },
+          {
+            "end": 69.98,
+            "start": 69.84,
+            "text": " his"
+          },
+          {
+            "end": 70.18,
+            "start": 69.98,
+            "text": " date"
+          },
+          {
+            "end": 70.4,
+            "start": 70.18,
+            "text": " of"
+          },
+          {
+            "end": 70.64,
+            "start": 70.4,
+            "text": " birth"
+          },
+          {
+            "end": 70.96,
+            "start": 70.64,
+            "text": " is"
+          },
+          {
+            "end": 71.24,
+            "start": 70.96,
+            "text": " 02"
+          },
+          {
+            "end": 71.84,
+            "start": 71.24,
+            "text": "-28"
+          },
+          {
+            "end": 72.94,
+            "start": 71.84,
+            "text": "-1949."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 79.7,
+        "speaker": "PGAI Clinic Agent",
+        "start": 76.9,
+        "text": "Would you like to use a phone number to help look up Richard's record?",
+        "words": [
+          {
+            "end": 77.26,
+            "start": 76.9,
+            "text": " Would"
+          },
+          {
+            "end": 77.62,
+            "start": 77.26,
+            "text": " you"
+          },
+          {
+            "end": 77.76,
+            "start": 77.62,
+            "text": " like"
+          },
+          {
+            "end": 77.92,
+            "start": 77.76,
+            "text": " to"
+          },
+          {
+            "end": 77.98,
+            "start": 77.92,
+            "text": " use"
+          },
+          {
+            "end": 78.12,
+            "start": 77.98,
+            "text": " a"
+          },
+          {
+            "end": 78.26,
+            "start": 78.12,
+            "text": " phone"
+          },
+          {
+            "end": 78.46,
+            "start": 78.26,
+            "text": " number"
+          },
+          {
+            "end": 78.62,
+            "start": 78.46,
+            "text": " to"
+          },
+          {
+            "end": 78.76,
+            "start": 78.62,
+            "text": " help"
+          },
+          {
+            "end": 78.9,
+            "start": 78.76,
+            "text": " look"
+          },
+          {
+            "end": 79.12,
+            "start": 78.9,
+            "text": " up"
+          },
+          {
+            "end": 79.5,
+            "start": 79.12,
+            "text": " Richard's"
+          },
+          {
+            "end": 79.7,
+            "start": 79.5,
+            "text": " record?"
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 83.02,
+        "speaker": "PGAI Clinic Agent",
+        "start": 80.32,
+        "text": "If so, please provide the number you have on file with us.",
+        "words": [
+          {
+            "end": 80.48,
+            "start": 80.32,
+            "text": " If"
+          },
+          {
+            "end": 80.76,
+            "start": 80.48,
+            "text": " so,"
+          },
+          {
+            "end": 81.04,
+            "start": 80.92,
+            "text": " please"
+          },
+          {
+            "end": 81.3,
+            "start": 81.04,
+            "text": " provide"
+          },
+          {
+            "end": 81.5,
+            "start": 81.3,
+            "text": " the"
+          },
+          {
+            "end": 81.68,
+            "start": 81.5,
+            "text": " number"
+          },
+          {
+            "end": 81.86,
+            "start": 81.68,
+            "text": " you"
+          },
+          {
+            "end": 82.02,
+            "start": 81.86,
+            "text": " have"
+          },
+          {
+            "end": 82.18,
+            "start": 82.02,
+            "text": " on"
+          },
+          {
+            "end": 82.44,
+            "start": 82.18,
+            "text": " file"
+          },
+          {
+            "end": 82.66,
+            "start": 82.44,
+            "text": " with"
+          },
+          {
+            "end": 83.02,
+            "start": 82.66,
+            "text": " us."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 85.98,
+        "speaker": "PGAI Clinic Agent",
+        "start": 83.02,
+        "text": "If you're not sure, just let me know.",
+        "words": [
+          {
+            "end": 83.48,
+            "start": 83.02,
+            "text": " If"
+          },
+          {
+            "end": 83.66,
+            "start": 83.48,
+            "text": " you're"
+          },
+          {
+            "end": 83.82,
+            "start": 83.66,
+            "text": " not"
+          },
+          {
+            "end": 84.24,
+            "start": 83.82,
+            "text": " sure,"
+          },
+          {
+            "end": 84.92,
+            "start": 84.76,
+            "text": " just"
+          },
+          {
+            "end": 85.08,
+            "start": 84.92,
+            "text": " let"
+          },
+          {
+            "end": 85.22,
+            "start": 85.08,
+            "text": " me"
+          },
+          {
+            "end": 85.98,
+            "start": 85.22,
+            "text": " know."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 90.96,
+        "speaker": "Patient / Elizabeth Thompson",
+        "start": 86.47999999999999,
+        "text": "I don't have a phone number on file that I'm sure about. Can you look him up with",
+        "words": [
+          {
+            "end": 86.96,
+            "start": 86.47999999999999,
+            "text": " I"
+          },
+          {
+            "end": 87.44,
+            "start": 86.96,
+            "text": " don't"
+          },
+          {
+            "end": 87.6,
+            "start": 87.44,
+            "text": " have"
+          },
+          {
+            "end": 87.74,
+            "start": 87.6,
+            "text": " a"
+          },
+          {
+            "end": 87.92,
+            "start": 87.74,
+            "text": " phone"
+          },
+          {
+            "end": 88.2,
+            "start": 87.92,
+            "text": " number"
+          },
+          {
+            "end": 88.36,
+            "start": 88.2,
+            "text": " on"
+          },
+          {
+            "end": 88.68,
+            "start": 88.36,
+            "text": " file"
+          },
+          {
+            "end": 88.82,
+            "start": 88.68,
+            "text": " that"
+          },
+          {
+            "end": 89.04,
+            "start": 88.82,
+            "text": " I'm"
+          },
+          {
+            "end": 89.24,
+            "start": 89.04,
+            "text": " sure"
+          },
+          {
+            "end": 89.66,
+            "start": 89.24,
+            "text": " about."
+          },
+          {
+            "end": 90.26,
+            "start": 90.08,
+            "text": " Can"
+          },
+          {
+            "end": 90.38,
+            "start": 90.26,
+            "text": " you"
+          },
+          {
+            "end": 90.52,
+            "start": 90.38,
+            "text": " look"
+          },
+          {
+            "end": 90.66,
+            "start": 90.52,
+            "text": " him"
+          },
+          {
+            "end": 90.8,
+            "start": 90.66,
+            "text": " up"
+          },
+          {
+            "end": 90.96,
+            "start": 90.8,
+            "text": " with"
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 92.9,
+        "speaker": "Patient / Elizabeth Thompson",
+        "start": 90.96,
+        "text": "the name and date of birth I provided?",
+        "words": [
+          {
+            "end": 91.1,
+            "start": 90.96,
+            "text": " the"
+          },
+          {
+            "end": 91.36,
+            "start": 91.1,
+            "text": " name"
+          },
+          {
+            "end": 91.56,
+            "start": 91.36,
+            "text": " and"
+          },
+          {
+            "end": 91.72,
+            "start": 91.56,
+            "text": " date"
+          },
+          {
+            "end": 91.92,
+            "start": 91.72,
+            "text": " of"
+          },
+          {
+            "end": 92.1,
+            "start": 91.92,
+            "text": " birth"
+          },
+          {
+            "end": 92.32,
+            "start": 92.1,
+            "text": " I"
+          },
+          {
+            "end": 92.9,
+            "start": 92.32,
+            "text": " provided?"
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 100.68,
+        "speaker": "PGAI Clinic Agent",
+        "start": 97.26,
+        "text": "I wasn't able to find Richard's record with the information provided.",
+        "words": [
+          {
+            "end": 97.74,
+            "start": 97.26,
+            "text": " I"
+          },
+          {
+            "end": 97.94,
+            "start": 97.74,
+            "text": " wasn't"
+          },
+          {
+            "end": 98.12,
+            "start": 97.94,
+            "text": " able"
+          },
+          {
+            "end": 98.3,
+            "start": 98.12,
+            "text": " to"
+          },
+          {
+            "end": 98.5,
+            "start": 98.3,
+            "text": " find"
+          },
+          {
+            "end": 98.96,
+            "start": 98.5,
+            "text": " Richard's"
+          },
+          {
+            "end": 99.18,
+            "start": 98.96,
+            "text": " record"
+          },
+          {
+            "end": 99.44,
+            "start": 99.18,
+            "text": " with"
+          },
+          {
+            "end": 99.6,
+            "start": 99.44,
+            "text": " the"
+          },
+          {
+            "end": 100.1,
+            "start": 99.6,
+            "text": " information"
+          },
+          {
+            "end": 100.68,
+            "start": 100.1,
+            "text": " provided."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 104.66,
+        "speaker": "PGAI Clinic Agent",
+        "start": 101.66,
+        "text": "I can connect you to our patient support team for further help.",
+        "words": [
+          {
+            "end": 101.86,
+            "start": 101.66,
+            "text": " I"
+          },
+          {
+            "end": 102.04,
+            "start": 101.86,
+            "text": " can"
+          },
+          {
+            "end": 102.34,
+            "start": 102.04,
+            "text": " connect"
+          },
+          {
+            "end": 102.48,
+            "start": 102.34,
+            "text": " you"
+          },
+          {
+            "end": 102.62,
+            "start": 102.48,
+            "text": " to"
+          },
+          {
+            "end": 102.8,
+            "start": 102.62,
+            "text": " our"
+          },
+          {
+            "end": 103.02,
+            "start": 102.8,
+            "text": " patient"
+          },
+          {
+            "end": 103.44,
+            "start": 103.02,
+            "text": " support"
+          },
+          {
+            "end": 103.74,
+            "start": 103.44,
+            "text": " team"
+          },
+          {
+            "end": 103.98,
+            "start": 103.74,
+            "text": " for"
+          },
+          {
+            "end": 104.24,
+            "start": 103.98,
+            "text": " further"
+          },
+          {
+            "end": 104.66,
+            "start": 104.24,
+            "text": " help."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 108.28,
+        "speaker": "PGAI Clinic Agent",
+        "start": 104.66,
+        "text": "Would you like to continue with me or should I transfer you now?",
+        "words": [
+          {
+            "end": 105.2,
+            "start": 104.66,
+            "text": " Would"
+          },
+          {
+            "end": 105.38,
+            "start": 105.2,
+            "text": " you"
+          },
+          {
+            "end": 105.56,
+            "start": 105.38,
+            "text": " like"
+          },
+          {
+            "end": 105.8,
+            "start": 105.56,
+            "text": " to"
+          },
+          {
+            "end": 106.12,
+            "start": 105.8,
+            "text": " continue"
+          },
+          {
+            "end": 106.36,
+            "start": 106.12,
+            "text": " with"
+          },
+          {
+            "end": 106.56,
+            "start": 106.36,
+            "text": " me"
+          },
+          {
+            "end": 106.78,
+            "start": 106.56,
+            "text": " or"
+          },
+          {
+            "end": 106.98,
+            "start": 106.78,
+            "text": " should"
+          },
+          {
+            "end": 107.1,
+            "start": 106.98,
+            "text": " I"
+          },
+          {
+            "end": 107.54,
+            "start": 107.1,
+            "text": " transfer"
+          },
+          {
+            "end": 107.78,
+            "start": 107.54,
+            "text": " you"
+          },
+          {
+            "end": 108.28,
+            "start": 107.78,
+            "text": " now?"
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 120.94,
+        "speaker": "Patient / Elizabeth Thompson",
+        "start": 109.6,
+        "text": "I can continue with you. But before we do that, I need to tell you something. He didn't",
+        "words": [
+          {
+            "end": 110.06,
+            "start": 109.6,
+            "text": " I"
+          },
+          {
+            "end": 110.28,
+            "start": 110.06,
+            "text": " can"
+          },
+          {
+            "end": 110.66,
+            "start": 110.28,
+            "text": " continue"
+          },
+          {
+            "end": 110.86,
+            "start": 110.66,
+            "text": " with"
+          },
+          {
+            "end": 111.14,
+            "start": 110.86,
+            "text": " you."
+          },
+          {
+            "end": 111.82,
+            "start": 111.66,
+            "text": " But"
+          },
+          {
+            "end": 112.1,
+            "start": 111.82,
+            "text": " before"
+          },
+          {
+            "end": 112.34,
+            "start": 112.1,
+            "text": " we"
+          },
+          {
+            "end": 112.48,
+            "start": 112.34,
+            "text": " do"
+          },
+          {
+            "end": 112.82,
+            "start": 112.48,
+            "text": " that,"
+          },
+          {
+            "end": 113.4,
+            "start": 113.18,
+            "text": " I"
+          },
+          {
+            "end": 113.56,
+            "start": 113.4,
+            "text": " need"
+          },
+          {
+            "end": 113.74,
+            "start": 113.56,
+            "text": " to"
+          },
+          {
+            "end": 113.9,
+            "start": 113.74,
+            "text": " tell"
+          },
+          {
+            "end": 114.08,
+            "start": 113.9,
+            "text": " you"
+          },
+          {
+            "end": 114.42,
+            "start": 114.08,
+            "text": " something."
+          },
+          {
+            "end": 118.1,
+            "start": 117.64,
+            "text": " He"
+          },
+          {
+            "end": 120.94,
+            "start": 118.1,
+            "text": " didn't"
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 124.5,
+        "speaker": "PGAI Clinic Agent",
+        "start": 122.7,
+        "text": "I'm very sorry for your loss.",
+        "words": [
+          {
+            "end": 123.18,
+            "start": 122.7,
+            "text": " I'm"
+          },
+          {
+            "end": 123.4,
+            "start": 123.18,
+            "text": " very"
+          },
+          {
+            "end": 123.72,
+            "start": 123.4,
+            "text": " sorry"
+          },
+          {
+            "end": 124.0,
+            "start": 123.72,
+            "text": " for"
+          },
+          {
+            "end": 124.2,
+            "start": 124.0,
+            "text": " your"
+          },
+          {
+            "end": 124.5,
+            "start": 124.2,
+            "text": " loss."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 127.74,
+        "speaker": "PGAI Clinic Agent",
+        "start": 124.88,
+        "text": "We won't be able to schedule any more appointments for Richard.",
+        "words": [
+          {
+            "end": 125.12,
+            "start": 124.88,
+            "text": " We"
+          },
+          {
+            "end": 125.3,
+            "start": 125.12,
+            "text": " won't"
+          },
+          {
+            "end": 125.46,
+            "start": 125.3,
+            "text": " be"
+          },
+          {
+            "end": 125.64,
+            "start": 125.46,
+            "text": " able"
+          },
+          {
+            "end": 125.86,
+            "start": 125.64,
+            "text": " to"
+          },
+          {
+            "end": 126.16,
+            "start": 125.86,
+            "text": " schedule"
+          },
+          {
+            "end": 126.48,
+            "start": 126.16,
+            "text": " any"
+          },
+          {
+            "end": 126.72,
+            "start": 126.48,
+            "text": " more"
+          },
+          {
+            "end": 127.12,
+            "start": 126.72,
+            "text": " appointments"
+          },
+          {
+            "end": 127.44,
+            "start": 127.12,
+            "text": " for"
+          },
+          {
+            "end": 127.74,
+            "start": 127.44,
+            "text": " Richard."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 132.34,
+        "speaker": "PGAI Clinic Agent",
+        "start": 127.74,
+        "text": "If you have any other questions or need help with anything else, please let me know.",
+        "words": [
+          {
+            "end": 128.44,
+            "start": 127.74,
+            "text": " If"
+          },
+          {
+            "end": 128.58,
+            "start": 128.44,
+            "text": " you"
+          },
+          {
+            "end": 128.74,
+            "start": 128.58,
+            "text": " have"
+          },
+          {
+            "end": 128.9,
+            "start": 128.74,
+            "text": " any"
+          },
+          {
+            "end": 129.08,
+            "start": 128.9,
+            "text": " other"
+          },
+          {
+            "end": 129.52,
+            "start": 129.08,
+            "text": " questions"
+          },
+          {
+            "end": 129.72,
+            "start": 129.52,
+            "text": " or"
+          },
+          {
+            "end": 129.86,
+            "start": 129.72,
+            "text": " need"
+          },
+          {
+            "end": 130.06,
+            "start": 129.86,
+            "text": " help"
+          },
+          {
+            "end": 130.22,
+            "start": 130.06,
+            "text": " with"
+          },
+          {
+            "end": 130.48,
+            "start": 130.22,
+            "text": " anything"
+          },
+          {
+            "end": 130.78,
+            "start": 130.48,
+            "text": " else,"
+          },
+          {
+            "end": 131.1,
+            "start": 130.98,
+            "text": " please"
+          },
+          {
+            "end": 131.26,
+            "start": 131.1,
+            "text": " let"
+          },
+          {
+            "end": 131.4,
+            "start": 131.26,
+            "text": " me"
+          },
+          {
+            "end": 132.34,
+            "start": 131.4,
+            "text": " know."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 137.74,
+        "speaker": "Patient / Elizabeth Thompson",
+        "start": 132.72000000000003,
+        "text": "I understand. Thank you for your condolences. What happens to any existing appointments",
+        "words": [
+          {
+            "end": 133.36,
+            "start": 132.72000000000003,
+            "text": " I"
+          },
+          {
+            "end": 133.86,
+            "start": 133.36,
+            "text": " understand."
+          },
+          {
+            "end": 134.48,
+            "start": 134.36,
+            "text": " Thank"
+          },
+          {
+            "end": 134.62,
+            "start": 134.48,
+            "text": " you"
+          },
+          {
+            "end": 134.74,
+            "start": 134.62,
+            "text": " for"
+          },
+          {
+            "end": 134.9,
+            "start": 134.74,
+            "text": " your"
+          },
+          {
+            "end": 135.46,
+            "start": 134.9,
+            "text": " condolences."
+          },
+          {
+            "end": 136.22,
+            "start": 135.96,
+            "text": " What"
+          },
+          {
+            "end": 136.54,
+            "start": 136.22,
+            "text": " happens"
+          },
+          {
+            "end": 136.74,
+            "start": 136.54,
+            "text": " to"
+          },
+          {
+            "end": 136.94,
+            "start": 136.74,
+            "text": " any"
+          },
+          {
+            "end": 137.34,
+            "start": 136.94,
+            "text": " existing"
+          },
+          {
+            "end": 137.74,
+            "start": 137.34,
+            "text": " appointments"
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 142.12,
+        "speaker": "Patient / Elizabeth Thompson",
+        "start": 137.74,
+        "text": "he had and can his record be updated to reflect that he's passed away?",
+        "words": [
+          {
+            "end": 137.96,
+            "start": 137.74,
+            "text": " he"
+          },
+          {
+            "end": 138.24,
+            "start": 137.96,
+            "text": " had"
+          },
+          {
+            "end": 138.74,
+            "start": 138.24,
+            "text": " and"
+          },
+          {
+            "end": 138.96,
+            "start": 138.74,
+            "text": " can"
+          },
+          {
+            "end": 139.16,
+            "start": 138.96,
+            "text": " his"
+          },
+          {
+            "end": 139.4,
+            "start": 139.16,
+            "text": " record"
+          },
+          {
+            "end": 139.6,
+            "start": 139.4,
+            "text": " be"
+          },
+          {
+            "end": 140.0,
+            "start": 139.6,
+            "text": " updated"
+          },
+          {
+            "end": 140.24,
+            "start": 140.0,
+            "text": " to"
+          },
+          {
+            "end": 140.58,
+            "start": 140.24,
+            "text": " reflect"
+          },
+          {
+            "end": 140.82,
+            "start": 140.58,
+            "text": " that"
+          },
+          {
+            "end": 141.02,
+            "start": 140.82,
+            "text": " he's"
+          },
+          {
+            "end": 141.22,
+            "start": 141.02,
+            "text": " passed"
+          },
+          {
+            "end": 142.12,
+            "start": 141.22,
+            "text": " away?"
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 150.72,
+        "speaker": "PGAI Clinic Agent",
+        "start": 145.12,
+        "text": "Since I couldn't locate Richard's record, I can't update his chart or cancel any appointments",
+        "words": [
+          {
+            "end": 145.64,
+            "start": 145.12,
+            "text": " Since"
+          },
+          {
+            "end": 145.86,
+            "start": 145.64,
+            "text": " I"
+          },
+          {
+            "end": 146.12,
+            "start": 145.86,
+            "text": " couldn't"
+          },
+          {
+            "end": 146.6,
+            "start": 146.12,
+            "text": " locate"
+          },
+          {
+            "end": 147.14,
+            "start": 146.6,
+            "text": " Richard's"
+          },
+          {
+            "end": 147.4,
+            "start": 147.14,
+            "text": " record,"
+          },
+          {
+            "end": 148.02,
+            "start": 147.66,
+            "text": " I"
+          },
+          {
+            "end": 148.38,
+            "start": 148.02,
+            "text": " can't"
+          },
+          {
+            "end": 148.68,
+            "start": 148.38,
+            "text": " update"
+          },
+          {
+            "end": 148.92,
+            "start": 148.68,
+            "text": " his"
+          },
+          {
+            "end": 149.26,
+            "start": 148.92,
+            "text": " chart"
+          },
+          {
+            "end": 149.64,
+            "start": 149.26,
+            "text": " or"
+          },
+          {
+            "end": 150.02,
+            "start": 149.64,
+            "text": " cancel"
+          },
+          {
+            "end": 150.34,
+            "start": 150.02,
+            "text": " any"
+          },
+          {
+            "end": 150.72,
+            "start": 150.34,
+            "text": " appointments"
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 151.32,
+        "speaker": "PGAI Clinic Agent",
+        "start": 150.72,
+        "text": "directly.",
+        "words": [
+          {
+            "end": 151.32,
+            "start": 150.72,
+            "text": " directly."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 155.72,
+        "speaker": "PGAI Clinic Agent",
+        "start": 151.86,
+        "text": "I recommend speaking with our patient support team so they can help update his record",
+        "words": [
+          {
+            "end": 151.98,
+            "start": 151.86,
+            "text": " I"
+          },
+          {
+            "end": 152.32,
+            "start": 151.98,
+            "text": " recommend"
+          },
+          {
+            "end": 152.7,
+            "start": 152.32,
+            "text": " speaking"
+          },
+          {
+            "end": 152.88,
+            "start": 152.7,
+            "text": " with"
+          },
+          {
+            "end": 153.1,
+            "start": 152.88,
+            "text": " our"
+          },
+          {
+            "end": 153.3,
+            "start": 153.1,
+            "text": " patient"
+          },
+          {
+            "end": 153.76,
+            "start": 153.3,
+            "text": " support"
+          },
+          {
+            "end": 154.02,
+            "start": 153.76,
+            "text": " team"
+          },
+          {
+            "end": 154.26,
+            "start": 154.02,
+            "text": " so"
+          },
+          {
+            "end": 154.38,
+            "start": 154.26,
+            "text": " they"
+          },
+          {
+            "end": 154.58,
+            "start": 154.38,
+            "text": " can"
+          },
+          {
+            "end": 154.78,
+            "start": 154.58,
+            "text": " help"
+          },
+          {
+            "end": 155.14,
+            "start": 154.78,
+            "text": " update"
+          },
+          {
+            "end": 155.36,
+            "start": 155.14,
+            "text": " his"
+          },
+          {
+            "end": 155.72,
+            "start": 155.36,
+            "text": " record"
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 157.52,
+        "speaker": "PGAI Clinic Agent",
+        "start": 155.72,
+        "text": "and handle any scheduled visits.",
+        "words": [
+          {
+            "end": 156.0,
+            "start": 155.72,
+            "text": " and"
+          },
+          {
+            "end": 156.3,
+            "start": 156.0,
+            "text": " handle"
+          },
+          {
+            "end": 156.6,
+            "start": 156.3,
+            "text": " any"
+          },
+          {
+            "end": 157.06,
+            "start": 156.6,
+            "text": " scheduled"
+          },
+          {
+            "end": 157.52,
+            "start": 157.06,
+            "text": " visits."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 159.96,
+        "speaker": "PGAI Clinic Agent",
+        "start": 158.08,
+        "text": "Would you like me to connect you to them now?",
+        "words": [
+          {
+            "end": 158.24,
+            "start": 158.08,
+            "text": " Would"
+          },
+          {
+            "end": 158.36,
+            "start": 158.24,
+            "text": " you"
+          },
+          {
+            "end": 158.52,
+            "start": 158.36,
+            "text": " like"
+          },
+          {
+            "end": 158.66,
+            "start": 158.52,
+            "text": " me"
+          },
+          {
+            "end": 158.8,
+            "start": 158.66,
+            "text": " to"
+          },
+          {
+            "end": 159.04,
+            "start": 158.8,
+            "text": " connect"
+          },
+          {
+            "end": 159.16,
+            "start": 159.04,
+            "text": " you"
+          },
+          {
+            "end": 159.3,
+            "start": 159.16,
+            "text": " to"
+          },
+          {
+            "end": 159.42,
+            "start": 159.3,
+            "text": " them"
+          },
+          {
+            "end": 159.96,
+            "start": 159.42,
+            "text": " now?"
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 166.44,
+        "speaker": "Patient / Elizabeth Thompson",
+        "start": 161.56,
+        "text": "Yes, I think that would be best. Please go ahead and connect me to patient support so",
+        "words": [
+          {
+            "end": 162.04,
+            "start": 161.56,
+            "text": " Yes,"
+          },
+          {
+            "end": 162.5,
+            "start": 162.08,
+            "text": " I"
+          },
+          {
+            "end": 162.76,
+            "start": 162.5,
+            "text": " think"
+          },
+          {
+            "end": 162.94,
+            "start": 162.76,
+            "text": " that"
+          },
+          {
+            "end": 163.1,
+            "start": 162.94,
+            "text": " would"
+          },
+          {
+            "end": 163.24,
+            "start": 163.1,
+            "text": " be"
+          },
+          {
+            "end": 163.66,
+            "start": 163.24,
+            "text": " best."
+          },
+          {
+            "end": 164.32,
+            "start": 163.9,
+            "text": " Please"
+          },
+          {
+            "end": 164.54,
+            "start": 164.32,
+            "text": " go"
+          },
+          {
+            "end": 164.8,
+            "start": 164.54,
+            "text": " ahead"
+          },
+          {
+            "end": 165.02,
+            "start": 164.8,
+            "text": " and"
+          },
+          {
+            "end": 165.2,
+            "start": 165.02,
+            "text": " connect"
+          },
+          {
+            "end": 165.44,
+            "start": 165.2,
+            "text": " me"
+          },
+          {
+            "end": 165.6,
+            "start": 165.44,
+            "text": " to"
+          },
+          {
+            "end": 165.84,
+            "start": 165.6,
+            "text": " patient"
+          },
+          {
+            "end": 166.24,
+            "start": 165.84,
+            "text": " support"
+          },
+          {
+            "end": 166.44,
+            "start": 166.24,
+            "text": " so"
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 169.08,
+        "speaker": "Patient / Elizabeth Thompson",
+        "start": 166.44,
+        "text": "they can update his record properly. Thank you.",
+        "words": [
+          {
+            "end": 166.56,
+            "start": 166.44,
+            "text": " they"
+          },
+          {
+            "end": 166.68,
+            "start": 166.56,
+            "text": " can"
+          },
+          {
+            "end": 167.0,
+            "start": 166.68,
+            "text": " update"
+          },
+          {
+            "end": 167.2,
+            "start": 167.0,
+            "text": " his"
+          },
+          {
+            "end": 167.48,
+            "start": 167.2,
+            "text": " record"
+          },
+          {
+            "end": 167.98,
+            "start": 167.48,
+            "text": " properly."
+          },
+          {
+            "end": 168.7,
+            "start": 168.5,
+            "text": " Thank"
+          },
+          {
+            "end": 169.08,
+            "start": 168.7,
+            "text": " you."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 173.78,
+        "speaker": "PGAI Clinic Agent",
+        "start": 172.52,
+        "text": "Transferring you now, thank you.",
+        "words": [
+          {
+            "end": 173.04,
+            "start": 172.52,
+            "text": " Transferring"
+          },
+          {
+            "end": 173.14,
+            "start": 173.04,
+            "text": " you"
+          },
+          {
+            "end": 173.28,
+            "start": 173.14,
+            "text": " now,"
+          },
+          {
+            "end": 173.52,
+            "start": 173.36,
+            "text": " thank"
+          },
+          {
+            "end": 173.78,
+            "start": 173.52,
+            "text": " you."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 178.44,
+        "speaker": "PGAI Clinic Agent",
+        "start": 175.3,
+        "text": "Hello, you've reached the pretty good AI test line.",
+        "words": [
+          {
+            "end": 175.82,
+            "start": 175.3,
+            "text": " Hello,"
+          },
+          {
+            "end": 176.7,
+            "start": 176.4,
+            "text": " you've"
+          },
+          {
+            "end": 176.84,
+            "start": 176.7,
+            "text": " reached"
+          },
+          {
+            "end": 177.06,
+            "start": 176.84,
+            "text": " the"
+          },
+          {
+            "end": 177.2,
+            "start": 177.06,
+            "text": " pretty"
+          },
+          {
+            "end": 177.44,
+            "start": 177.2,
+            "text": " good"
+          },
+          {
+            "end": 177.78,
+            "start": 177.44,
+            "text": " AI"
+          },
+          {
+            "end": 177.94,
+            "start": 177.78,
+            "text": " test"
+          },
+          {
+            "end": 178.44,
+            "start": 177.94,
+            "text": " line."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 179.06,
+        "speaker": "PGAI Clinic Agent",
+        "start": 178.78,
+        "text": "Goodbye.",
+        "words": [
+          {
+            "end": 179.06,
+            "start": 178.78,
+            "text": " Goodbye."
+          }
+        ]
+      }
+    ],
+    "sha256": "5dea2a934c434fc24a9e47f8dd915f146ff716890112428f2d2aa98750c9067b",
+    "source_sha256": "9f18bc68ab24868ab41b131ef01abc22e3dea9d0b02fc4134307b361eaf67f52",
+    "status": "completed"
+  }
+}

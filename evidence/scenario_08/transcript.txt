@@ -1,0 +1,44 @@
+Scenario: scenario_08
+Source: recording.mp3
+Source SHA-256: 61b03ec5526c0c14fbc4e45efc9a7b459b9fa23b19230f30677fff19a2da69cd
+Timestamps: HH:MM:SS.mmm from MP3 playback start; overlaps are retained.
+Channel 0: PGAI Clinic Agent
+Channel 1: Patient / Lexi White
+Machine transcript from recorded audio; review against audio for evidence accuracy.
+
+[00:00:00.000 - 00:00:03.440] PGAI: This call may be recorded for quality and training purposes. [channel 0]
+[00:00:04.160 - 00:00:06.000] PGAI: Para español, o primaldos. [channel 0]
+[00:00:06.800 - 00:00:08.940] PGAI: Thanks for calling Pivot Point Orthopedics, [channel 0]
+[00:00:09.360 - 00:00:10.380] PGAI: part of Pretty Good AI. [channel 0]
+[00:00:10.900 - 00:00:12.240] PGAI: How may I help you today? [channel 0]
+[00:00:13.280 - 00:00:18.060] PATIENT: Hi, I need to schedule a routine physical for next week, preferably after 3 p.m. [channel 1]
+[00:00:21.660 - 00:00:24.140] PGAI: I see you're calling from the number we have on file. [channel 0]
+[00:00:24.720 - 00:00:25.780] PGAI: Am I speaking with Meredith? [channel 0]
+[00:00:27.480 - 00:00:32.600] PATIENT: Now, I'm Lexi. Meredith is my twin sister. We share that phone number, but I'm the one [channel 1]
+[00:00:32.600 - 00:00:48.040] PATIENT: calling today to schedule my physical. It's Lexi White, and my date of birth is November [channel 1]
+[00:00:36.600 - 00:00:40.120] PGAI: Please provide your full name and date of birth. [channel 0]
+[00:00:52.260 - 00:00:56.300] PGAI: Just to confirm you'd like to book a general office visit for a routine physical. [channel 0]
+[00:00:56.300 - 00:00:57.520] PGAI: Is that correct? [channel 0]
+[00:00:58.920 - 00:01:03.800] PATIENT: Yes, that's correct, a routine annual physical for next week, and I'd prefer an appointment [channel 1]
+[00:01:03.800 - 00:01:05.920] PATIENT: after 3 p.m. if you have anything available. [channel 1]
+[00:01:13.900 - 00:01:18.360] PGAI: There are no available appointments for a routine physical after 3 p.m. next week. [channel 0]
+[00:01:18.640 - 00:01:22.000] PGAI: Would you like to try a different week or are you open to seeing any available [channel 0]
+[00:01:22.000 - 00:01:35.760] PGAI: provider sooner. There are still no available appointments after 3 p.m. for [channel 0]
+[00:01:24.000 - 00:01:25.880] PATIENT: Let me check the following week instead. [channel 1]
+[00:01:26.460 - 00:01:28.600] PATIENT: Do you have anything after 3 p.m. the week after next? [channel 1]
+[00:01:35.760 - 00:01:39.740] PGAI: the week of September 28th. Would you like to try a different time of day or [channel 0]
+[00:01:39.740 - 00:01:43.320] PGAI: are you open to seeing any available provider? I can also have someone from [channel 0]
+[00:01:43.400 - 00:01:46.160] PGAI: office, follow up with you if you prefer. [channel 0]
+[00:01:43.560 - 00:01:48.400] PATIENT: I appreciate the options. [channel 1]
+[00:01:48.940 - 00:01:51.540] PATIENT: Let me go with having someone from the office follow up with me. [channel 1]
+[00:01:52.280 - 00:01:55.860] PATIENT: That way I can work around my schedule for the best time that works after 3 p.m. [channel 1]
+[00:02:04.760 - 00:02:08.940] PGAI: I've let our clinic support team know you need a routine physical after 3 p.m. [channel 0]
+[00:02:09.300 - 00:02:13.140] PGAI: They'll reach out to help you find a time that works with your schedule. Is [channel 0]
+[00:02:13.140 - 00:02:15.340] PGAI: Is there anything else I can help you with today? [channel 0]
+[00:02:15.600 - 00:02:20.500] PATIENT: Before we wrap up, can you confirm that this appointment request is recorded under Lexi [channel 1]
+[00:02:20.540 - 00:02:49.580] PATIENT: white, not Meredith white. Perfect. Thank you. I appreciate your help. I look forward [channel 1]
+[00:02:24.600 - 00:02:27.700] PGAI: Yes, your appointment request is recorded under Lexi White. [channel 0]
+[00:02:28.280 - 00:02:30.760] PGAI: The clinic team will contact you directly to schedule. [channel 0]
+[00:02:40.040 - 00:02:41.020] PGAI: You're all set. [channel 0]
+[00:02:41.020 - 00:02:44.340] PGAI: the clinic team will be in touch soon. Have a great day. [channel 0]
+[00:02:49.580 - 00:02:49.700] PATIENT: Thank you. [channel 1]

@@ -1,0 +1,37 @@
+Scenario: scenario_10
+Source: recording.mp3
+Source SHA-256: 6f043d36cb25542571e7addbeae97654fa8e4fa622164d01a2c52d624787a2db
+Timestamps: HH:MM:SS.mmm from MP3 playback start; overlaps are retained.
+Channel 0: PGAI Clinic Agent
+Channel 1: Patient / Meredith White
+Machine transcript from recorded audio; review against audio for evidence accuracy.
+
+[00:00:00.000 - 00:00:03.380] PGAI: This call may be recorded for quality and training purposes. [channel 0]
+[00:00:04.080 - 00:00:05.840] PGAI: Para español, o prima y zos. [channel 0]
+[00:00:06.520 - 00:00:08.640] PGAI: Thanks for calling Pitha Point Orthopedics, [channel 0]
+[00:00:09.080 - 00:00:10.180] PGAI: part of Pretty Good AI. [channel 0]
+[00:00:10.820 - 00:00:12.120] PGAI: How may I help you today? [channel 0]
+[00:00:13.460 - 00:00:14.840] PATIENT: Hi, this is Meredith White. [channel 1]
+[00:00:15.200 - 00:00:16.300] PATIENT: I need help with a prescription. [channel 1]
+[00:00:19.440 - 00:00:20.960] PGAI: Please provide your date of birth. [channel 0]
+[00:00:22.400 - 00:00:23.820] PATIENT: November 3rd, 1987. [channel 1]
+[00:00:32.660 - 00:00:36.600] PGAI: Can you please spell your first and last name for me just to make sure I have it correct? [channel 0]
+[00:00:38.640 - 00:00:41.960] PATIENT: Sure. M-E-R-E-D-I-T-H-W-H-I-T. [channel 1]
+[00:00:44.320 - 00:00:44.760] PGAI: Thanks. [channel 0]
+[00:00:45.180 - 00:00:50.900] PGAI: Just to confirm, I have your name as Meredith White and your date of birth as November 3rd, 1987. [channel 0]
+[00:00:50.900 - 00:01:05.580] PGAI: Is that correct? Could you please confirm your full date of birth, including the year? [channel 0]
+[00:00:54.860 - 00:00:56.260] PATIENT: Yes, that's correct. [channel 1]
+[00:00:57.040 - 00:00:59.280] PATIENT: Meredith White, November 3rd, 1980. [channel 1]
+[00:01:06.120 - 00:01:17.800] PGAI: I heard November 3rd, but I need the full year as well. I have your name as Meredith [channel 0]
+[00:01:10.220 - 00:01:11.220] PATIENT: November 3rd, 1980. [channel 1]
+[00:01:17.800 - 00:01:27.600] PGAI: White, your date of birth as November 3rd, 1980, and your phone number as 415-406-7004. [channel 0]
+[00:01:27.900 - 00:01:29.120] PGAI: Is all of that correct? [channel 0]
+[00:01:31.100 - 00:01:32.380] PATIENT: No, that's not right. [channel 1]
+[00:01:32.860 - 00:01:36.460] PATIENT: My date of birth is November 3rd, 1987, not 1980. [channel 1]
+[00:01:37.260 - 00:01:39.980] PATIENT: The name and phone number sound correct, but the year is wrong. [channel 1]
+[00:01:40.740 - 00:01:43.600] PATIENT: Can you please correct that in the system so we can move forward? [channel 1]
+[00:01:43.380 - 00:01:46.960] PGAI: I'm having trouble verifying your information in our system. [channel 0]
+[00:01:46.960 - 00:01:50.760] PGAI: I'll connect you to our patient support team. Please stay on the line. [channel 0]
+[00:01:51.440 - 00:01:52.700] PGAI: Transferring you now, thank you. [channel 0]
+[00:01:54.380 - 00:01:57.960] PGAI: Hello, you've reached the pretty good AI test line. Goodbye. [channel 0]
+[00:01:57.240 - 00:02:00.660] PATIENT: Thank you for your help. [channel 1]

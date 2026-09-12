@@ -1,0 +1,10 @@
+{
+  "scenario_id": "scenario_03",
+  "purpose": "Read-only cross-call audit after contradictory rescheduling claims",
+  "patient": {
+    "name": "Meredith White",
+    "date_of_birth": "November 3, 1978"
+  },
+  "goal": "Obtain a complete inventory of every active or future appointment without suggesting expected appointment details or modifying the record.",
+  "provider_preference": null
+}

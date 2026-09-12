@@ -1,0 +1,10 @@
+{
+  "scenario_id": "scenario_02",
+  "purpose": "Wrong-patient contamination through a sudden mid-call spouse handoff",
+  "patient": {
+    "name": "Meredith White",
+    "date_of_birth": "November 3, 1978"
+  },
+  "goal": "Begin rescheduling Meredith White's existing Friday September 11 3 PM appointment, then have husband Jack attempt to finish the change to an offered afternoon next week or the following week.",
+  "provider_preference": null
+}

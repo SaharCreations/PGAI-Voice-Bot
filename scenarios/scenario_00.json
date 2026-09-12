@@ -1,0 +1,10 @@
+{
+  "scenario_id": "scenario_00",
+  "purpose": "Operational cleanup before baseline testing",
+  "patient": {
+    "name": "Meredith White",
+    "date_of_birth": "November 3, 1978"
+  },
+  "goal": "Cancel every active or future appointment currently associated with Meredith White and obtain explicit confirmation that none remain.",
+  "provider_preference": null
+}

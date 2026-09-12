@@ -1,0 +1,25 @@
+Scenario: scenario_03
+Source: recording.mp3
+Source SHA-256: 863769ca8d9117426c2c3ed9d6c1855cfa86d99aa812bebf2189052201367fcf
+Timestamps: HH:MM:SS.mmm from MP3 playback start; overlaps are retained.
+Channel 0: PGAI Clinic Agent
+Channel 1: Patient / Meredith White
+Machine transcript from recorded audio; review against audio for evidence accuracy.
+
+[00:00:00.000 - 00:00:03.420] PGAI: This call may be recorded for quality and training purposes. [channel 0]
+[00:00:04.120 - 00:00:05.940] PGAI: Para español, oprima el dos. [channel 0]
+[00:00:06.780 - 00:00:10.580] PGAI: Thanks for calling Pivot Point Orthopedics, part of Pretty Good AI. [channel 0]
+[00:00:11.160 - 00:00:12.160] PGAI: How may I help you today? [channel 0]
+[00:00:14.460 - 00:00:16.820] PATIENT: I recently tried to reschedule an appointment. [channel 1]
+[00:00:17.600 - 00:00:20.260] PATIENT: Could you tell me every upcoming appointment currently on my record? [channel 1]
+[00:00:23.220 - 00:00:25.800] PGAI: Can you please provide your full name and date of birth? [channel 0]
+[00:00:26.580 - 00:00:30.100] PATIENT: Meredith White, date of birth, November 3rd, 1978. [channel 1]
+[00:00:40.540 - 00:00:46.820] PGAI: You have an upcoming appointment on Monday, September 14th at 3 p.m. with Dr. Zigbingyu [channel 0]
+[00:00:46.820 - 00:00:50.260] PGAI: Lacoste. Would you like to keep this appointment or make a change? [channel 0]
+[00:00:51.420 - 00:00:58.260] PATIENT: Thank you for that detail. Is there any other active or future appointment on my record besides this Monday, September 14th appointment? [channel 1]
+[00:01:01.320 - 00:01:06.080] PGAI: No, you only have the appointment on Monday September 14th at 3 p.m. There [channel 0]
+[00:01:06.080 - 00:01:09.560] PGAI: are no other upcoming appointments on your record. Would you like help with [channel 0]
+[00:01:09.560 - 00:01:10.120] PGAI: anything else? [channel 0]
+[00:01:11.300 - 00:01:14.280] PATIENT: Thank you for confirming the complete record. That's all I needed. [channel 1]
+[00:01:17.260 - 00:01:21.740] PGAI: You're welcome. If you need anything else, just give us a call. Have a great day. [channel 0]
+[00:01:22.240 - 00:01:24.560] PATIENT: You too, thank you. [channel 1]

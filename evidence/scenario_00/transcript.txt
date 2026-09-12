@@ -1,0 +1,37 @@
+Scenario: scenario_00
+Source: recording.mp3
+Source SHA-256: 6e685b8835b809b64aa01bd2197752a1057fa493bbfe5e84de5c8eb7def9f620
+Timestamps: HH:MM:SS.mmm from MP3 playback start; overlaps are retained.
+Channel 0: PGAI Clinic Agent
+Channel 1: Patient / Meredith White
+Machine transcript from recorded audio; review against audio for evidence accuracy.
+
+[00:00:00.000 - 00:00:03.300] PGAI: This call may be recorded for quality and training purposes. [channel 0]
+[00:00:04.020 - 00:00:05.900] PGAI: Para español, oprima y el dos. [channel 0]
+[00:00:06.520 - 00:00:08.580] PGAI: Thanks for calling Pivot Point Orthopedics, [channel 0]
+[00:00:09.060 - 00:00:10.080] PGAI: part of Pretty Good AI. [channel 0]
+[00:00:10.580 - 00:00:11.660] PGAI: How may I help you today? [channel 0]
+[00:00:12.860 - 00:00:17.820] PATIENT: Hi, I need to cancel all active and future appointments for Meredith White, born November [channel 1]
+[00:00:18.560 - 00:00:19.120] PATIENT: 3rd, 1978. [channel 1]
+[00:00:22.560 - 00:00:25.540] PGAI: Can you please confirm Meredith's full name [channel 0]
+[00:00:25.540 - 00:00:27.240] PGAI: and date of birth for verification? [channel 0]
+[00:00:28.340 - 00:00:31.920] PATIENT: Meredith White, date of birth, November 3, 1978. [channel 1]
+[00:00:40.000 - 00:00:46.400] PGAI: You have an upcoming appointment with Dr. Zigbing Yu-Lukoski on Monday, September 14th. [channel 0]
+[00:00:46.400 - 00:00:49.940] PGAI: Is this the appointment you want to cancel, or are there others not listed here? [channel 0]
+[00:00:52.040 - 00:00:56.820] PATIENT: Cancel that appointment, then please check if there are any other active or future appointments [channel 1]
+[00:00:56.820 - 00:00:58.060] PATIENT: for Meredith White. [channel 1]
+[00:01:00.020 - 00:01:05.340] PGAI: Can you share the reason for canceling your appointment with Dr. Zbigniew-Lukoski on [channel 0]
+[00:01:05.340 - 00:01:07.540] PGAI: Monday, September 14th? [channel 0]
+[00:01:07.540 - 00:01:11.940] PGAI: Once I have that, I'll cancel it and check for any other upcoming appointments. [channel 0]
+[00:01:12.920 - 00:01:15.600] PATIENT: I need to cancel all appointments, that's the reason. [channel 1]
+[00:01:16.180 - 00:01:18.820] PATIENT: Please go ahead and cancel that one, then check for others. [channel 1]
+[00:01:22.160 - 00:01:28.540] PGAI: Your appointment with Dr. Zdigniew Zukoski on Monday, September 14th has been canceled. [channel 0]
+[00:01:29.100 - 00:01:31.960] PGAI: That was the only active or future appointment on file for Meredith. [channel 0]
+[00:01:32.480 - 00:01:34.580] PGAI: Is there anything else I can help you with? [channel 0]
+[00:01:35.900 - 00:01:38.980] PATIENT: Thank you for canceling that appointment and confirming no others remain. [channel 1]
+[00:01:38.980 - 00:01:40.600] PATIENT: I appreciate your help. [channel 1]
+[00:01:43.420 - 00:01:47.120] PGAI: You're welcome. If you need anything else from Pivot Point Orthopedics, just [channel 0]
+[00:01:47.120 - 00:01:48.860] PGAI: let me know. Have a good night. [channel 0]
+[00:01:50.380 - 00:01:50.680] PATIENT: You too. [channel 1]
+[00:01:50.900 - 00:01:51.300] PATIENT: Thanks again. [channel 1]
+[00:01:51.560 - 00:01:51.720] PATIENT: Goodbye. [channel 1]

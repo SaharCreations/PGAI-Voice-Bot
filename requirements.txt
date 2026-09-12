@@ -1,6 +1,10 @@
 fastapi
 uvicorn
-twilio
+telnyx[webhooks]==4.178.0
 websockets
 python-dotenv
 anthropic
+httpx
+certifi>=2025.8.3,<2027
+faster-whisper==1.2.1
+av==18.1.0

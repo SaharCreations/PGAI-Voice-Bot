@@ -1,0 +1,44 @@
+Scenario: scenario_01
+Source: recording.mp3
+Source SHA-256: a1327df75d430d7487429a052c946cc7474d821a5c65a433d65397927fbaa5fe
+Timestamps: HH:MM:SS.mmm from MP3 playback start; overlaps are retained.
+Channel 0: PGAI Clinic Agent
+Channel 1: Patient / Meredith White
+Machine transcript from recorded audio; review against audio for evidence accuracy.
+
+[00:00:00.000 - 00:00:03.380] PGAI: This call may be recorded for quality and training purposes. [channel 0]
+[00:00:04.120 - 00:00:05.960] PGAI: Para español, o prima el dos. [channel 0]
+[00:00:06.620 - 00:00:11.180] PGAI: Thanks for calling Pivot Point Orthopedics, part of Pretty Good AI. [channel 0]
+[00:00:11.640 - 00:00:12.940] PGAI: How may I help you today? [channel 0]
+[00:00:14.560 - 00:00:17.460] PATIENT: Hi, I'm calling to schedule a routine annual physical. [channel 1]
+[00:00:18.160 - 00:00:21.640] PATIENT: I'd like to book something for next week if possible, preferably after 3 p.m. [channel 1]
+[00:00:24.140 - 00:00:27.480] PGAI: Can I get your full name and date of birth to look up your chart? [channel 0]
+[00:00:28.580 - 00:00:33.120] PATIENT: My name is Meredith White, and my date of birth is November 3rd, 1978. [channel 1]
+[00:00:39.600 - 00:00:43.820] PGAI: Just to confirm you'd like to book a general office visit for your routine annual physical. [channel 0]
+[00:00:43.820 - 00:00:45.100] PGAI: Is that correct? [channel 0]
+[00:00:47.020 - 00:00:48.280] PATIENT: Yes, that's correct. [channel 1]
+[00:00:48.280 - 00:00:51.940] PATIENT: A routine annual physical, ideally next week after 3 p.m. [channel 1]
+[00:01:01.880 - 00:01:07.180] PGAI: There are no available appointments for a routine annual physical next week after 3 [channel 0]
+[00:01:07.180 - 00:01:07.600] PGAI: p.m. [channel 0]
+[00:01:07.760 - 00:01:11.080] PGAI: Would you like to try a different week or are you open to seeing any available [channel 0]
+[00:01:11.080 - 00:01:11.520] PGAI: provider. [channel 0]
+[00:01:12.680 - 00:01:15.120] PATIENT: What times do you have available next week overall? [channel 1]
+[00:01:15.120 - 00:01:18.180] PATIENT: I'm flexible if there's an earlier slot that works. [channel 1]
+[00:01:22.540 - 00:01:26.100] PGAI: There are no open slots for a routine annual physical this week or next. [channel 0]
+[00:01:26.480 - 00:01:29.840] PGAI: Would you like me to check for the next available appointment with any provider, [channel 0]
+[00:01:29.840 - 00:01:32.280] PGAI: provider, or would you prefer a specific provider? [channel 0]
+[00:01:33.560 - 00:01:36.900] PATIENT: Yes, please check for the next available appointment with any provider. [channel 1]
+[00:01:37.560 - 00:01:39.120] PATIENT: I don't have a provider preference. [channel 1]
+[00:01:41.820 - 00:01:45.440] PGAI: There are several openings this Friday, September 11th. [channel 0]
+[00:01:45.440 - 00:01:50.060] PGAI: The first available after 3 p.m. is at 3 p.m. with Dr. Zbigniew Luchowski. [channel 0]
+[00:01:50.060 - 00:01:51.840] PGAI: Would you like to book that slot? [channel 0]
+[00:01:56.080 - 00:02:01.220] PATIENT: I'd like to book the 3 p.m. appointment this Friday, September 11th, with Dr. Zigni Wlakoski. [channel 1]
+[00:02:05.020 - 00:02:11.620] PGAI: You are confirmed for Friday, September 11th at 3 p.m. with Dr. Zbigniew Likoski at Pivot [channel 0]
+[00:02:11.620 - 00:02:12.900] PGAI: Point Orthopedics. [channel 0]
+[00:02:12.920 - 00:02:17.980] PGAI: Please bring your photo ID, insurance card, and a list of current medications. [channel 0]
+[00:02:18.480 - 00:02:20.760] PGAI: Would you like me to text you these appointment details? [channel 0]
+[00:02:22.660 - 00:02:26.560] PATIENT: Thank you, yes, please text me those details, I appreciate your help. [channel 1]
+[00:02:30.280 - 00:02:32.860] PGAI: You should get a text with your appointment details soon. [channel 0]
+[00:02:33.100 - 00:02:35.420] PGAI: If you need anything else, just let us know. [channel 0]
+[00:02:35.920 - 00:02:36.700] PGAI: Have a great day! [channel 0]
+[00:02:38.080 - 00:02:39.660] PATIENT: Thanks so much, have a great day. [channel 1]

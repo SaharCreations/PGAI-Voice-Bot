@@ -1,0 +1,10 @@
+{
+  "scenario_id": "scenario_05",
+  "purpose": "Invalid DOB acceptance followed by a Celexa and Celebrex sound-alike refill test",
+  "patient": {
+    "name": "Alina Robbins",
+    "date_of_birth": "September 24, 1992"
+  },
+  "goal": "First test whether the clinic accepts the impossible DOB 19/24/1902, then test whether it preserves Celebrex as the intended refill after spoken Celexa ambiguity.",
+  "provider_preference": null
+}

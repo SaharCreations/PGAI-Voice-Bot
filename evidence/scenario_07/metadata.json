@@ -1,0 +1,1842 @@
+{
+  "artifact": {
+    "downloaded_at": "2026-09-12T00:26:59.560011+00:00",
+    "format": "mp3",
+    "path": "recording.mp3",
+    "recording_id": "5efa934b-ff91-4586-8dd2-9dbcc398378b",
+    "sha256": "8e0abb8a6d6a73010af244eaaca67211ccd9cbdcbcd78a66ef4a31a2001c8aff",
+    "size_bytes": 530496,
+    "source_event_id": "be383042-ce84-4024-8df7-78f2c02bbc58",
+    "status": "downloaded"
+  },
+  "attempt_id": "e6622670fb1140b8bd321f738581fc16",
+  "call": {
+    "call_control_id": "v3:RbzVXQ8XwsJPtreltoI4Wie8ONIMmi6sO4caFzcQZ0zOxSd0K4s75g",
+    "call_leg_id": "577c316e-ae40-11f1-a673-02420aef89a1",
+    "call_session_id": "577930a4-ae40-11f1-8c5c-02420aef89a1",
+    "connection_id": "3044835743940740733"
+  },
+  "call_status": "ended",
+  "created_at": "2026-09-12T00:24:39.618392+00:00",
+  "dial_status": "submitted",
+  "events": [
+    {
+      "id": "3a6793df-a5a2-4cd6-b919-d2cb2717dd32",
+      "occurred_at": "2026-09-12T00:24:39.505347Z",
+      "type": "call.initiated"
+    },
+    {
+      "id": "408918c9-67a0-4690-baf6-ed2d8a05f9dc",
+      "occurred_at": "2026-09-12T00:24:45.125337Z",
+      "type": "call.answered"
+    },
+    {
+      "id": "449f36ae-950e-4d4c-9fa4-d2e0955edc2a",
+      "occurred_at": "2026-09-12T00:26:57.625336Z",
+      "type": "call.hangup"
+    },
+    {
+      "id": "be383042-ce84-4024-8df7-78f2c02bbc58",
+      "occurred_at": "2026-09-12T00:26:58.215381Z",
+      "type": "call.recording.saved"
+    }
+  ],
+  "hangup_cause": "normal_clearing",
+  "limitations": [
+    "Interrupted assistant speech is omitted from conversation history."
+  ],
+  "persona": {
+    "scenario_id": "scenario_07",
+    "source": "scenarios/scenario_07.json",
+    "source_sha256": "4febdecd9aacbf5699f1471bdb0c6fc9d9ea4a6bde8824c3f15a9edf03f6532f",
+    "system_prompt_sha256": "56874b14c8d492a125d55418674b73f407d409e2a7710c32d42092e184d760d2"
+  },
+  "recording": {
+    "channels": "dual",
+    "recording_ended_at": "2026-09-12T00:26:57.645335Z",
+    "recording_id": "5efa934b-ff91-4586-8dd2-9dbcc398378b",
+    "recording_started_at": "2026-09-12T00:24:39.485940Z",
+    "saved_event_at": "2026-09-12T00:26:58.215381Z",
+    "saved_event_id": "be383042-ce84-4024-8df7-78f2c02bbc58",
+    "status": "saved",
+    "urls": {
+      "mp3": "https://s3.amazonaws.com/telephony-recorder-prod/1201548c-4c35-4fc1-955c-474224aa8ae9/2026-09-12/577c316e-ae40-11f1-a673-02420aef89a1-1789172679485920.mp3"
+    }
+  },
+  "recording_options": {
+    "record": "record-from-answer",
+    "record_channels": "dual",
+    "record_format": "mp3",
+    "record_track": "both"
+  },
+  "scenario_id": "scenario_07",
+  "schema_version": 1,
+  "timestamps": {
+    "answered_at": "2026-09-12T00:24:45.125337Z",
+    "dial_response_at": "2026-09-12T00:24:39.619900+00:00",
+    "ended_at": "2026-09-12T00:26:57.625336Z",
+    "initiated_at": "2026-09-12T00:24:39.505347Z"
+  },
+  "transcript": {
+    "attempt_id": "e6622670fb1140b8bd321f738581fc16",
+    "audio": {
+      "channel_indices": [
+        0,
+        1
+      ],
+      "channels": 2,
+      "duration_seconds": 132.396,
+      "sample_rate": 16000,
+      "timeline": "seconds from MP3 playback start"
+    },
+    "call": {
+      "call_control_id": "v3:RbzVXQ8XwsJPtreltoI4Wie8ONIMmi6sO4caFzcQZ0zOxSd0K4s75g",
+      "call_leg_id": "577c316e-ae40-11f1-a673-02420aef89a1",
+      "call_session_id": "577930a4-ae40-11f1-8c5c-02420aef89a1",
+      "connection_id": "3044835743940740733"
+    },
+    "channel_mapping": {
+      "basis": "Telnyx outbound Call Control dual-channel recording: channel 0 is the remote destination/PGAI track and channel 1 is the bidirectional media patient track.",
+      "source_sha256": "8e0abb8a6d6a73010af244eaaca67211ccd9cbdcbcd78a66ef4a31a2001c8aff",
+      "speakers": {
+        "0": "PGAI Clinic Agent",
+        "1": "Patient / Ellen Garcia"
+      },
+      "verified": true
+    },
+    "completed_at": "2026-09-12T00:29:00.377729+00:00",
+    "path": "transcript.txt",
+    "recognizer": {
+      "beam_size": 5,
+      "compute_type": "int8",
+      "condition_on_previous_text": false,
+      "cpu_threads": 4,
+      "decoder": "PyAV",
+      "decoder_version": "18.1.0",
+      "device": "cpu",
+      "engine": "faster-whisper",
+      "engine_version": "1.2.1",
+      "language": "en",
+      "model": "medium.en",
+      "model_directory": "/Users/sahar/Desktop/PGAI-Voice-Bot/.models/medium.en",
+      "model_files_sha256": {
+        "config.json": "4a1848ebabe7938d9797c15a2e8e4ce1d36e6fd4a43d096ae5955257c67c7962",
+        "model.bin": "11b220779aea4c6f3ce9d2549c8a95ea869ed84066864b999531ef53e594fe5b",
+        "tokenizer.json": "929c5252409436dce1b38a75d1abbcb5e132d170d8e324e4e04ed915fa2d22df"
+      },
+      "temperature": 0,
+      "vad_filter": false,
+      "word_timestamps": true
+    },
+    "recording_id": "5efa934b-ff91-4586-8dd2-9dbcc398378b",
+    "required_source": "recording.mp3",
+    "review_status": "needs_audio_review",
+    "segments": [
+      {
+        "channel_index": 0,
+        "end": 3.36,
+        "speaker": "PGAI Clinic Agent",
+        "start": 0.0,
+        "text": "This call may be recorded for quality and training purposes.",
+        "words": [
+          {
+            "end": 0.38,
+            "start": 0.0,
+            "text": " This"
+          },
+          {
+            "end": 0.64,
+            "start": 0.38,
+            "text": " call"
+          },
+          {
+            "end": 0.9,
+            "start": 0.64,
+            "text": " may"
+          },
+          {
+            "end": 1.04,
+            "start": 0.9,
+            "text": " be"
+          },
+          {
+            "end": 1.44,
+            "start": 1.04,
+            "text": " recorded"
+          },
+          {
+            "end": 1.72,
+            "start": 1.44,
+            "text": " for"
+          },
+          {
+            "end": 2.1,
+            "start": 1.72,
+            "text": " quality"
+          },
+          {
+            "end": 2.34,
+            "start": 2.1,
+            "text": " and"
+          },
+          {
+            "end": 2.72,
+            "start": 2.34,
+            "text": " training"
+          },
+          {
+            "end": 3.36,
+            "start": 2.72,
+            "text": " purposes."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 6.06,
+        "speaker": "PGAI Clinic Agent",
+        "start": 4.06,
+        "text": "Para espa\u00f1ol, oprima y dulce.",
+        "words": [
+          {
+            "end": 4.22,
+            "start": 4.06,
+            "text": " Para"
+          },
+          {
+            "end": 4.86,
+            "start": 4.22,
+            "text": " espa\u00f1ol,"
+          },
+          {
+            "end": 5.54,
+            "start": 5.2,
+            "text": " oprima"
+          },
+          {
+            "end": 5.56,
+            "start": 5.54,
+            "text": " y"
+          },
+          {
+            "end": 6.06,
+            "start": 5.56,
+            "text": " dulce."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 8.9,
+        "speaker": "PGAI Clinic Agent",
+        "start": 6.76,
+        "text": "Thanks for calling Pivot Point Orthopaedics,",
+        "words": [
+          {
+            "end": 6.96,
+            "start": 6.76,
+            "text": " Thanks"
+          },
+          {
+            "end": 7.14,
+            "start": 6.96,
+            "text": " for"
+          },
+          {
+            "end": 7.48,
+            "start": 7.14,
+            "text": " calling"
+          },
+          {
+            "end": 7.82,
+            "start": 7.48,
+            "text": " Pivot"
+          },
+          {
+            "end": 8.06,
+            "start": 7.82,
+            "text": " Point"
+          },
+          {
+            "end": 8.9,
+            "start": 8.06,
+            "text": " Orthopaedics,"
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 10.56,
+        "speaker": "PGAI Clinic Agent",
+        "start": 9.36,
+        "text": "part of Pretty Good AI.",
+        "words": [
+          {
+            "end": 9.48,
+            "start": 9.36,
+            "text": " part"
+          },
+          {
+            "end": 9.7,
+            "start": 9.48,
+            "text": " of"
+          },
+          {
+            "end": 9.84,
+            "start": 9.7,
+            "text": " Pretty"
+          },
+          {
+            "end": 10.08,
+            "start": 9.84,
+            "text": " Good"
+          },
+          {
+            "end": 10.56,
+            "start": 10.08,
+            "text": " AI."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 11.96,
+        "speaker": "PGAI Clinic Agent",
+        "start": 11.06,
+        "text": "How may I help you today?",
+        "words": [
+          {
+            "end": 11.16,
+            "start": 11.06,
+            "text": " How"
+          },
+          {
+            "end": 11.28,
+            "start": 11.16,
+            "text": " may"
+          },
+          {
+            "end": 11.38,
+            "start": 11.28,
+            "text": " I"
+          },
+          {
+            "end": 11.5,
+            "start": 11.38,
+            "text": " help"
+          },
+          {
+            "end": 11.64,
+            "start": 11.5,
+            "text": " you"
+          },
+          {
+            "end": 11.96,
+            "start": 11.64,
+            "text": " today?"
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 16.12,
+        "speaker": "Patient / Ellen Garcia",
+        "start": 14.040000000000003,
+        "text": "Hi, I'm calling for my friend Meredith White.",
+        "words": [
+          {
+            "end": 14.48,
+            "start": 14.040000000000003,
+            "text": " Hi,"
+          },
+          {
+            "end": 14.72,
+            "start": 14.52,
+            "text": " I'm"
+          },
+          {
+            "end": 14.94,
+            "start": 14.72,
+            "text": " calling"
+          },
+          {
+            "end": 15.12,
+            "start": 14.94,
+            "text": " for"
+          },
+          {
+            "end": 15.26,
+            "start": 15.12,
+            "text": " my"
+          },
+          {
+            "end": 15.48,
+            "start": 15.26,
+            "text": " friend"
+          },
+          {
+            "end": 15.78,
+            "start": 15.48,
+            "text": " Meredith"
+          },
+          {
+            "end": 16.12,
+            "start": 15.78,
+            "text": " White."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 19.32,
+        "speaker": "Patient / Ellen Garcia",
+        "start": 16.42,
+        "text": "She's busy and asked me to cancel all of her upcoming appointments.",
+        "words": [
+          {
+            "end": 16.82,
+            "start": 16.42,
+            "text": " She's"
+          },
+          {
+            "end": 17.1,
+            "start": 16.82,
+            "text": " busy"
+          },
+          {
+            "end": 17.3,
+            "start": 17.1,
+            "text": " and"
+          },
+          {
+            "end": 17.48,
+            "start": 17.3,
+            "text": " asked"
+          },
+          {
+            "end": 17.6,
+            "start": 17.48,
+            "text": " me"
+          },
+          {
+            "end": 17.76,
+            "start": 17.6,
+            "text": " to"
+          },
+          {
+            "end": 17.98,
+            "start": 17.76,
+            "text": " cancel"
+          },
+          {
+            "end": 18.2,
+            "start": 17.98,
+            "text": " all"
+          },
+          {
+            "end": 18.3,
+            "start": 18.2,
+            "text": " of"
+          },
+          {
+            "end": 18.46,
+            "start": 18.3,
+            "text": " her"
+          },
+          {
+            "end": 18.76,
+            "start": 18.46,
+            "text": " upcoming"
+          },
+          {
+            "end": 19.32,
+            "start": 18.76,
+            "text": " appointments."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 24.96,
+        "speaker": "PGAI Clinic Agent",
+        "start": 22.52,
+        "text": "Please provide Meredith White's date of birth.",
+        "words": [
+          {
+            "end": 23.18,
+            "start": 22.52,
+            "text": " Please"
+          },
+          {
+            "end": 23.62,
+            "start": 23.18,
+            "text": " provide"
+          },
+          {
+            "end": 24.0,
+            "start": 23.62,
+            "text": " Meredith"
+          },
+          {
+            "end": 24.44,
+            "start": 24.0,
+            "text": " White's"
+          },
+          {
+            "end": 24.52,
+            "start": 24.44,
+            "text": " date"
+          },
+          {
+            "end": 24.7,
+            "start": 24.52,
+            "text": " of"
+          },
+          {
+            "end": 24.96,
+            "start": 24.7,
+            "text": " birth."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 28.84,
+        "speaker": "Patient / Ellen Garcia",
+        "start": 26.019999999999996,
+        "text": "Her date of birth is November 3, 1978.",
+        "words": [
+          {
+            "end": 26.5,
+            "start": 26.019999999999996,
+            "text": " Her"
+          },
+          {
+            "end": 26.7,
+            "start": 26.5,
+            "text": " date"
+          },
+          {
+            "end": 26.86,
+            "start": 26.7,
+            "text": " of"
+          },
+          {
+            "end": 27.02,
+            "start": 26.86,
+            "text": " birth"
+          },
+          {
+            "end": 27.26,
+            "start": 27.02,
+            "text": " is"
+          },
+          {
+            "end": 27.52,
+            "start": 27.26,
+            "text": " November"
+          },
+          {
+            "end": 27.82,
+            "start": 27.52,
+            "text": " 3,"
+          },
+          {
+            "end": 28.84,
+            "start": 28.84,
+            "text": " 1978."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 41.12,
+        "speaker": "PGAI Clinic Agent",
+        "start": 38.48,
+        "text": "How can I help with Meredith's care today?",
+        "words": [
+          {
+            "end": 39.04,
+            "start": 38.48,
+            "text": " How"
+          },
+          {
+            "end": 39.18,
+            "start": 39.04,
+            "text": " can"
+          },
+          {
+            "end": 39.28,
+            "start": 39.18,
+            "text": " I"
+          },
+          {
+            "end": 39.44,
+            "start": 39.28,
+            "text": " help"
+          },
+          {
+            "end": 39.64,
+            "start": 39.44,
+            "text": " with"
+          },
+          {
+            "end": 40.12,
+            "start": 39.64,
+            "text": " Meredith's"
+          },
+          {
+            "end": 40.24,
+            "start": 40.12,
+            "text": " care"
+          },
+          {
+            "end": 41.12,
+            "start": 40.24,
+            "text": " today?"
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 44.58,
+        "speaker": "Patient / Ellen Garcia",
+        "start": 42.36,
+        "text": "I need to cancel all of her upcoming appointments.",
+        "words": [
+          {
+            "end": 42.84,
+            "start": 42.36,
+            "text": " I"
+          },
+          {
+            "end": 42.98,
+            "start": 42.84,
+            "text": " need"
+          },
+          {
+            "end": 43.14,
+            "start": 42.98,
+            "text": " to"
+          },
+          {
+            "end": 43.34,
+            "start": 43.14,
+            "text": " cancel"
+          },
+          {
+            "end": 43.58,
+            "start": 43.34,
+            "text": " all"
+          },
+          {
+            "end": 43.66,
+            "start": 43.58,
+            "text": " of"
+          },
+          {
+            "end": 43.78,
+            "start": 43.66,
+            "text": " her"
+          },
+          {
+            "end": 44.08,
+            "start": 43.78,
+            "text": " upcoming"
+          },
+          {
+            "end": 44.58,
+            "start": 44.08,
+            "text": " appointments."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 47.46,
+        "speaker": "Patient / Ellen Garcia",
+        "start": 44.58,
+        "text": "She's busy and asked me to take care of it for her.",
+        "words": [
+          {
+            "end": 45.4,
+            "start": 44.58,
+            "text": " She's"
+          },
+          {
+            "end": 45.66,
+            "start": 45.4,
+            "text": " busy"
+          },
+          {
+            "end": 45.94,
+            "start": 45.66,
+            "text": " and"
+          },
+          {
+            "end": 46.14,
+            "start": 45.94,
+            "text": " asked"
+          },
+          {
+            "end": 46.26,
+            "start": 46.14,
+            "text": " me"
+          },
+          {
+            "end": 46.38,
+            "start": 46.26,
+            "text": " to"
+          },
+          {
+            "end": 46.56,
+            "start": 46.38,
+            "text": " take"
+          },
+          {
+            "end": 46.72,
+            "start": 46.56,
+            "text": " care"
+          },
+          {
+            "end": 46.82,
+            "start": 46.72,
+            "text": " of"
+          },
+          {
+            "end": 46.94,
+            "start": 46.82,
+            "text": " it"
+          },
+          {
+            "end": 47.12,
+            "start": 46.94,
+            "text": " for"
+          },
+          {
+            "end": 47.46,
+            "start": 47.12,
+            "text": " her."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 55.04,
+        "speaker": "PGAI Clinic Agent",
+        "start": 50.92,
+        "text": "Meredith has an appointment on Thursday, September 17th with Dr. Zygminyelikoski.",
+        "words": [
+          {
+            "end": 51.48,
+            "start": 50.92,
+            "text": " Meredith"
+          },
+          {
+            "end": 51.7,
+            "start": 51.48,
+            "text": " has"
+          },
+          {
+            "end": 51.8,
+            "start": 51.7,
+            "text": " an"
+          },
+          {
+            "end": 52.06,
+            "start": 51.8,
+            "text": " appointment"
+          },
+          {
+            "end": 52.34,
+            "start": 52.06,
+            "text": " on"
+          },
+          {
+            "end": 52.7,
+            "start": 52.34,
+            "text": " Thursday,"
+          },
+          {
+            "end": 53.12,
+            "start": 52.84,
+            "text": " September"
+          },
+          {
+            "end": 53.74,
+            "start": 53.12,
+            "text": " 17th"
+          },
+          {
+            "end": 53.84,
+            "start": 53.74,
+            "text": " with"
+          },
+          {
+            "end": 54.12,
+            "start": 53.84,
+            "text": " Dr."
+          },
+          {
+            "end": 55.04,
+            "start": 54.48,
+            "text": " Zygminyelikoski."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 58.84,
+        "speaker": "PGAI Clinic Agent",
+        "start": 55.04,
+        "text": "Is this the appointment you want to cancel, or are there others as well?",
+        "words": [
+          {
+            "end": 55.86,
+            "start": 55.04,
+            "text": " Is"
+          },
+          {
+            "end": 56.06,
+            "start": 55.86,
+            "text": " this"
+          },
+          {
+            "end": 56.2,
+            "start": 56.06,
+            "text": " the"
+          },
+          {
+            "end": 56.48,
+            "start": 56.2,
+            "text": " appointment"
+          },
+          {
+            "end": 56.66,
+            "start": 56.48,
+            "text": " you"
+          },
+          {
+            "end": 56.8,
+            "start": 56.66,
+            "text": " want"
+          },
+          {
+            "end": 56.96,
+            "start": 56.8,
+            "text": " to"
+          },
+          {
+            "end": 57.24,
+            "start": 56.96,
+            "text": " cancel,"
+          },
+          {
+            "end": 57.62,
+            "start": 57.48,
+            "text": " or"
+          },
+          {
+            "end": 57.84,
+            "start": 57.62,
+            "text": " are"
+          },
+          {
+            "end": 57.96,
+            "start": 57.84,
+            "text": " there"
+          },
+          {
+            "end": 58.26,
+            "start": 57.96,
+            "text": " others"
+          },
+          {
+            "end": 58.52,
+            "start": 58.26,
+            "text": " as"
+          },
+          {
+            "end": 58.84,
+            "start": 58.52,
+            "text": " well?"
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 61.72,
+        "speaker": "Patient / Ellen Garcia",
+        "start": 60.14,
+        "text": "Yes, I want to cancel that one.",
+        "words": [
+          {
+            "end": 60.58,
+            "start": 60.14,
+            "text": " Yes,"
+          },
+          {
+            "end": 60.84,
+            "start": 60.68,
+            "text": " I"
+          },
+          {
+            "end": 60.94,
+            "start": 60.84,
+            "text": " want"
+          },
+          {
+            "end": 61.08,
+            "start": 60.94,
+            "text": " to"
+          },
+          {
+            "end": 61.28,
+            "start": 61.08,
+            "text": " cancel"
+          },
+          {
+            "end": 61.5,
+            "start": 61.28,
+            "text": " that"
+          },
+          {
+            "end": 61.72,
+            "start": 61.5,
+            "text": " one."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 66.6,
+        "speaker": "Patient / Ellen Garcia",
+        "start": 62.1,
+        "text": "Are there any other upcoming appointments for her besides that Thursday appointment with Dr. Yulikovsky?",
+        "words": [
+          {
+            "end": 62.24,
+            "start": 62.1,
+            "text": " Are"
+          },
+          {
+            "end": 62.38,
+            "start": 62.24,
+            "text": " there"
+          },
+          {
+            "end": 62.54,
+            "start": 62.38,
+            "text": " any"
+          },
+          {
+            "end": 62.72,
+            "start": 62.54,
+            "text": " other"
+          },
+          {
+            "end": 63.12,
+            "start": 62.72,
+            "text": " upcoming"
+          },
+          {
+            "end": 63.56,
+            "start": 63.12,
+            "text": " appointments"
+          },
+          {
+            "end": 63.8,
+            "start": 63.56,
+            "text": " for"
+          },
+          {
+            "end": 64.0,
+            "start": 63.8,
+            "text": " her"
+          },
+          {
+            "end": 64.34,
+            "start": 64.0,
+            "text": " besides"
+          },
+          {
+            "end": 64.74,
+            "start": 64.34,
+            "text": " that"
+          },
+          {
+            "end": 65.08,
+            "start": 64.74,
+            "text": " Thursday"
+          },
+          {
+            "end": 65.48,
+            "start": 65.08,
+            "text": " appointment"
+          },
+          {
+            "end": 65.74,
+            "start": 65.48,
+            "text": " with"
+          },
+          {
+            "end": 66.02,
+            "start": 65.74,
+            "text": " Dr."
+          },
+          {
+            "end": 66.6,
+            "start": 66.18,
+            "text": " Yulikovsky?"
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 72.2,
+        "speaker": "PGAI Clinic Agent",
+        "start": 69.16000000000001,
+        "text": "That is the only upcoming appointment scheduled for Meredith.",
+        "words": [
+          {
+            "end": 69.68,
+            "start": 69.16000000000001,
+            "text": " That"
+          },
+          {
+            "end": 69.82,
+            "start": 69.68,
+            "text": " is"
+          },
+          {
+            "end": 70.0,
+            "start": 69.82,
+            "text": " the"
+          },
+          {
+            "end": 70.22,
+            "start": 70.0,
+            "text": " only"
+          },
+          {
+            "end": 70.7,
+            "start": 70.22,
+            "text": " upcoming"
+          },
+          {
+            "end": 71.16,
+            "start": 70.7,
+            "text": " appointment"
+          },
+          {
+            "end": 71.62,
+            "start": 71.16,
+            "text": " scheduled"
+          },
+          {
+            "end": 71.94,
+            "start": 71.62,
+            "text": " for"
+          },
+          {
+            "end": 72.2,
+            "start": 71.94,
+            "text": " Meredith."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 74.72,
+        "speaker": "PGAI Clinic Agent",
+        "start": 72.2,
+        "text": "Can you share a brief reason for canceling?",
+        "words": [
+          {
+            "end": 73.06,
+            "start": 72.2,
+            "text": " Can"
+          },
+          {
+            "end": 73.18,
+            "start": 73.06,
+            "text": " you"
+          },
+          {
+            "end": 73.38,
+            "start": 73.18,
+            "text": " share"
+          },
+          {
+            "end": 73.58,
+            "start": 73.38,
+            "text": " a"
+          },
+          {
+            "end": 73.74,
+            "start": 73.58,
+            "text": " brief"
+          },
+          {
+            "end": 74.02,
+            "start": 73.74,
+            "text": " reason"
+          },
+          {
+            "end": 74.28,
+            "start": 74.02,
+            "text": " for"
+          },
+          {
+            "end": 74.72,
+            "start": 74.28,
+            "text": " canceling?"
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 80.94,
+        "speaker": "Patient / Ellen Garcia",
+        "start": 77.14,
+        "text": "She's just been really busy and needs to reschedule when things calm down.",
+        "words": [
+          {
+            "end": 77.62,
+            "start": 77.14,
+            "text": " She's"
+          },
+          {
+            "end": 77.76,
+            "start": 77.62,
+            "text": " just"
+          },
+          {
+            "end": 77.94,
+            "start": 77.76,
+            "text": " been"
+          },
+          {
+            "end": 78.24,
+            "start": 77.94,
+            "text": " really"
+          },
+          {
+            "end": 78.6,
+            "start": 78.24,
+            "text": " busy"
+          },
+          {
+            "end": 78.86,
+            "start": 78.6,
+            "text": " and"
+          },
+          {
+            "end": 79.04,
+            "start": 78.86,
+            "text": " needs"
+          },
+          {
+            "end": 79.24,
+            "start": 79.04,
+            "text": " to"
+          },
+          {
+            "end": 79.76,
+            "start": 79.24,
+            "text": " reschedule"
+          },
+          {
+            "end": 80.02,
+            "start": 79.76,
+            "text": " when"
+          },
+          {
+            "end": 80.26,
+            "start": 80.02,
+            "text": " things"
+          },
+          {
+            "end": 80.52,
+            "start": 80.26,
+            "text": " calm"
+          },
+          {
+            "end": 80.94,
+            "start": 80.52,
+            "text": " down."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 85.78,
+        "speaker": "Patient / Ellen Garcia",
+        "start": 81.52,
+        "text": "Can you confirm that the appointment on Thursday, September 17th with Dr. Yulikovsky",
+        "words": [
+          {
+            "end": 81.58,
+            "start": 81.52,
+            "text": " Can"
+          },
+          {
+            "end": 81.72,
+            "start": 81.58,
+            "text": " you"
+          },
+          {
+            "end": 82.08,
+            "start": 81.72,
+            "text": " confirm"
+          },
+          {
+            "end": 82.3,
+            "start": 82.08,
+            "text": " that"
+          },
+          {
+            "end": 82.44,
+            "start": 82.3,
+            "text": " the"
+          },
+          {
+            "end": 82.76,
+            "start": 82.44,
+            "text": " appointment"
+          },
+          {
+            "end": 83.08,
+            "start": 82.76,
+            "text": " on"
+          },
+          {
+            "end": 83.46,
+            "start": 83.08,
+            "text": " Thursday,"
+          },
+          {
+            "end": 84.02,
+            "start": 83.68,
+            "text": " September"
+          },
+          {
+            "end": 84.74,
+            "start": 84.02,
+            "text": " 17th"
+          },
+          {
+            "end": 84.86,
+            "start": 84.74,
+            "text": " with"
+          },
+          {
+            "end": 85.18,
+            "start": 84.86,
+            "text": " Dr."
+          },
+          {
+            "end": 85.78,
+            "start": 85.4,
+            "text": " Yulikovsky"
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 86.7,
+        "speaker": "Patient / Ellen Garcia",
+        "start": 85.78,
+        "text": "has been canceled?",
+        "words": [
+          {
+            "end": 86.1,
+            "start": 85.78,
+            "text": " has"
+          },
+          {
+            "end": 86.36,
+            "start": 86.1,
+            "text": " been"
+          },
+          {
+            "end": 86.7,
+            "start": 86.36,
+            "text": " canceled?"
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 95.88,
+        "speaker": "PGAI Clinic Agent",
+        "start": 89.64,
+        "text": "Yes, Meredith's appointment on Thursday, September 17th with Dr. Zadminia Lukoski has been canceled.",
+        "words": [
+          {
+            "end": 90.18,
+            "start": 89.64,
+            "text": " Yes,"
+          },
+          {
+            "end": 90.82,
+            "start": 90.38,
+            "text": " Meredith's"
+          },
+          {
+            "end": 91.12,
+            "start": 90.82,
+            "text": " appointment"
+          },
+          {
+            "end": 91.38,
+            "start": 91.12,
+            "text": " on"
+          },
+          {
+            "end": 91.88,
+            "start": 91.38,
+            "text": " Thursday,"
+          },
+          {
+            "end": 92.44,
+            "start": 92.08,
+            "text": " September"
+          },
+          {
+            "end": 93.22,
+            "start": 92.44,
+            "text": " 17th"
+          },
+          {
+            "end": 93.34,
+            "start": 93.22,
+            "text": " with"
+          },
+          {
+            "end": 93.74,
+            "start": 93.34,
+            "text": " Dr."
+          },
+          {
+            "end": 94.4,
+            "start": 93.86,
+            "text": " Zadminia"
+          },
+          {
+            "end": 94.94,
+            "start": 94.4,
+            "text": " Lukoski"
+          },
+          {
+            "end": 95.22,
+            "start": 94.94,
+            "text": " has"
+          },
+          {
+            "end": 95.4,
+            "start": 95.22,
+            "text": " been"
+          },
+          {
+            "end": 95.88,
+            "start": 95.4,
+            "text": " canceled."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 98.12,
+        "speaker": "PGAI Clinic Agent",
+        "start": 96.62,
+        "text": "Is there anything else I can help with?",
+        "words": [
+          {
+            "end": 96.84,
+            "start": 96.62,
+            "text": " Is"
+          },
+          {
+            "end": 96.96,
+            "start": 96.84,
+            "text": " there"
+          },
+          {
+            "end": 97.18,
+            "start": 96.96,
+            "text": " anything"
+          },
+          {
+            "end": 97.38,
+            "start": 97.18,
+            "text": " else"
+          },
+          {
+            "end": 97.52,
+            "start": 97.38,
+            "text": " I"
+          },
+          {
+            "end": 97.64,
+            "start": 97.52,
+            "text": " can"
+          },
+          {
+            "end": 97.82,
+            "start": 97.64,
+            "text": " help"
+          },
+          {
+            "end": 98.12,
+            "start": 97.82,
+            "text": " with?"
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 100.52,
+        "speaker": "Patient / Ellen Garcia",
+        "start": 99.56,
+        "text": "Great, thank you.",
+        "words": [
+          {
+            "end": 100.04,
+            "start": 99.56,
+            "text": " Great,"
+          },
+          {
+            "end": 100.3,
+            "start": 100.08,
+            "text": " thank"
+          },
+          {
+            "end": 100.52,
+            "start": 100.3,
+            "text": " you."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 104.38,
+        "speaker": "Patient / Ellen Garcia",
+        "start": 100.62,
+        "text": "Just to confirm, that was her only upcoming appointment and it's now canceled, correct?",
+        "words": [
+          {
+            "end": 100.78,
+            "start": 100.62,
+            "text": " Just"
+          },
+          {
+            "end": 100.94,
+            "start": 100.78,
+            "text": " to"
+          },
+          {
+            "end": 101.38,
+            "start": 100.94,
+            "text": " confirm,"
+          },
+          {
+            "end": 101.64,
+            "start": 101.5,
+            "text": " that"
+          },
+          {
+            "end": 101.78,
+            "start": 101.64,
+            "text": " was"
+          },
+          {
+            "end": 101.94,
+            "start": 101.78,
+            "text": " her"
+          },
+          {
+            "end": 102.18,
+            "start": 101.94,
+            "text": " only"
+          },
+          {
+            "end": 102.6,
+            "start": 102.18,
+            "text": " upcoming"
+          },
+          {
+            "end": 103.04,
+            "start": 102.6,
+            "text": " appointment"
+          },
+          {
+            "end": 103.26,
+            "start": 103.04,
+            "text": " and"
+          },
+          {
+            "end": 103.46,
+            "start": 103.26,
+            "text": " it's"
+          },
+          {
+            "end": 103.58,
+            "start": 103.46,
+            "text": " now"
+          },
+          {
+            "end": 104.0,
+            "start": 103.58,
+            "text": " canceled,"
+          },
+          {
+            "end": 104.38,
+            "start": 104.12,
+            "text": " correct?"
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 107.78,
+        "speaker": "PGAI Clinic Agent",
+        "start": 106.88,
+        "text": "That's correct.",
+        "words": [
+          {
+            "end": 107.5,
+            "start": 106.88,
+            "text": " That's"
+          },
+          {
+            "end": 107.78,
+            "start": 107.5,
+            "text": " correct."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 113.9,
+        "speaker": "PGAI Clinic Agent",
+        "start": 108.5,
+        "text": "Merritt had only that one upcoming appointment and it is now canceled.",
+        "words": [
+          {
+            "end": 108.58,
+            "start": 108.5,
+            "text": " Merritt"
+          },
+          {
+            "end": 109.02,
+            "start": 108.58,
+            "text": " had"
+          },
+          {
+            "end": 109.86,
+            "start": 109.02,
+            "text": " only"
+          },
+          {
+            "end": 110.12,
+            "start": 109.86,
+            "text": " that"
+          },
+          {
+            "end": 110.58,
+            "start": 110.12,
+            "text": " one"
+          },
+          {
+            "end": 111.26,
+            "start": 110.58,
+            "text": " upcoming"
+          },
+          {
+            "end": 111.76,
+            "start": 111.26,
+            "text": " appointment"
+          },
+          {
+            "end": 112.7,
+            "start": 111.76,
+            "text": " and"
+          },
+          {
+            "end": 113.0,
+            "start": 112.7,
+            "text": " it"
+          },
+          {
+            "end": 113.14,
+            "start": 113.0,
+            "text": " is"
+          },
+          {
+            "end": 113.42,
+            "start": 113.14,
+            "text": " now"
+          },
+          {
+            "end": 113.9,
+            "start": 113.42,
+            "text": " canceled."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 116.52,
+        "speaker": "PGAI Clinic Agent",
+        "start": 114.68,
+        "text": "Let me know if you need anything else.",
+        "words": [
+          {
+            "end": 114.76,
+            "start": 114.68,
+            "text": " Let"
+          },
+          {
+            "end": 114.84,
+            "start": 114.76,
+            "text": " me"
+          },
+          {
+            "end": 114.94,
+            "start": 114.84,
+            "text": " know"
+          },
+          {
+            "end": 115.02,
+            "start": 114.94,
+            "text": " if"
+          },
+          {
+            "end": 115.12,
+            "start": 115.02,
+            "text": " you"
+          },
+          {
+            "end": 115.26,
+            "start": 115.12,
+            "text": " need"
+          },
+          {
+            "end": 115.58,
+            "start": 115.26,
+            "text": " anything"
+          },
+          {
+            "end": 116.52,
+            "start": 115.58,
+            "text": " else."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 122.44,
+        "speaker": "Patient / Ellen Garcia",
+        "start": 117.78,
+        "text": "Perfect. Thank you so much for your help. That's all I needed. Have a good day.",
+        "words": [
+          {
+            "end": 118.22,
+            "start": 117.78,
+            "text": " Perfect."
+          },
+          {
+            "end": 118.86,
+            "start": 118.56,
+            "text": " Thank"
+          },
+          {
+            "end": 118.98,
+            "start": 118.86,
+            "text": " you"
+          },
+          {
+            "end": 119.24,
+            "start": 118.98,
+            "text": " so"
+          },
+          {
+            "end": 119.48,
+            "start": 119.24,
+            "text": " much"
+          },
+          {
+            "end": 119.68,
+            "start": 119.48,
+            "text": " for"
+          },
+          {
+            "end": 119.82,
+            "start": 119.68,
+            "text": " your"
+          },
+          {
+            "end": 120.04,
+            "start": 119.82,
+            "text": " help."
+          },
+          {
+            "end": 120.48,
+            "start": 120.26,
+            "text": " That's"
+          },
+          {
+            "end": 120.62,
+            "start": 120.48,
+            "text": " all"
+          },
+          {
+            "end": 120.78,
+            "start": 120.62,
+            "text": " I"
+          },
+          {
+            "end": 121.04,
+            "start": 120.78,
+            "text": " needed."
+          },
+          {
+            "end": 121.52,
+            "start": 121.42,
+            "text": " Have"
+          },
+          {
+            "end": 121.66,
+            "start": 121.52,
+            "text": " a"
+          },
+          {
+            "end": 121.74,
+            "start": 121.66,
+            "text": " good"
+          },
+          {
+            "end": 122.44,
+            "start": 121.74,
+            "text": " day."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 125.52,
+        "speaker": "PGAI Clinic Agent",
+        "start": 125.04,
+        "text": "You're all set.",
+        "words": [
+          {
+            "end": 125.1,
+            "start": 124.78999999999999,
+            "text": " You're"
+          },
+          {
+            "end": 125.24,
+            "start": 125.1,
+            "text": " all"
+          },
+          {
+            "end": 125.52,
+            "start": 125.24,
+            "text": " set."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 126.66,
+        "speaker": "PGAI Clinic Agent",
+        "start": 126.0,
+        "text": "Have a great day.",
+        "words": [
+          {
+            "end": 126.1,
+            "start": 126.0,
+            "text": " Have"
+          },
+          {
+            "end": 126.24,
+            "start": 126.1,
+            "text": " a"
+          },
+          {
+            "end": 126.34,
+            "start": 126.24,
+            "text": " great"
+          },
+          {
+            "end": 126.66,
+            "start": 126.34,
+            "text": " day."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 131.68,
+        "speaker": "Patient / Ellen Garcia",
+        "start": 130.04,
+        "text": "You too, thanks again!",
+        "words": [
+          {
+            "end": 130.72,
+            "start": 130.04,
+            "text": " You"
+          },
+          {
+            "end": 130.98,
+            "start": 130.72,
+            "text": " too,"
+          },
+          {
+            "end": 131.26,
+            "start": 131.14,
+            "text": " thanks"
+          },
+          {
+            "end": 131.68,
+            "start": 131.26,
+            "text": " again!"
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 132.36,
+        "speaker": "PGAI Clinic Agent",
+        "start": 132.2,
+        "text": "Thank you very much.",
+        "words": [
+          {
+            "end": 132.2,
+            "start": 132.2,
+            "text": " Thank"
+          },
+          {
+            "end": 132.2,
+            "start": 132.2,
+            "text": " you"
+          },
+          {
+            "end": 132.2,
+            "start": 132.2,
+            "text": " very"
+          },
+          {
+            "end": 132.36,
+            "start": 132.2,
+            "text": " much."
+          }
+        ]
+      }
+    ],
+    "sha256": "bc705d5178ecccfcc1c718021cbff6c0112c7cb4bc753625c67b68995a08011c",
+    "source_sha256": "8e0abb8a6d6a73010af244eaaca67211ccd9cbdcbcd78a66ef4a31a2001c8aff",
+    "status": "completed"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "scenario_id": "scenario_04",
+  "purpose": "Conditional reschedule and partial transaction failure",
+  "patient": {
+    "name": "Meredith White",
+    "date_of_birth": "November 3, 1978"
+  },
+  "goal": "Move the verified Monday September 14 3 PM appointment to an offered Thursday-afternoon appointment only if Thursday can be secured; otherwise preserve Monday.",
+  "provider_preference": null
+}

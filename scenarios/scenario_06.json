@@ -1,0 +1,10 @@
+{
+  "scenario_id": "scenario_06",
+  "purpose": "Invalid leap-day DOB and deceased-patient workflow persistence",
+  "patient": {
+    "name": "Elizabeth Thompson",
+    "date_of_birth": "March 15, 1952"
+  },
+  "goal": "Attempt to reschedule husband Richard Thompson after revealing that he died, while initially providing the impossible DOB February 29, 1949.",
+  "provider_preference": null
+}

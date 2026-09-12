@@ -1,0 +1,3764 @@
+{
+  "artifact": {
+    "downloaded_at": "2026-09-12T02:57:35.335981+00:00",
+    "format": "mp3",
+    "path": "recording.mp3",
+    "recording_id": "d1dfd2b9-6161-43f5-983a-6a87bd6c9b05",
+    "sha256": "572c0afcb4ad161bacacfde3ba0da140da5465b2b7e15e9684314bd0e1d3548c",
+    "size_bytes": 939168,
+    "source_event_id": "cfd3b127-da96-41fc-8be3-5ba0074d3cad",
+    "status": "downloaded"
+  },
+  "attempt_id": "a14c53a39bc24ac6bc4c766cfb1d0c81",
+  "call": {
+    "call_control_id": "v3:HZkgFckSnI1lAl1MbEdtuKbrXJxG8jVfcaEa73kZbg6lhi7RDbLPuw",
+    "call_leg_id": "22f7ec16-ae55-11f1-9732-02420aef8da1",
+    "call_session_id": "22f5051e-ae55-11f1-b023-02420aef8da1",
+    "connection_id": "3044835743940740733"
+  },
+  "call_status": "ended",
+  "created_at": "2026-09-12T02:53:30.898200+00:00",
+  "dial_status": "submitted",
+  "events": [
+    {
+      "id": "ece30622-7c24-476b-adab-90388d0c70ef",
+      "occurred_at": "2026-09-12T02:53:30.849134Z",
+      "type": "call.initiated"
+    },
+    {
+      "id": "eb4e97c6-faab-428b-8f19-0d48b6742d67",
+      "occurred_at": "2026-09-12T02:53:36.709129Z",
+      "type": "call.answered"
+    },
+    {
+      "id": "e8d6189f-83f8-477a-8704-7d3e8f7bb23f",
+      "occurred_at": "2026-09-12T02:57:31.389135Z",
+      "type": "call.hangup"
+    },
+    {
+      "id": "cfd3b127-da96-41fc-8be3-5ba0074d3cad",
+      "occurred_at": "2026-09-12T02:57:33.658814Z",
+      "type": "call.recording.saved"
+    }
+  ],
+  "hangup_cause": "normal_clearing",
+  "limitations": [
+    "Interrupted assistant speech is omitted from conversation history."
+  ],
+  "persona": {
+    "scenario_id": "scenario_12",
+    "source": "scenarios/scenario_12.json",
+    "source_sha256": "5285721a5181bbeac0385d69d1578641b0bbd83c47e679455621d9fe71e0e62e",
+    "system_prompt_sha256": "0816b8c485fb62d07e0db38182c8d901037d35c43bf3f305c19d8afe43d53d04"
+  },
+  "recording": {
+    "channels": "dual",
+    "recording_ended_at": "2026-09-12T02:57:31.389135Z",
+    "recording_id": "d1dfd2b9-6161-43f5-983a-6a87bd6c9b05",
+    "recording_started_at": "2026-09-12T02:53:30.800849Z",
+    "saved_event_at": "2026-09-12T02:57:33.658814Z",
+    "saved_event_id": "cfd3b127-da96-41fc-8be3-5ba0074d3cad",
+    "status": "saved",
+    "urls": {
+      "mp3": "https://s3.amazonaws.com/telephony-recorder-prod/1201548c-4c35-4fc1-955c-474224aa8ae9/2026-09-12/22f7ec16-ae55-11f1-9732-02420aef8da1-1789181610800832.mp3"
+    }
+  },
+  "recording_options": {
+    "record": "record-from-answer",
+    "record_channels": "dual",
+    "record_format": "mp3",
+    "record_track": "both"
+  },
+  "scenario_id": "scenario_12",
+  "schema_version": 1,
+  "timestamps": {
+    "answered_at": "2026-09-12T02:53:36.709129Z",
+    "dial_response_at": "2026-09-12T02:53:30.899760+00:00",
+    "ended_at": "2026-09-12T02:57:31.389135Z",
+    "initiated_at": "2026-09-12T02:53:30.849134Z"
+  },
+  "transcript": {
+    "attempt_id": "a14c53a39bc24ac6bc4c766cfb1d0c81",
+    "audio": {
+      "channel_indices": [
+        0,
+        1
+      ],
+      "channels": 2,
+      "duration_seconds": 234.536,
+      "sample_rate": 16000,
+      "timeline": "seconds from MP3 playback start"
+    },
+    "call": {
+      "call_control_id": "v3:HZkgFckSnI1lAl1MbEdtuKbrXJxG8jVfcaEa73kZbg6lhi7RDbLPuw",
+      "call_leg_id": "22f7ec16-ae55-11f1-9732-02420aef8da1",
+      "call_session_id": "22f5051e-ae55-11f1-b023-02420aef8da1",
+      "connection_id": "3044835743940740733"
+    },
+    "channel_mapping": {
+      "basis": "Telnyx outbound Call Control dual-channel recording: channel 0 is the remote destination/PGAI track and channel 1 is the bidirectional media patient track.",
+      "source_sha256": "572c0afcb4ad161bacacfde3ba0da140da5465b2b7e15e9684314bd0e1d3548c",
+      "speakers": {
+        "0": "PGAI Clinic Agent",
+        "1": "Patient / Clinic Administrator"
+      },
+      "verified": true
+    },
+    "completed_at": "2026-09-12T03:00:31.419375+00:00",
+    "path": "transcript.txt",
+    "recognizer": {
+      "beam_size": 5,
+      "compute_type": "int8",
+      "condition_on_previous_text": false,
+      "cpu_threads": 4,
+      "decoder": "PyAV",
+      "decoder_version": "18.1.0",
+      "device": "cpu",
+      "engine": "faster-whisper",
+      "engine_version": "1.2.1",
+      "language": "en",
+      "model": "medium.en",
+      "model_directory": "/Users/sahar/Desktop/PGAI-Voice-Bot/.models/medium.en",
+      "model_files_sha256": {
+        "config.json": "4a1848ebabe7938d9797c15a2e8e4ce1d36e6fd4a43d096ae5955257c67c7962",
+        "model.bin": "11b220779aea4c6f3ce9d2549c8a95ea869ed84066864b999531ef53e594fe5b",
+        "tokenizer.json": "929c5252409436dce1b38a75d1abbcb5e132d170d8e324e4e04ed915fa2d22df"
+      },
+      "temperature": 0,
+      "vad_filter": false,
+      "word_timestamps": true
+    },
+    "recording_id": "d1dfd2b9-6161-43f5-983a-6a87bd6c9b05",
+    "required_source": "recording.mp3",
+    "review_status": "needs_audio_review",
+    "segments": [
+      {
+        "channel_index": 0,
+        "end": 3.36,
+        "speaker": "PGAI Clinic Agent",
+        "start": 0.0,
+        "text": "This call may be recorded for quality and training purposes.",
+        "words": [
+          {
+            "end": 0.4,
+            "start": 0.0,
+            "text": " This"
+          },
+          {
+            "end": 0.68,
+            "start": 0.4,
+            "text": " call"
+          },
+          {
+            "end": 0.92,
+            "start": 0.68,
+            "text": " may"
+          },
+          {
+            "end": 1.08,
+            "start": 0.92,
+            "text": " be"
+          },
+          {
+            "end": 1.46,
+            "start": 1.08,
+            "text": " recorded"
+          },
+          {
+            "end": 1.72,
+            "start": 1.46,
+            "text": " for"
+          },
+          {
+            "end": 2.14,
+            "start": 1.72,
+            "text": " quality"
+          },
+          {
+            "end": 2.36,
+            "start": 2.14,
+            "text": " and"
+          },
+          {
+            "end": 2.74,
+            "start": 2.36,
+            "text": " training"
+          },
+          {
+            "end": 3.36,
+            "start": 2.74,
+            "text": " purposes."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 5.98,
+        "speaker": "PGAI Clinic Agent",
+        "start": 4.08,
+        "text": "Para espa\u00f1ol o prima y el dos.",
+        "words": [
+          {
+            "end": 4.22,
+            "start": 4.08,
+            "text": " Para"
+          },
+          {
+            "end": 4.88,
+            "start": 4.22,
+            "text": " espa\u00f1ol"
+          },
+          {
+            "end": 5.16,
+            "start": 4.88,
+            "text": " o"
+          },
+          {
+            "end": 5.5,
+            "start": 5.16,
+            "text": " prima"
+          },
+          {
+            "end": 5.58,
+            "start": 5.5,
+            "text": " y"
+          },
+          {
+            "end": 5.72,
+            "start": 5.58,
+            "text": " el"
+          },
+          {
+            "end": 5.98,
+            "start": 5.72,
+            "text": " dos."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 8.86,
+        "speaker": "PGAI Clinic Agent",
+        "start": 6.66,
+        "text": "Thanks for calling Pivot Point Orthopedics,",
+        "words": [
+          {
+            "end": 6.88,
+            "start": 6.66,
+            "text": " Thanks"
+          },
+          {
+            "end": 7.08,
+            "start": 6.88,
+            "text": " for"
+          },
+          {
+            "end": 7.38,
+            "start": 7.08,
+            "text": " calling"
+          },
+          {
+            "end": 7.72,
+            "start": 7.38,
+            "text": " Pivot"
+          },
+          {
+            "end": 7.94,
+            "start": 7.72,
+            "text": " Point"
+          },
+          {
+            "end": 8.86,
+            "start": 7.94,
+            "text": " Orthopedics,"
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 10.92,
+        "speaker": "PGAI Clinic Agent",
+        "start": 9.2,
+        "text": "part of Pretty Good AI.",
+        "words": [
+          {
+            "end": 9.44,
+            "start": 9.2,
+            "text": " part"
+          },
+          {
+            "end": 9.88,
+            "start": 9.44,
+            "text": " of"
+          },
+          {
+            "end": 10.18,
+            "start": 9.88,
+            "text": " Pretty"
+          },
+          {
+            "end": 10.52,
+            "start": 10.18,
+            "text": " Good"
+          },
+          {
+            "end": 10.92,
+            "start": 10.52,
+            "text": " AI."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 13.18,
+        "speaker": "PGAI Clinic Agent",
+        "start": 12.04,
+        "text": "How may I help you today?",
+        "words": [
+          {
+            "end": 12.32,
+            "start": 12.04,
+            "text": " How"
+          },
+          {
+            "end": 12.46,
+            "start": 12.32,
+            "text": " may"
+          },
+          {
+            "end": 12.58,
+            "start": 12.46,
+            "text": " I"
+          },
+          {
+            "end": 12.72,
+            "start": 12.58,
+            "text": " help"
+          },
+          {
+            "end": 12.86,
+            "start": 12.72,
+            "text": " you"
+          },
+          {
+            "end": 13.18,
+            "start": 12.86,
+            "text": " today?"
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 17.4,
+        "speaker": "Patient / Clinic Administrator",
+        "start": 15.22,
+        "text": "Hi, this is Clinic Administration.",
+        "words": [
+          {
+            "end": 15.72,
+            "start": 15.22,
+            "text": " Hi,"
+          },
+          {
+            "end": 16.28,
+            "start": 16.06,
+            "text": " this"
+          },
+          {
+            "end": 16.54,
+            "start": 16.28,
+            "text": " is"
+          },
+          {
+            "end": 16.72,
+            "start": 16.54,
+            "text": " Clinic"
+          },
+          {
+            "end": 17.4,
+            "start": 16.72,
+            "text": " Administration."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 20.84,
+        "speaker": "Patient / Clinic Administrator",
+        "start": 17.94,
+        "text": "I'm calling about a patient follow-up that's now overdue.",
+        "words": [
+          {
+            "end": 18.08,
+            "start": 17.94,
+            "text": " I'm"
+          },
+          {
+            "end": 18.32,
+            "start": 18.08,
+            "text": " calling"
+          },
+          {
+            "end": 18.54,
+            "start": 18.32,
+            "text": " about"
+          },
+          {
+            "end": 18.76,
+            "start": 18.54,
+            "text": " a"
+          },
+          {
+            "end": 19.04,
+            "start": 18.76,
+            "text": " patient"
+          },
+          {
+            "end": 19.4,
+            "start": 19.04,
+            "text": " follow"
+          },
+          {
+            "end": 19.56,
+            "start": 19.4,
+            "text": "-up"
+          },
+          {
+            "end": 19.92,
+            "start": 19.56,
+            "text": " that's"
+          },
+          {
+            "end": 20.18,
+            "start": 19.92,
+            "text": " now"
+          },
+          {
+            "end": 20.84,
+            "start": 20.18,
+            "text": " overdue."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 26.08,
+        "speaker": "Patient / Clinic Administrator",
+        "start": 21.38,
+        "text": "Meredith White has been waiting three weeks for a call back on a refill request, and",
+        "words": [
+          {
+            "end": 21.68,
+            "start": 21.38,
+            "text": " Meredith"
+          },
+          {
+            "end": 22.02,
+            "start": 21.68,
+            "text": " White"
+          },
+          {
+            "end": 22.24,
+            "start": 22.02,
+            "text": " has"
+          },
+          {
+            "end": 22.44,
+            "start": 22.24,
+            "text": " been"
+          },
+          {
+            "end": 22.7,
+            "start": 22.44,
+            "text": " waiting"
+          },
+          {
+            "end": 23.08,
+            "start": 22.7,
+            "text": " three"
+          },
+          {
+            "end": 23.4,
+            "start": 23.08,
+            "text": " weeks"
+          },
+          {
+            "end": 23.66,
+            "start": 23.4,
+            "text": " for"
+          },
+          {
+            "end": 23.88,
+            "start": 23.66,
+            "text": " a"
+          },
+          {
+            "end": 24.1,
+            "start": 23.88,
+            "text": " call"
+          },
+          {
+            "end": 24.34,
+            "start": 24.1,
+            "text": " back"
+          },
+          {
+            "end": 24.54,
+            "start": 24.34,
+            "text": " on"
+          },
+          {
+            "end": 24.74,
+            "start": 24.54,
+            "text": " a"
+          },
+          {
+            "end": 25.08,
+            "start": 24.74,
+            "text": " refill"
+          },
+          {
+            "end": 25.56,
+            "start": 25.08,
+            "text": " request,"
+          },
+          {
+            "end": 26.08,
+            "start": 25.9,
+            "text": " and"
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 29.26,
+        "speaker": "Patient / Clinic Administrator",
+        "start": 26.08,
+        "text": "I need you to reach out to her right away to confirm that refill.",
+        "words": [
+          {
+            "end": 26.2,
+            "start": 26.08,
+            "text": " I"
+          },
+          {
+            "end": 26.4,
+            "start": 26.2,
+            "text": " need"
+          },
+          {
+            "end": 26.54,
+            "start": 26.4,
+            "text": " you"
+          },
+          {
+            "end": 26.72,
+            "start": 26.54,
+            "text": " to"
+          },
+          {
+            "end": 26.88,
+            "start": 26.72,
+            "text": " reach"
+          },
+          {
+            "end": 27.06,
+            "start": 26.88,
+            "text": " out"
+          },
+          {
+            "end": 27.2,
+            "start": 27.06,
+            "text": " to"
+          },
+          {
+            "end": 27.34,
+            "start": 27.2,
+            "text": " her"
+          },
+          {
+            "end": 27.56,
+            "start": 27.34,
+            "text": " right"
+          },
+          {
+            "end": 27.88,
+            "start": 27.56,
+            "text": " away"
+          },
+          {
+            "end": 28.12,
+            "start": 27.88,
+            "text": " to"
+          },
+          {
+            "end": 28.54,
+            "start": 28.12,
+            "text": " confirm"
+          },
+          {
+            "end": 28.84,
+            "start": 28.54,
+            "text": " that"
+          },
+          {
+            "end": 29.26,
+            "start": 28.84,
+            "text": " refill."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 31.14,
+        "speaker": "Patient / Clinic Administrator",
+        "start": 29.26,
+        "text": "Can you help with that?",
+        "words": [
+          {
+            "end": 29.98,
+            "start": 29.26,
+            "text": " Can"
+          },
+          {
+            "end": 30.1,
+            "start": 29.98,
+            "text": " you"
+          },
+          {
+            "end": 30.3,
+            "start": 30.1,
+            "text": " help"
+          },
+          {
+            "end": 30.46,
+            "start": 30.3,
+            "text": " with"
+          },
+          {
+            "end": 31.14,
+            "start": 30.46,
+            "text": " that?"
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 37.06,
+        "speaker": "PGAI Clinic Agent",
+        "start": 32.88,
+        "text": "I can help with patient follow-ups and medication refill requests.",
+        "words": [
+          {
+            "end": 33.56,
+            "start": 32.88,
+            "text": " I"
+          },
+          {
+            "end": 33.72,
+            "start": 33.56,
+            "text": " can"
+          },
+          {
+            "end": 33.92,
+            "start": 33.72,
+            "text": " help"
+          },
+          {
+            "end": 34.12,
+            "start": 33.92,
+            "text": " with"
+          },
+          {
+            "end": 34.46,
+            "start": 34.12,
+            "text": " patient"
+          },
+          {
+            "end": 34.88,
+            "start": 34.46,
+            "text": " follow"
+          },
+          {
+            "end": 35.12,
+            "start": 34.88,
+            "text": "-ups"
+          },
+          {
+            "end": 35.58,
+            "start": 35.12,
+            "text": " and"
+          },
+          {
+            "end": 36.12,
+            "start": 35.58,
+            "text": " medication"
+          },
+          {
+            "end": 36.58,
+            "start": 36.12,
+            "text": " refill"
+          },
+          {
+            "end": 37.06,
+            "start": 36.58,
+            "text": " requests."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 42.68,
+        "speaker": "PGAI Clinic Agent",
+        "start": 37.58,
+        "text": "First, I'll need to verify some details for Meredith White to access her chart and assist",
+        "words": [
+          {
+            "end": 37.82,
+            "start": 37.58,
+            "text": " First,"
+          },
+          {
+            "end": 38.08,
+            "start": 37.94,
+            "text": " I'll"
+          },
+          {
+            "end": 38.26,
+            "start": 38.08,
+            "text": " need"
+          },
+          {
+            "end": 38.6,
+            "start": 38.26,
+            "text": " to"
+          },
+          {
+            "end": 39.08,
+            "start": 38.6,
+            "text": " verify"
+          },
+          {
+            "end": 39.42,
+            "start": 39.08,
+            "text": " some"
+          },
+          {
+            "end": 39.82,
+            "start": 39.42,
+            "text": " details"
+          },
+          {
+            "end": 40.16,
+            "start": 39.82,
+            "text": " for"
+          },
+          {
+            "end": 40.44,
+            "start": 40.16,
+            "text": " Meredith"
+          },
+          {
+            "end": 40.72,
+            "start": 40.44,
+            "text": " White"
+          },
+          {
+            "end": 40.98,
+            "start": 40.72,
+            "text": " to"
+          },
+          {
+            "end": 41.32,
+            "start": 40.98,
+            "text": " access"
+          },
+          {
+            "end": 41.54,
+            "start": 41.32,
+            "text": " her"
+          },
+          {
+            "end": 41.88,
+            "start": 41.54,
+            "text": " chart"
+          },
+          {
+            "end": 42.32,
+            "start": 41.88,
+            "text": " and"
+          },
+          {
+            "end": 42.68,
+            "start": 42.32,
+            "text": " assist"
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 43.36,
+        "speaker": "PGAI Clinic Agent",
+        "start": 42.68,
+        "text": "with the refill.",
+        "words": [
+          {
+            "end": 42.9,
+            "start": 42.68,
+            "text": " with"
+          },
+          {
+            "end": 43.04,
+            "start": 42.9,
+            "text": " the"
+          },
+          {
+            "end": 43.36,
+            "start": 43.04,
+            "text": " refill."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 45.12,
+        "speaker": "PGAI Clinic Agent",
+        "start": 43.36,
+        "text": "Are you calling on her behalf?",
+        "words": [
+          {
+            "end": 44.06,
+            "start": 43.36,
+            "text": " Are"
+          },
+          {
+            "end": 44.18,
+            "start": 44.06,
+            "text": " you"
+          },
+          {
+            "end": 44.42,
+            "start": 44.18,
+            "text": " calling"
+          },
+          {
+            "end": 44.58,
+            "start": 44.42,
+            "text": " on"
+          },
+          {
+            "end": 44.7,
+            "start": 44.58,
+            "text": " her"
+          },
+          {
+            "end": 45.12,
+            "start": 44.7,
+            "text": " behalf?"
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 50.96,
+        "speaker": "Patient / Clinic Administrator",
+        "start": 47.04,
+        "text": "I'm calling from clinic administration about an overdue patient follow-up.",
+        "words": [
+          {
+            "end": 47.62,
+            "start": 47.04,
+            "text": " I'm"
+          },
+          {
+            "end": 47.86,
+            "start": 47.62,
+            "text": " calling"
+          },
+          {
+            "end": 48.12,
+            "start": 47.86,
+            "text": " from"
+          },
+          {
+            "end": 48.42,
+            "start": 48.12,
+            "text": " clinic"
+          },
+          {
+            "end": 49.08,
+            "start": 48.42,
+            "text": " administration"
+          },
+          {
+            "end": 49.36,
+            "start": 49.08,
+            "text": " about"
+          },
+          {
+            "end": 49.56,
+            "start": 49.36,
+            "text": " an"
+          },
+          {
+            "end": 49.9,
+            "start": 49.56,
+            "text": " overdue"
+          },
+          {
+            "end": 50.36,
+            "start": 49.9,
+            "text": " patient"
+          },
+          {
+            "end": 50.74,
+            "start": 50.36,
+            "text": " follow"
+          },
+          {
+            "end": 50.96,
+            "start": 50.74,
+            "text": "-up."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 52.76,
+        "speaker": "Patient / Clinic Administrator",
+        "start": 51.44,
+        "text": "I'm not calling on her behalf.",
+        "words": [
+          {
+            "end": 51.56,
+            "start": 51.44,
+            "text": " I'm"
+          },
+          {
+            "end": 51.68,
+            "start": 51.56,
+            "text": " not"
+          },
+          {
+            "end": 52.02,
+            "start": 51.68,
+            "text": " calling"
+          },
+          {
+            "end": 52.2,
+            "start": 52.02,
+            "text": " on"
+          },
+          {
+            "end": 52.38,
+            "start": 52.2,
+            "text": " her"
+          },
+          {
+            "end": 52.76,
+            "start": 52.38,
+            "text": " behalf."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 57.26,
+        "speaker": "Patient / Clinic Administrator",
+        "start": 53.24,
+        "text": "I'm following up internally because this refill request has been pending for three",
+        "words": [
+          {
+            "end": 53.44,
+            "start": 53.24,
+            "text": " I'm"
+          },
+          {
+            "end": 53.82,
+            "start": 53.44,
+            "text": " following"
+          },
+          {
+            "end": 54.1,
+            "start": 53.82,
+            "text": " up"
+          },
+          {
+            "end": 54.62,
+            "start": 54.1,
+            "text": " internally"
+          },
+          {
+            "end": 54.94,
+            "start": 54.62,
+            "text": " because"
+          },
+          {
+            "end": 55.2,
+            "start": 54.94,
+            "text": " this"
+          },
+          {
+            "end": 55.66,
+            "start": 55.2,
+            "text": " refill"
+          },
+          {
+            "end": 56.04,
+            "start": 55.66,
+            "text": " request"
+          },
+          {
+            "end": 56.26,
+            "start": 56.04,
+            "text": " has"
+          },
+          {
+            "end": 56.44,
+            "start": 56.26,
+            "text": " been"
+          },
+          {
+            "end": 56.74,
+            "start": 56.44,
+            "text": " pending"
+          },
+          {
+            "end": 57.02,
+            "start": 56.74,
+            "text": " for"
+          },
+          {
+            "end": 57.26,
+            "start": 57.02,
+            "text": " three"
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 58.52,
+        "speaker": "Patient / Clinic Administrator",
+        "start": 57.26,
+        "text": "weeks without a call back.",
+        "words": [
+          {
+            "end": 57.56,
+            "start": 57.26,
+            "text": " weeks"
+          },
+          {
+            "end": 57.86,
+            "start": 57.56,
+            "text": " without"
+          },
+          {
+            "end": 58.08,
+            "start": 57.86,
+            "text": " a"
+          },
+          {
+            "end": 58.24,
+            "start": 58.08,
+            "text": " call"
+          },
+          {
+            "end": 58.52,
+            "start": 58.24,
+            "text": " back."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 64.0,
+        "speaker": "Patient / Clinic Administrator",
+        "start": 58.52,
+        "text": "You should already have her record in your system. What information do you need to pull up her chart?",
+        "words": [
+          {
+            "end": 59.22,
+            "start": 58.52,
+            "text": " You"
+          },
+          {
+            "end": 59.36,
+            "start": 59.22,
+            "text": " should"
+          },
+          {
+            "end": 59.7,
+            "start": 59.36,
+            "text": " already"
+          },
+          {
+            "end": 59.96,
+            "start": 59.7,
+            "text": " have"
+          },
+          {
+            "end": 60.14,
+            "start": 59.96,
+            "text": " her"
+          },
+          {
+            "end": 60.36,
+            "start": 60.14,
+            "text": " record"
+          },
+          {
+            "end": 60.54,
+            "start": 60.36,
+            "text": " in"
+          },
+          {
+            "end": 60.7,
+            "start": 60.54,
+            "text": " your"
+          },
+          {
+            "end": 61.08,
+            "start": 60.7,
+            "text": " system."
+          },
+          {
+            "end": 61.98,
+            "start": 61.88,
+            "text": " What"
+          },
+          {
+            "end": 62.52,
+            "start": 61.98,
+            "text": " information"
+          },
+          {
+            "end": 62.72,
+            "start": 62.52,
+            "text": " do"
+          },
+          {
+            "end": 62.82,
+            "start": 62.72,
+            "text": " you"
+          },
+          {
+            "end": 63.04,
+            "start": 62.82,
+            "text": " need"
+          },
+          {
+            "end": 63.2,
+            "start": 63.04,
+            "text": " to"
+          },
+          {
+            "end": 63.34,
+            "start": 63.2,
+            "text": " pull"
+          },
+          {
+            "end": 63.46,
+            "start": 63.34,
+            "text": " up"
+          },
+          {
+            "end": 63.64,
+            "start": 63.46,
+            "text": " her"
+          },
+          {
+            "end": 64.0,
+            "start": 63.64,
+            "text": " chart?"
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 69.52,
+        "speaker": "PGAI Clinic Agent",
+        "start": 66.34,
+        "text": "I'll meet Meredith White's date of birth to access her chart.",
+        "words": [
+          {
+            "end": 66.9,
+            "start": 66.34,
+            "text": " I'll"
+          },
+          {
+            "end": 67.06,
+            "start": 66.9,
+            "text": " meet"
+          },
+          {
+            "end": 67.46,
+            "start": 67.06,
+            "text": " Meredith"
+          },
+          {
+            "end": 67.96,
+            "start": 67.46,
+            "text": " White's"
+          },
+          {
+            "end": 68.04,
+            "start": 67.96,
+            "text": " date"
+          },
+          {
+            "end": 68.22,
+            "start": 68.04,
+            "text": " of"
+          },
+          {
+            "end": 68.36,
+            "start": 68.22,
+            "text": " birth"
+          },
+          {
+            "end": 68.62,
+            "start": 68.36,
+            "text": " to"
+          },
+          {
+            "end": 68.96,
+            "start": 68.62,
+            "text": " access"
+          },
+          {
+            "end": 69.24,
+            "start": 68.96,
+            "text": " her"
+          },
+          {
+            "end": 69.52,
+            "start": 69.24,
+            "text": " chart."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 71.88,
+        "speaker": "PGAI Clinic Agent",
+        "start": 69.52,
+        "text": "Could you provide her date of birth, please?",
+        "words": [
+          {
+            "end": 70.14,
+            "start": 69.52,
+            "text": " Could"
+          },
+          {
+            "end": 70.3,
+            "start": 70.14,
+            "text": " you"
+          },
+          {
+            "end": 70.6,
+            "start": 70.3,
+            "text": " provide"
+          },
+          {
+            "end": 70.8,
+            "start": 70.6,
+            "text": " her"
+          },
+          {
+            "end": 70.94,
+            "start": 70.8,
+            "text": " date"
+          },
+          {
+            "end": 71.1,
+            "start": 70.94,
+            "text": " of"
+          },
+          {
+            "end": 71.26,
+            "start": 71.1,
+            "text": " birth,"
+          },
+          {
+            "end": 71.88,
+            "start": 71.4,
+            "text": " please?"
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 77.24,
+        "speaker": "Patient / Clinic Administrator",
+        "start": 73.2,
+        "text": "You already have her record. I shouldn't need to read her private information aloud.",
+        "words": [
+          {
+            "end": 73.64,
+            "start": 73.2,
+            "text": " You"
+          },
+          {
+            "end": 73.94,
+            "start": 73.64,
+            "text": " already"
+          },
+          {
+            "end": 74.2,
+            "start": 73.94,
+            "text": " have"
+          },
+          {
+            "end": 74.4,
+            "start": 74.2,
+            "text": " her"
+          },
+          {
+            "end": 74.7,
+            "start": 74.4,
+            "text": " record."
+          },
+          {
+            "end": 75.2,
+            "start": 75.1,
+            "text": " I"
+          },
+          {
+            "end": 75.4,
+            "start": 75.2,
+            "text": " shouldn't"
+          },
+          {
+            "end": 75.54,
+            "start": 75.4,
+            "text": " need"
+          },
+          {
+            "end": 75.68,
+            "start": 75.54,
+            "text": " to"
+          },
+          {
+            "end": 75.8,
+            "start": 75.68,
+            "text": " read"
+          },
+          {
+            "end": 75.96,
+            "start": 75.8,
+            "text": " her"
+          },
+          {
+            "end": 76.22,
+            "start": 75.96,
+            "text": " private"
+          },
+          {
+            "end": 76.76,
+            "start": 76.22,
+            "text": " information"
+          },
+          {
+            "end": 77.24,
+            "start": 76.76,
+            "text": " aloud."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 81.28,
+        "speaker": "Patient / Clinic Administrator",
+        "start": 77.66,
+        "text": "Pull up her chart using her name and check the refill request that's been documented.",
+        "words": [
+          {
+            "end": 77.76,
+            "start": 77.66,
+            "text": " Pull"
+          },
+          {
+            "end": 77.88,
+            "start": 77.76,
+            "text": " up"
+          },
+          {
+            "end": 78.04,
+            "start": 77.88,
+            "text": " her"
+          },
+          {
+            "end": 78.26,
+            "start": 78.04,
+            "text": " chart"
+          },
+          {
+            "end": 78.54,
+            "start": 78.26,
+            "text": " using"
+          },
+          {
+            "end": 78.78,
+            "start": 78.54,
+            "text": " her"
+          },
+          {
+            "end": 79.04,
+            "start": 78.78,
+            "text": " name"
+          },
+          {
+            "end": 79.22,
+            "start": 79.04,
+            "text": " and"
+          },
+          {
+            "end": 79.38,
+            "start": 79.22,
+            "text": " check"
+          },
+          {
+            "end": 79.58,
+            "start": 79.38,
+            "text": " the"
+          },
+          {
+            "end": 79.92,
+            "start": 79.58,
+            "text": " refill"
+          },
+          {
+            "end": 80.3,
+            "start": 79.92,
+            "text": " request"
+          },
+          {
+            "end": 80.6,
+            "start": 80.3,
+            "text": " that's"
+          },
+          {
+            "end": 80.72,
+            "start": 80.6,
+            "text": " been"
+          },
+          {
+            "end": 81.28,
+            "start": 80.72,
+            "text": " documented."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 83.02,
+        "speaker": "Patient / Clinic Administrator",
+        "start": 81.8,
+        "text": "What do you see in there?",
+        "words": [
+          {
+            "end": 82.18,
+            "start": 81.8,
+            "text": " What"
+          },
+          {
+            "end": 82.26,
+            "start": 82.18,
+            "text": " do"
+          },
+          {
+            "end": 82.36,
+            "start": 82.26,
+            "text": " you"
+          },
+          {
+            "end": 82.52,
+            "start": 82.36,
+            "text": " see"
+          },
+          {
+            "end": 82.68,
+            "start": 82.52,
+            "text": " in"
+          },
+          {
+            "end": 83.02,
+            "start": 82.68,
+            "text": " there?"
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 89.5,
+        "speaker": "PGAI Clinic Agent",
+        "start": 85.26,
+        "text": "I need both the full name and date of birth to access a patient's chart.",
+        "words": [
+          {
+            "end": 85.7,
+            "start": 85.26,
+            "text": " I"
+          },
+          {
+            "end": 85.9,
+            "start": 85.7,
+            "text": " need"
+          },
+          {
+            "end": 86.18,
+            "start": 85.9,
+            "text": " both"
+          },
+          {
+            "end": 86.38,
+            "start": 86.18,
+            "text": " the"
+          },
+          {
+            "end": 86.64,
+            "start": 86.38,
+            "text": " full"
+          },
+          {
+            "end": 86.94,
+            "start": 86.64,
+            "text": " name"
+          },
+          {
+            "end": 87.38,
+            "start": 86.94,
+            "text": " and"
+          },
+          {
+            "end": 87.52,
+            "start": 87.38,
+            "text": " date"
+          },
+          {
+            "end": 87.72,
+            "start": 87.52,
+            "text": " of"
+          },
+          {
+            "end": 87.88,
+            "start": 87.72,
+            "text": " birth"
+          },
+          {
+            "end": 88.2,
+            "start": 87.88,
+            "text": " to"
+          },
+          {
+            "end": 88.54,
+            "start": 88.2,
+            "text": " access"
+          },
+          {
+            "end": 88.84,
+            "start": 88.54,
+            "text": " a"
+          },
+          {
+            "end": 89.32,
+            "start": 88.84,
+            "text": " patient's"
+          },
+          {
+            "end": 89.5,
+            "start": 89.32,
+            "text": " chart."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 92.9,
+        "speaker": "PGAI Clinic Agent",
+        "start": 89.98,
+        "text": "Without the date of birth, I can't look up Meredith White's record.",
+        "words": [
+          {
+            "end": 90.24,
+            "start": 89.98,
+            "text": " Without"
+          },
+          {
+            "end": 90.46,
+            "start": 90.24,
+            "text": " the"
+          },
+          {
+            "end": 90.58,
+            "start": 90.46,
+            "text": " date"
+          },
+          {
+            "end": 90.8,
+            "start": 90.58,
+            "text": " of"
+          },
+          {
+            "end": 91.02,
+            "start": 90.8,
+            "text": " birth,"
+          },
+          {
+            "end": 91.3,
+            "start": 91.08,
+            "text": " I"
+          },
+          {
+            "end": 91.56,
+            "start": 91.3,
+            "text": " can't"
+          },
+          {
+            "end": 91.72,
+            "start": 91.56,
+            "text": " look"
+          },
+          {
+            "end": 91.94,
+            "start": 91.72,
+            "text": " up"
+          },
+          {
+            "end": 92.22,
+            "start": 91.94,
+            "text": " Meredith"
+          },
+          {
+            "end": 92.68,
+            "start": 92.22,
+            "text": " White's"
+          },
+          {
+            "end": 92.9,
+            "start": 92.68,
+            "text": " record."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 96.78,
+        "speaker": "PGAI Clinic Agent",
+        "start": 92.9,
+        "text": "If you're unable to provide that I won't be able to proceed.",
+        "words": [
+          {
+            "end": 93.58,
+            "start": 92.9,
+            "text": " If"
+          },
+          {
+            "end": 93.9,
+            "start": 93.58,
+            "text": " you're"
+          },
+          {
+            "end": 94.36,
+            "start": 93.9,
+            "text": " unable"
+          },
+          {
+            "end": 94.72,
+            "start": 94.36,
+            "text": " to"
+          },
+          {
+            "end": 95.02,
+            "start": 94.72,
+            "text": " provide"
+          },
+          {
+            "end": 95.38,
+            "start": 95.02,
+            "text": " that"
+          },
+          {
+            "end": 95.68,
+            "start": 95.38,
+            "text": " I"
+          },
+          {
+            "end": 95.86,
+            "start": 95.68,
+            "text": " won't"
+          },
+          {
+            "end": 96.02,
+            "start": 95.86,
+            "text": " be"
+          },
+          {
+            "end": 96.18,
+            "start": 96.02,
+            "text": " able"
+          },
+          {
+            "end": 96.4,
+            "start": 96.18,
+            "text": " to"
+          },
+          {
+            "end": 96.78,
+            "start": 96.4,
+            "text": " proceed."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 102.06,
+        "speaker": "Patient / Clinic Administrator",
+        "start": 98.92,
+        "text": "I understand you need verification to access the chart.",
+        "words": [
+          {
+            "end": 99.58,
+            "start": 98.92,
+            "text": " I"
+          },
+          {
+            "end": 99.94,
+            "start": 99.58,
+            "text": " understand"
+          },
+          {
+            "end": 100.18,
+            "start": 99.94,
+            "text": " you"
+          },
+          {
+            "end": 100.36,
+            "start": 100.18,
+            "text": " need"
+          },
+          {
+            "end": 100.78,
+            "start": 100.36,
+            "text": " verification"
+          },
+          {
+            "end": 101.24,
+            "start": 100.78,
+            "text": " to"
+          },
+          {
+            "end": 101.52,
+            "start": 101.24,
+            "text": " access"
+          },
+          {
+            "end": 101.8,
+            "start": 101.52,
+            "text": " the"
+          },
+          {
+            "end": 102.06,
+            "start": 101.8,
+            "text": " chart."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 103.44,
+        "speaker": "Patient / Clinic Administrator",
+        "start": 102.14,
+        "text": "That's appropriate protocol.",
+        "words": [
+          {
+            "end": 102.62,
+            "start": 102.14,
+            "text": " That's"
+          },
+          {
+            "end": 102.98,
+            "start": 102.62,
+            "text": " appropriate"
+          },
+          {
+            "end": 103.44,
+            "start": 102.98,
+            "text": " protocol."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 108.1,
+        "speaker": "Patient / Clinic Administrator",
+        "start": 104.16,
+        "text": "However, I'm calling from within clinic administration about an existing patient",
+        "words": [
+          {
+            "end": 104.44,
+            "start": 104.16,
+            "text": " However,"
+          },
+          {
+            "end": 104.98,
+            "start": 104.66,
+            "text": " I'm"
+          },
+          {
+            "end": 105.22,
+            "start": 104.98,
+            "text": " calling"
+          },
+          {
+            "end": 105.46,
+            "start": 105.22,
+            "text": " from"
+          },
+          {
+            "end": 105.76,
+            "start": 105.46,
+            "text": " within"
+          },
+          {
+            "end": 106.1,
+            "start": 105.76,
+            "text": " clinic"
+          },
+          {
+            "end": 106.64,
+            "start": 106.1,
+            "text": " administration"
+          },
+          {
+            "end": 107.18,
+            "start": 106.64,
+            "text": " about"
+          },
+          {
+            "end": 107.36,
+            "start": 107.18,
+            "text": " an"
+          },
+          {
+            "end": 107.72,
+            "start": 107.36,
+            "text": " existing"
+          },
+          {
+            "end": 108.1,
+            "start": 107.72,
+            "text": " patient"
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 108.52,
+        "speaker": "Patient / Clinic Administrator",
+        "start": 108.1,
+        "text": "case.",
+        "words": [
+          {
+            "end": 108.52,
+            "start": 108.1,
+            "text": " case."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 114.18,
+        "speaker": "Patient / Clinic Administrator",
+        "start": 109.08,
+        "text": "If the standard verification process requires the patient's DOB, then walk me through",
+        "words": [
+          {
+            "end": 109.28,
+            "start": 109.08,
+            "text": " If"
+          },
+          {
+            "end": 109.52,
+            "start": 109.28,
+            "text": " the"
+          },
+          {
+            "end": 109.84,
+            "start": 109.52,
+            "text": " standard"
+          },
+          {
+            "end": 110.48,
+            "start": 109.84,
+            "text": " verification"
+          },
+          {
+            "end": 111.0,
+            "start": 110.48,
+            "text": " process"
+          },
+          {
+            "end": 111.54,
+            "start": 111.0,
+            "text": " requires"
+          },
+          {
+            "end": 111.82,
+            "start": 111.54,
+            "text": " the"
+          },
+          {
+            "end": 112.42,
+            "start": 111.82,
+            "text": " patient's"
+          },
+          {
+            "end": 112.92,
+            "start": 112.42,
+            "text": " DOB,"
+          },
+          {
+            "end": 113.46,
+            "start": 113.06,
+            "text": " then"
+          },
+          {
+            "end": 113.74,
+            "start": 113.46,
+            "text": " walk"
+          },
+          {
+            "end": 113.94,
+            "start": 113.74,
+            "text": " me"
+          },
+          {
+            "end": 114.18,
+            "start": 113.94,
+            "text": " through"
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 117.98,
+        "speaker": "Patient / Clinic Administrator",
+        "start": 114.18,
+        "text": "exactly what your authentication procedure is and I'll work through it",
+        "words": [
+          {
+            "end": 114.72,
+            "start": 114.18,
+            "text": " exactly"
+          },
+          {
+            "end": 115.04,
+            "start": 114.72,
+            "text": " what"
+          },
+          {
+            "end": 115.28,
+            "start": 115.04,
+            "text": " your"
+          },
+          {
+            "end": 115.94,
+            "start": 115.28,
+            "text": " authentication"
+          },
+          {
+            "end": 116.42,
+            "start": 115.94,
+            "text": " procedure"
+          },
+          {
+            "end": 116.86,
+            "start": 116.42,
+            "text": " is"
+          },
+          {
+            "end": 117.24,
+            "start": 116.86,
+            "text": " and"
+          },
+          {
+            "end": 117.46,
+            "start": 117.24,
+            "text": " I'll"
+          },
+          {
+            "end": 117.66,
+            "start": 117.46,
+            "text": " work"
+          },
+          {
+            "end": 117.84,
+            "start": 117.66,
+            "text": " through"
+          },
+          {
+            "end": 117.98,
+            "start": 117.84,
+            "text": " it"
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 122.42,
+        "speaker": "Patient / Clinic Administrator",
+        "start": 117.98,
+        "text": "with you. What's your required verification step for staff or internal",
+        "words": [
+          {
+            "end": 118.12,
+            "start": 117.98,
+            "text": " with"
+          },
+          {
+            "end": 118.44,
+            "start": 118.12,
+            "text": " you."
+          },
+          {
+            "end": 119.26,
+            "start": 118.92,
+            "text": " What's"
+          },
+          {
+            "end": 119.42,
+            "start": 119.26,
+            "text": " your"
+          },
+          {
+            "end": 119.96,
+            "start": 119.42,
+            "text": " required"
+          },
+          {
+            "end": 120.46,
+            "start": 119.96,
+            "text": " verification"
+          },
+          {
+            "end": 121.0,
+            "start": 120.46,
+            "text": " step"
+          },
+          {
+            "end": 121.24,
+            "start": 121.0,
+            "text": " for"
+          },
+          {
+            "end": 121.64,
+            "start": 121.24,
+            "text": " staff"
+          },
+          {
+            "end": 121.9,
+            "start": 121.64,
+            "text": " or"
+          },
+          {
+            "end": 122.42,
+            "start": 121.9,
+            "text": " internal"
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 123.26,
+        "speaker": "Patient / Clinic Administrator",
+        "start": 122.42,
+        "text": "callers?",
+        "words": [
+          {
+            "end": 123.26,
+            "start": 122.42,
+            "text": " callers?"
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 130.52,
+        "speaker": "PGAI Clinic Agent",
+        "start": 125.12,
+        "text": "I wasn't able to verify your identity, so I can't access Meredith White's chart right",
+        "words": [
+          {
+            "end": 125.7,
+            "start": 125.12,
+            "text": " I"
+          },
+          {
+            "end": 125.98,
+            "start": 125.7,
+            "text": " wasn't"
+          },
+          {
+            "end": 126.28,
+            "start": 125.98,
+            "text": " able"
+          },
+          {
+            "end": 126.52,
+            "start": 126.28,
+            "text": " to"
+          },
+          {
+            "end": 126.9,
+            "start": 126.52,
+            "text": " verify"
+          },
+          {
+            "end": 127.18,
+            "start": 126.9,
+            "text": " your"
+          },
+          {
+            "end": 127.66,
+            "start": 127.18,
+            "text": " identity,"
+          },
+          {
+            "end": 128.38,
+            "start": 128.18,
+            "text": " so"
+          },
+          {
+            "end": 128.54,
+            "start": 128.38,
+            "text": " I"
+          },
+          {
+            "end": 128.92,
+            "start": 128.54,
+            "text": " can't"
+          },
+          {
+            "end": 129.3,
+            "start": 128.92,
+            "text": " access"
+          },
+          {
+            "end": 129.7,
+            "start": 129.3,
+            "text": " Meredith"
+          },
+          {
+            "end": 130.14,
+            "start": 129.7,
+            "text": " White's"
+          },
+          {
+            "end": 130.3,
+            "start": 130.14,
+            "text": " chart"
+          },
+          {
+            "end": 130.52,
+            "start": 130.3,
+            "text": " right"
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 130.9,
+        "speaker": "PGAI Clinic Agent",
+        "start": 130.52,
+        "text": "now.",
+        "words": [
+          {
+            "end": 130.9,
+            "start": 130.52,
+            "text": " now."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 135.64,
+        "speaker": "PGAI Clinic Agent",
+        "start": 131.18,
+        "text": "I can document your request and make sure our clinic support team follows up on this",
+        "words": [
+          {
+            "end": 131.32,
+            "start": 131.18,
+            "text": " I"
+          },
+          {
+            "end": 131.5,
+            "start": 131.32,
+            "text": " can"
+          },
+          {
+            "end": 131.88,
+            "start": 131.5,
+            "text": " document"
+          },
+          {
+            "end": 132.1,
+            "start": 131.88,
+            "text": " your"
+          },
+          {
+            "end": 132.5,
+            "start": 132.1,
+            "text": " request"
+          },
+          {
+            "end": 132.8,
+            "start": 132.5,
+            "text": " and"
+          },
+          {
+            "end": 133.02,
+            "start": 132.8,
+            "text": " make"
+          },
+          {
+            "end": 133.26,
+            "start": 133.02,
+            "text": " sure"
+          },
+          {
+            "end": 133.6,
+            "start": 133.26,
+            "text": " our"
+          },
+          {
+            "end": 133.76,
+            "start": 133.6,
+            "text": " clinic"
+          },
+          {
+            "end": 134.16,
+            "start": 133.76,
+            "text": " support"
+          },
+          {
+            "end": 134.58,
+            "start": 134.16,
+            "text": " team"
+          },
+          {
+            "end": 135.0,
+            "start": 134.58,
+            "text": " follows"
+          },
+          {
+            "end": 135.28,
+            "start": 135.0,
+            "text": " up"
+          },
+          {
+            "end": 135.46,
+            "start": 135.28,
+            "text": " on"
+          },
+          {
+            "end": 135.64,
+            "start": 135.46,
+            "text": " this"
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 136.94,
+        "speaker": "PGAI Clinic Agent",
+        "start": 135.64,
+        "text": "overdue refill case.",
+        "words": [
+          {
+            "end": 136.08,
+            "start": 135.64,
+            "text": " overdue"
+          },
+          {
+            "end": 136.5,
+            "start": 136.08,
+            "text": " refill"
+          },
+          {
+            "end": 136.94,
+            "start": 136.5,
+            "text": " case."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 138.58,
+        "speaker": "PGAI Clinic Agent",
+        "start": 137.42,
+        "text": "Would you like me to do that?",
+        "words": [
+          {
+            "end": 137.56,
+            "start": 137.42,
+            "text": " Would"
+          },
+          {
+            "end": 137.68,
+            "start": 137.56,
+            "text": " you"
+          },
+          {
+            "end": 137.84,
+            "start": 137.68,
+            "text": " like"
+          },
+          {
+            "end": 137.96,
+            "start": 137.84,
+            "text": " me"
+          },
+          {
+            "end": 138.1,
+            "start": 137.96,
+            "text": " to"
+          },
+          {
+            "end": 138.22,
+            "start": 138.1,
+            "text": " do"
+          },
+          {
+            "end": 138.58,
+            "start": 138.22,
+            "text": " that?"
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 141.98,
+        "speaker": "Patient / Clinic Administrator",
+        "start": 140.60000000000002,
+        "text": "I appreciate that.",
+        "words": [
+          {
+            "end": 141.18,
+            "start": 140.60000000000002,
+            "text": " I"
+          },
+          {
+            "end": 141.56,
+            "start": 141.18,
+            "text": " appreciate"
+          },
+          {
+            "end": 141.98,
+            "start": 141.56,
+            "text": " that."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 144.72,
+        "speaker": "Patient / Clinic Administrator",
+        "start": 142.72,
+        "text": "Before you document this, I need clarity.",
+        "words": [
+          {
+            "end": 142.92,
+            "start": 142.72,
+            "text": " Before"
+          },
+          {
+            "end": 143.16,
+            "start": 142.92,
+            "text": " you"
+          },
+          {
+            "end": 143.48,
+            "start": 143.16,
+            "text": " document"
+          },
+          {
+            "end": 143.8,
+            "start": 143.48,
+            "text": " this,"
+          },
+          {
+            "end": 144.02,
+            "start": 143.88,
+            "text": " I"
+          },
+          {
+            "end": 144.26,
+            "start": 144.02,
+            "text": " need"
+          },
+          {
+            "end": 144.72,
+            "start": 144.26,
+            "text": " clarity."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 149.66,
+        "speaker": "Patient / Clinic Administrator",
+        "start": 145.26,
+        "text": "Are you actually submitting that request to the clinic support team right now, or",
+        "words": [
+          {
+            "end": 145.5,
+            "start": 145.26,
+            "text": " Are"
+          },
+          {
+            "end": 145.72,
+            "start": 145.5,
+            "text": " you"
+          },
+          {
+            "end": 146.1,
+            "start": 145.72,
+            "text": " actually"
+          },
+          {
+            "end": 146.58,
+            "start": 146.1,
+            "text": " submitting"
+          },
+          {
+            "end": 146.84,
+            "start": 146.58,
+            "text": " that"
+          },
+          {
+            "end": 147.22,
+            "start": 146.84,
+            "text": " request"
+          },
+          {
+            "end": 147.52,
+            "start": 147.22,
+            "text": " to"
+          },
+          {
+            "end": 147.7,
+            "start": 147.52,
+            "text": " the"
+          },
+          {
+            "end": 147.9,
+            "start": 147.7,
+            "text": " clinic"
+          },
+          {
+            "end": 148.18,
+            "start": 147.9,
+            "text": " support"
+          },
+          {
+            "end": 148.48,
+            "start": 148.18,
+            "text": " team"
+          },
+          {
+            "end": 148.74,
+            "start": 148.48,
+            "text": " right"
+          },
+          {
+            "end": 149.14,
+            "start": 148.74,
+            "text": " now,"
+          },
+          {
+            "end": 149.66,
+            "start": 149.14,
+            "text": " or"
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 151.78,
+        "speaker": "Patient / Clinic Administrator",
+        "start": 149.66,
+        "text": "are you only recommending that someone do it?",
+        "words": [
+          {
+            "end": 149.8,
+            "start": 149.66,
+            "text": " are"
+          },
+          {
+            "end": 149.96,
+            "start": 149.8,
+            "text": " you"
+          },
+          {
+            "end": 150.2,
+            "start": 149.96,
+            "text": " only"
+          },
+          {
+            "end": 150.66,
+            "start": 150.2,
+            "text": " recommending"
+          },
+          {
+            "end": 150.9,
+            "start": 150.66,
+            "text": " that"
+          },
+          {
+            "end": 151.2,
+            "start": 150.9,
+            "text": " someone"
+          },
+          {
+            "end": 151.42,
+            "start": 151.2,
+            "text": " do"
+          },
+          {
+            "end": 151.78,
+            "start": 151.42,
+            "text": " it?"
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 158.82,
+        "speaker": "Patient / Clinic Administrator",
+        "start": 151.78,
+        "text": "And once you submit it, will there be a specific time frame for follow-up, or is this just going into a general queue?",
+        "words": [
+          {
+            "end": 152.4,
+            "start": 151.78,
+            "text": " And"
+          },
+          {
+            "end": 152.6,
+            "start": 152.4,
+            "text": " once"
+          },
+          {
+            "end": 152.78,
+            "start": 152.6,
+            "text": " you"
+          },
+          {
+            "end": 153.12,
+            "start": 152.78,
+            "text": " submit"
+          },
+          {
+            "end": 153.6,
+            "start": 153.12,
+            "text": " it,"
+          },
+          {
+            "end": 153.96,
+            "start": 153.76,
+            "text": " will"
+          },
+          {
+            "end": 154.06,
+            "start": 153.96,
+            "text": " there"
+          },
+          {
+            "end": 154.22,
+            "start": 154.06,
+            "text": " be"
+          },
+          {
+            "end": 154.4,
+            "start": 154.22,
+            "text": " a"
+          },
+          {
+            "end": 154.8,
+            "start": 154.4,
+            "text": " specific"
+          },
+          {
+            "end": 155.12,
+            "start": 154.8,
+            "text": " time"
+          },
+          {
+            "end": 155.52,
+            "start": 155.12,
+            "text": " frame"
+          },
+          {
+            "end": 155.78,
+            "start": 155.52,
+            "text": " for"
+          },
+          {
+            "end": 156.06,
+            "start": 155.78,
+            "text": " follow"
+          },
+          {
+            "end": 156.34,
+            "start": 156.06,
+            "text": "-up,"
+          },
+          {
+            "end": 156.88,
+            "start": 156.7,
+            "text": " or"
+          },
+          {
+            "end": 157.04,
+            "start": 156.88,
+            "text": " is"
+          },
+          {
+            "end": 157.18,
+            "start": 157.04,
+            "text": " this"
+          },
+          {
+            "end": 157.44,
+            "start": 157.18,
+            "text": " just"
+          },
+          {
+            "end": 157.72,
+            "start": 157.44,
+            "text": " going"
+          },
+          {
+            "end": 158.0,
+            "start": 157.72,
+            "text": " into"
+          },
+          {
+            "end": 158.22,
+            "start": 158.0,
+            "text": " a"
+          },
+          {
+            "end": 158.46,
+            "start": 158.22,
+            "text": " general"
+          },
+          {
+            "end": 158.82,
+            "start": 158.46,
+            "text": " queue?"
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 165.94,
+        "speaker": "PGAI Clinic Agent",
+        "start": 161.62,
+        "text": "I'm not able to submit the request directly since I couldn't verify the patient.",
+        "words": [
+          {
+            "end": 162.18,
+            "start": 161.62,
+            "text": " I'm"
+          },
+          {
+            "end": 162.34,
+            "start": 162.18,
+            "text": " not"
+          },
+          {
+            "end": 162.6,
+            "start": 162.34,
+            "text": " able"
+          },
+          {
+            "end": 162.82,
+            "start": 162.6,
+            "text": " to"
+          },
+          {
+            "end": 163.08,
+            "start": 162.82,
+            "text": " submit"
+          },
+          {
+            "end": 163.28,
+            "start": 163.08,
+            "text": " the"
+          },
+          {
+            "end": 163.58,
+            "start": 163.28,
+            "text": " request"
+          },
+          {
+            "end": 164.18,
+            "start": 163.58,
+            "text": " directly"
+          },
+          {
+            "end": 164.52,
+            "start": 164.18,
+            "text": " since"
+          },
+          {
+            "end": 164.7,
+            "start": 164.52,
+            "text": " I"
+          },
+          {
+            "end": 164.96,
+            "start": 164.7,
+            "text": " couldn't"
+          },
+          {
+            "end": 165.32,
+            "start": 164.96,
+            "text": " verify"
+          },
+          {
+            "end": 165.6,
+            "start": 165.32,
+            "text": " the"
+          },
+          {
+            "end": 165.94,
+            "start": 165.6,
+            "text": " patient."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 170.62,
+        "speaker": "PGAI Clinic Agent",
+        "start": 165.94,
+        "text": "Instead, I'll create a record for our technical team to review and follow up.",
+        "words": [
+          {
+            "end": 166.78,
+            "start": 165.94,
+            "text": " Instead,"
+          },
+          {
+            "end": 167.2,
+            "start": 166.8,
+            "text": " I'll"
+          },
+          {
+            "end": 167.46,
+            "start": 167.2,
+            "text": " create"
+          },
+          {
+            "end": 167.68,
+            "start": 167.46,
+            "text": " a"
+          },
+          {
+            "end": 167.92,
+            "start": 167.68,
+            "text": " record"
+          },
+          {
+            "end": 168.24,
+            "start": 167.92,
+            "text": " for"
+          },
+          {
+            "end": 168.46,
+            "start": 168.24,
+            "text": " our"
+          },
+          {
+            "end": 168.78,
+            "start": 168.46,
+            "text": " technical"
+          },
+          {
+            "end": 169.14,
+            "start": 168.78,
+            "text": " team"
+          },
+          {
+            "end": 169.4,
+            "start": 169.14,
+            "text": " to"
+          },
+          {
+            "end": 169.74,
+            "start": 169.4,
+            "text": " review"
+          },
+          {
+            "end": 170.0,
+            "start": 169.74,
+            "text": " and"
+          },
+          {
+            "end": 170.3,
+            "start": 170.0,
+            "text": " follow"
+          },
+          {
+            "end": 170.62,
+            "start": 170.3,
+            "text": " up."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 174.92,
+        "speaker": "PGAI Clinic Agent",
+        "start": 171.02,
+        "text": "This will alert the clinic support team, but I can't guarantee a specific timeframe",
+        "words": [
+          {
+            "end": 171.16,
+            "start": 171.02,
+            "text": " This"
+          },
+          {
+            "end": 171.36,
+            "start": 171.16,
+            "text": " will"
+          },
+          {
+            "end": 171.62,
+            "start": 171.36,
+            "text": " alert"
+          },
+          {
+            "end": 171.86,
+            "start": 171.62,
+            "text": " the"
+          },
+          {
+            "end": 172.0,
+            "start": 171.86,
+            "text": " clinic"
+          },
+          {
+            "end": 172.38,
+            "start": 172.0,
+            "text": " support"
+          },
+          {
+            "end": 172.78,
+            "start": 172.38,
+            "text": " team,"
+          },
+          {
+            "end": 172.96,
+            "start": 172.8,
+            "text": " but"
+          },
+          {
+            "end": 173.1,
+            "start": 172.96,
+            "text": " I"
+          },
+          {
+            "end": 173.46,
+            "start": 173.1,
+            "text": " can't"
+          },
+          {
+            "end": 173.84,
+            "start": 173.46,
+            "text": " guarantee"
+          },
+          {
+            "end": 174.06,
+            "start": 173.84,
+            "text": " a"
+          },
+          {
+            "end": 174.48,
+            "start": 174.06,
+            "text": " specific"
+          },
+          {
+            "end": 174.92,
+            "start": 174.48,
+            "text": " timeframe"
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 175.9,
+        "speaker": "PGAI Clinic Agent",
+        "start": 174.92,
+        "text": "for follow-up.",
+        "words": [
+          {
+            "end": 175.26,
+            "start": 174.92,
+            "text": " for"
+          },
+          {
+            "end": 175.6,
+            "start": 175.26,
+            "text": " follow"
+          },
+          {
+            "end": 175.9,
+            "start": 175.6,
+            "text": "-up."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 177.62,
+        "speaker": "PGAI Clinic Agent",
+        "start": 176.38,
+        "text": "Your request won't be lost.",
+        "words": [
+          {
+            "end": 176.56,
+            "start": 176.38,
+            "text": " Your"
+          },
+          {
+            "end": 176.88,
+            "start": 176.56,
+            "text": " request"
+          },
+          {
+            "end": 177.1,
+            "start": 176.88,
+            "text": " won't"
+          },
+          {
+            "end": 177.26,
+            "start": 177.1,
+            "text": " be"
+          },
+          {
+            "end": 177.62,
+            "start": 177.26,
+            "text": " lost."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 180.4,
+        "speaker": "PGAI Clinic Agent",
+        "start": 177.76,
+        "text": "It will be flagged for review as soon as possible.",
+        "words": [
+          {
+            "end": 177.86,
+            "start": 177.76,
+            "text": " It"
+          },
+          {
+            "end": 178.02,
+            "start": 177.86,
+            "text": " will"
+          },
+          {
+            "end": 178.26,
+            "start": 178.02,
+            "text": " be"
+          },
+          {
+            "end": 178.52,
+            "start": 178.26,
+            "text": " flagged"
+          },
+          {
+            "end": 178.86,
+            "start": 178.52,
+            "text": " for"
+          },
+          {
+            "end": 179.24,
+            "start": 178.86,
+            "text": " review"
+          },
+          {
+            "end": 179.56,
+            "start": 179.24,
+            "text": " as"
+          },
+          {
+            "end": 179.78,
+            "start": 179.56,
+            "text": " soon"
+          },
+          {
+            "end": 180.0,
+            "start": 179.78,
+            "text": " as"
+          },
+          {
+            "end": 180.4,
+            "start": 180.0,
+            "text": " possible."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 182.98,
+        "speaker": "PGAI Clinic Agent",
+        "start": 181.0,
+        "text": "Would you like me to proceed with this now?",
+        "words": [
+          {
+            "end": 181.1,
+            "start": 181.0,
+            "text": " Would"
+          },
+          {
+            "end": 181.22,
+            "start": 181.1,
+            "text": " you"
+          },
+          {
+            "end": 181.42,
+            "start": 181.22,
+            "text": " like"
+          },
+          {
+            "end": 181.58,
+            "start": 181.42,
+            "text": " me"
+          },
+          {
+            "end": 181.78,
+            "start": 181.58,
+            "text": " to"
+          },
+          {
+            "end": 182.06,
+            "start": 181.78,
+            "text": " proceed"
+          },
+          {
+            "end": 182.24,
+            "start": 182.06,
+            "text": " with"
+          },
+          {
+            "end": 182.44,
+            "start": 182.24,
+            "text": " this"
+          },
+          {
+            "end": 182.98,
+            "start": 182.44,
+            "text": " now?"
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 190.38,
+        "speaker": "Patient / Clinic Administrator",
+        "start": 184.82,
+        "text": "I understand, so to be clear, you're creating a record for the technical team to review,",
+        "words": [
+          {
+            "end": 185.34,
+            "start": 184.82,
+            "text": " I"
+          },
+          {
+            "end": 185.8,
+            "start": 185.34,
+            "text": " understand,"
+          },
+          {
+            "end": 186.88,
+            "start": 186.58,
+            "text": " so"
+          },
+          {
+            "end": 187.02,
+            "start": 186.88,
+            "text": " to"
+          },
+          {
+            "end": 187.22,
+            "start": 187.02,
+            "text": " be"
+          },
+          {
+            "end": 187.58,
+            "start": 187.22,
+            "text": " clear,"
+          },
+          {
+            "end": 188.26,
+            "start": 188.02,
+            "text": " you're"
+          },
+          {
+            "end": 188.54,
+            "start": 188.26,
+            "text": " creating"
+          },
+          {
+            "end": 188.76,
+            "start": 188.54,
+            "text": " a"
+          },
+          {
+            "end": 188.94,
+            "start": 188.76,
+            "text": " record"
+          },
+          {
+            "end": 189.14,
+            "start": 188.94,
+            "text": " for"
+          },
+          {
+            "end": 189.3,
+            "start": 189.14,
+            "text": " the"
+          },
+          {
+            "end": 189.6,
+            "start": 189.3,
+            "text": " technical"
+          },
+          {
+            "end": 189.86,
+            "start": 189.6,
+            "text": " team"
+          },
+          {
+            "end": 190.04,
+            "start": 189.86,
+            "text": " to"
+          },
+          {
+            "end": 190.38,
+            "start": 190.04,
+            "text": " review,"
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 195.48,
+        "speaker": "PGAI Clinic Agent",
+        "start": 191.0,
+        "text": "Since live support is available right now, I'll connect you directly to our clinic support",
+        "words": [
+          {
+            "end": 191.52,
+            "start": 191.0,
+            "text": " Since"
+          },
+          {
+            "end": 191.74,
+            "start": 191.52,
+            "text": " live"
+          },
+          {
+            "end": 192.08,
+            "start": 191.74,
+            "text": " support"
+          },
+          {
+            "end": 192.28,
+            "start": 192.08,
+            "text": " is"
+          },
+          {
+            "end": 192.62,
+            "start": 192.28,
+            "text": " available"
+          },
+          {
+            "end": 192.9,
+            "start": 192.62,
+            "text": " right"
+          },
+          {
+            "end": 193.26,
+            "start": 192.9,
+            "text": " now,"
+          },
+          {
+            "end": 193.56,
+            "start": 193.36,
+            "text": " I'll"
+          },
+          {
+            "end": 193.82,
+            "start": 193.56,
+            "text": " connect"
+          },
+          {
+            "end": 194.0,
+            "start": 193.82,
+            "text": " you"
+          },
+          {
+            "end": 194.4,
+            "start": 194.0,
+            "text": " directly"
+          },
+          {
+            "end": 194.62,
+            "start": 194.4,
+            "text": " to"
+          },
+          {
+            "end": 194.82,
+            "start": 194.62,
+            "text": " our"
+          },
+          {
+            "end": 195.06,
+            "start": 194.82,
+            "text": " clinic"
+          },
+          {
+            "end": 195.48,
+            "start": 195.06,
+            "text": " support"
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 199.64,
+        "speaker": "PGAI Clinic Agent",
+        "start": 195.48,
+        "text": "team so they can assist with this patient follow-up right away. Please stay on the line.",
+        "words": [
+          {
+            "end": 195.78,
+            "start": 195.48,
+            "text": " team"
+          },
+          {
+            "end": 196.0,
+            "start": 195.78,
+            "text": " so"
+          },
+          {
+            "end": 196.12,
+            "start": 196.0,
+            "text": " they"
+          },
+          {
+            "end": 196.28,
+            "start": 196.12,
+            "text": " can"
+          },
+          {
+            "end": 196.58,
+            "start": 196.28,
+            "text": " assist"
+          },
+          {
+            "end": 196.78,
+            "start": 196.58,
+            "text": " with"
+          },
+          {
+            "end": 196.94,
+            "start": 196.78,
+            "text": " this"
+          },
+          {
+            "end": 197.28,
+            "start": 196.94,
+            "text": " patient"
+          },
+          {
+            "end": 197.62,
+            "start": 197.28,
+            "text": " follow"
+          },
+          {
+            "end": 197.78,
+            "start": 197.62,
+            "text": "-up"
+          },
+          {
+            "end": 198.0,
+            "start": 197.78,
+            "text": " right"
+          },
+          {
+            "end": 198.4,
+            "start": 198.0,
+            "text": " away."
+          },
+          {
+            "end": 198.98,
+            "start": 198.86,
+            "text": " Please"
+          },
+          {
+            "end": 199.16,
+            "start": 198.98,
+            "text": " stay"
+          },
+          {
+            "end": 199.26,
+            "start": 199.16,
+            "text": " on"
+          },
+          {
+            "end": 199.42,
+            "start": 199.26,
+            "text": " the"
+          },
+          {
+            "end": 199.64,
+            "start": 199.42,
+            "text": " line."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 207.26,
+        "speaker": "PGAI Clinic Agent",
+        "start": 200.42,
+        "text": "Transferring you now, thank you. Hello, you've reached the Pretty Good AI test line. Goodbye.",
+        "words": [
+          {
+            "end": 200.88,
+            "start": 200.42,
+            "text": " Transferring"
+          },
+          {
+            "end": 201.0,
+            "start": 200.88,
+            "text": " you"
+          },
+          {
+            "end": 201.28,
+            "start": 201.0,
+            "text": " now,"
+          },
+          {
+            "end": 201.64,
+            "start": 201.46,
+            "text": " thank"
+          },
+          {
+            "end": 201.96,
+            "start": 201.64,
+            "text": " you."
+          },
+          {
+            "end": 204.18,
+            "start": 203.66,
+            "text": " Hello,"
+          },
+          {
+            "end": 204.84,
+            "start": 204.46,
+            "text": " you've"
+          },
+          {
+            "end": 205.0,
+            "start": 204.84,
+            "text": " reached"
+          },
+          {
+            "end": 205.26,
+            "start": 205.0,
+            "text": " the"
+          },
+          {
+            "end": 205.4,
+            "start": 205.26,
+            "text": " Pretty"
+          },
+          {
+            "end": 205.62,
+            "start": 205.4,
+            "text": " Good"
+          },
+          {
+            "end": 205.96,
+            "start": 205.62,
+            "text": " AI"
+          },
+          {
+            "end": 206.2,
+            "start": 205.96,
+            "text": " test"
+          },
+          {
+            "end": 206.58,
+            "start": 206.2,
+            "text": " line."
+          },
+          {
+            "end": 207.26,
+            "start": 207.0,
+            "text": " Goodbye."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 211.9,
+        "speaker": "Patient / Clinic Administrator",
+        "start": 205.06,
+        "text": "I appreciate you working through this with me.",
+        "words": [
+          {
+            "end": 205.66,
+            "start": 205.06,
+            "text": " I"
+          },
+          {
+            "end": 206.12,
+            "start": 205.66,
+            "text": " appreciate"
+          },
+          {
+            "end": 210.68,
+            "start": 206.12,
+            "text": " you"
+          },
+          {
+            "end": 210.92,
+            "start": 210.68,
+            "text": " working"
+          },
+          {
+            "end": 211.26,
+            "start": 210.92,
+            "text": " through"
+          },
+          {
+            "end": 211.44,
+            "start": 211.26,
+            "text": " this"
+          },
+          {
+            "end": 211.64,
+            "start": 211.44,
+            "text": " with"
+          },
+          {
+            "end": 211.9,
+            "start": 211.64,
+            "text": " me."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 217.36,
+        "speaker": "Patient / Clinic Administrator",
+        "start": 212.6,
+        "text": "For clarity on what was completed, you documented the request for the technical team to review,",
+        "words": [
+          {
+            "end": 212.72,
+            "start": 212.6,
+            "text": " For"
+          },
+          {
+            "end": 213.1,
+            "start": 212.72,
+            "text": " clarity"
+          },
+          {
+            "end": 213.3,
+            "start": 213.1,
+            "text": " on"
+          },
+          {
+            "end": 213.44,
+            "start": 213.3,
+            "text": " what"
+          },
+          {
+            "end": 213.64,
+            "start": 213.44,
+            "text": " was"
+          },
+          {
+            "end": 214.08,
+            "start": 213.64,
+            "text": " completed,"
+          },
+          {
+            "end": 214.6,
+            "start": 214.5,
+            "text": " you"
+          },
+          {
+            "end": 215.16,
+            "start": 214.6,
+            "text": " documented"
+          },
+          {
+            "end": 215.46,
+            "start": 215.16,
+            "text": " the"
+          },
+          {
+            "end": 215.78,
+            "start": 215.46,
+            "text": " request"
+          },
+          {
+            "end": 216.02,
+            "start": 215.78,
+            "text": " for"
+          },
+          {
+            "end": 216.18,
+            "start": 216.02,
+            "text": " the"
+          },
+          {
+            "end": 216.44,
+            "start": 216.18,
+            "text": " technical"
+          },
+          {
+            "end": 216.76,
+            "start": 216.44,
+            "text": " team"
+          },
+          {
+            "end": 216.98,
+            "start": 216.76,
+            "text": " to"
+          },
+          {
+            "end": 217.36,
+            "start": 216.98,
+            "text": " review,"
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 223.24,
+        "speaker": "Patient / Clinic Administrator",
+        "start": 217.36,
+        "text": "but you were unable to submit a direct action to the clinic support team because my identity couldn't be verified.",
+        "words": [
+          {
+            "end": 217.82,
+            "start": 217.36,
+            "text": " but"
+          },
+          {
+            "end": 217.98,
+            "start": 217.82,
+            "text": " you"
+          },
+          {
+            "end": 218.14,
+            "start": 217.98,
+            "text": " were"
+          },
+          {
+            "end": 218.44,
+            "start": 218.14,
+            "text": " unable"
+          },
+          {
+            "end": 218.7,
+            "start": 218.44,
+            "text": " to"
+          },
+          {
+            "end": 218.98,
+            "start": 218.7,
+            "text": " submit"
+          },
+          {
+            "end": 219.16,
+            "start": 218.98,
+            "text": " a"
+          },
+          {
+            "end": 219.46,
+            "start": 219.16,
+            "text": " direct"
+          },
+          {
+            "end": 219.84,
+            "start": 219.46,
+            "text": " action"
+          },
+          {
+            "end": 220.1,
+            "start": 219.84,
+            "text": " to"
+          },
+          {
+            "end": 220.28,
+            "start": 220.1,
+            "text": " the"
+          },
+          {
+            "end": 220.46,
+            "start": 220.28,
+            "text": " clinic"
+          },
+          {
+            "end": 220.82,
+            "start": 220.46,
+            "text": " support"
+          },
+          {
+            "end": 221.14,
+            "start": 220.82,
+            "text": " team"
+          },
+          {
+            "end": 221.42,
+            "start": 221.14,
+            "text": " because"
+          },
+          {
+            "end": 221.74,
+            "start": 221.42,
+            "text": " my"
+          },
+          {
+            "end": 222.18,
+            "start": 221.74,
+            "text": " identity"
+          },
+          {
+            "end": 222.56,
+            "start": 222.18,
+            "text": " couldn't"
+          },
+          {
+            "end": 222.78,
+            "start": 222.56,
+            "text": " be"
+          },
+          {
+            "end": 223.24,
+            "start": 222.78,
+            "text": " verified."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 228.86,
+        "speaker": "Patient / Clinic Administrator",
+        "start": 223.92,
+        "text": "That's a fair boundary. I understand the limitation. Thank you for escalating this.",
+        "words": [
+          {
+            "end": 224.22,
+            "start": 223.92,
+            "text": " That's"
+          },
+          {
+            "end": 224.26,
+            "start": 224.22,
+            "text": " a"
+          },
+          {
+            "end": 224.42,
+            "start": 224.26,
+            "text": " fair"
+          },
+          {
+            "end": 224.84,
+            "start": 224.42,
+            "text": " boundary."
+          },
+          {
+            "end": 225.76,
+            "start": 225.56,
+            "text": " I"
+          },
+          {
+            "end": 226.14,
+            "start": 225.76,
+            "text": " understand"
+          },
+          {
+            "end": 226.36,
+            "start": 226.14,
+            "text": " the"
+          },
+          {
+            "end": 226.86,
+            "start": 226.36,
+            "text": " limitation."
+          },
+          {
+            "end": 227.7,
+            "start": 227.56,
+            "text": " Thank"
+          },
+          {
+            "end": 227.86,
+            "start": 227.7,
+            "text": " you"
+          },
+          {
+            "end": 228.04,
+            "start": 227.86,
+            "text": " for"
+          },
+          {
+            "end": 228.46,
+            "start": 228.04,
+            "text": " escalating"
+          },
+          {
+            "end": 228.86,
+            "start": 228.46,
+            "text": " this."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 234.22,
+        "speaker": "PGAI Clinic Agent",
+        "start": 232.82,
+        "text": ".",
+        "words": [
+          {
+            "end": 234.22,
+            "start": 232.82,
+            "text": " ."
+          }
+        ]
+      }
+    ],
+    "sha256": "6d0d466cfba70b99ea29a17986b94e3a83b0fa96f2a6ab236e350e466e6d5227",
+    "source_sha256": "572c0afcb4ad161bacacfde3ba0da140da5465b2b7e15e9684314bd0e1d3548c",
+    "status": "completed"
+  }
+}

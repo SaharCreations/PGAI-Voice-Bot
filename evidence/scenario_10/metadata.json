@@ -1,0 +1,1661 @@
+{
+  "artifact": {
+    "downloaded_at": "2026-09-12T02:24:27.228650+00:00",
+    "format": "mp3",
+    "path": "recording.mp3",
+    "recording_id": "a13b95dd-a783-48a3-8394-fac4c2b126bb",
+    "sha256": "6f043d36cb25542571e7addbeae97654fa8e4fa622164d01a2c52d624787a2db",
+    "size_bytes": 506304,
+    "source_event_id": "57ebd6f8-ef2b-42cf-bfcc-8f26cf2911c8",
+    "status": "downloaded"
+  },
+  "attempt_id": "b2f06a9b941643f298d37ff8bf20dee8",
+  "call": {
+    "call_control_id": "v3:rwNe_oah1Ajc16__Gy5rNf3OK8a09OlZrQdvx-_yXB0Mef-H9m64MQ",
+    "call_leg_id": "c3853076-ae50-11f1-9e75-02420a0df320",
+    "call_session_id": "c38213a0-ae50-11f1-a40a-02420a0df320",
+    "connection_id": "3044835743940740733"
+  },
+  "call_status": "ended",
+  "created_at": "2026-09-12T02:22:13.176098+00:00",
+  "dial_status": "submitted",
+  "events": [
+    {
+      "id": "3a8d6b29-3718-4353-ab60-70533a94c7aa",
+      "occurred_at": "2026-09-12T02:22:12.993611Z",
+      "type": "call.initiated"
+    },
+    {
+      "id": "96de0f20-a74e-41a9-a228-168bfd942005",
+      "occurred_at": "2026-09-12T02:22:18.633605Z",
+      "type": "call.answered"
+    },
+    {
+      "id": "68f06337-4a61-480d-9f0f-2f688aca486a",
+      "occurred_at": "2026-09-12T02:24:25.073606Z",
+      "type": "call.hangup"
+    },
+    {
+      "id": "57ebd6f8-ef2b-42cf-bfcc-8f26cf2911c8",
+      "occurred_at": "2026-09-12T02:24:26.667991Z",
+      "type": "call.recording.saved"
+    }
+  ],
+  "hangup_cause": "normal_clearing",
+  "limitations": [
+    "Interrupted assistant speech is omitted from conversation history."
+  ],
+  "persona": {
+    "scenario_id": "scenario_10",
+    "source": "scenarios/scenario_10.json",
+    "source_sha256": "427743e70c7500c888fd3a37b59416249d9097e254a20277019872f7465dd0f3",
+    "system_prompt_sha256": "d7ca865664279f7fa6aa98ee7a3f9051552a36eb8e01d608bfe9de6b3df4bb1a"
+  },
+  "recording": {
+    "channels": "dual",
+    "recording_ended_at": "2026-09-12T02:24:25.073606Z",
+    "recording_id": "a13b95dd-a783-48a3-8394-fac4c2b126bb",
+    "recording_started_at": "2026-09-12T02:22:12.854586Z",
+    "saved_event_at": "2026-09-12T02:24:26.667991Z",
+    "saved_event_id": "57ebd6f8-ef2b-42cf-bfcc-8f26cf2911c8",
+    "status": "saved",
+    "urls": {
+      "mp3": "https://s3.amazonaws.com/telephony-recorder-prod/1201548c-4c35-4fc1-955c-474224aa8ae9/2026-09-12/c3853076-ae50-11f1-9e75-02420a0df320-1789179732854566.mp3"
+    }
+  },
+  "recording_options": {
+    "record": "record-from-answer",
+    "record_channels": "dual",
+    "record_format": "mp3",
+    "record_track": "both"
+  },
+  "scenario_id": "scenario_10",
+  "schema_version": 1,
+  "timestamps": {
+    "answered_at": "2026-09-12T02:22:18.633605Z",
+    "dial_response_at": "2026-09-12T02:22:13.177939+00:00",
+    "ended_at": "2026-09-12T02:24:25.073606Z",
+    "initiated_at": "2026-09-12T02:22:12.993611Z"
+  },
+  "transcript": {
+    "attempt_id": "b2f06a9b941643f298d37ff8bf20dee8",
+    "audio": {
+      "channel_indices": [
+        0,
+        1
+      ],
+      "channels": 2,
+      "duration_seconds": 126.316,
+      "sample_rate": 16000,
+      "timeline": "seconds from MP3 playback start"
+    },
+    "call": {
+      "call_control_id": "v3:rwNe_oah1Ajc16__Gy5rNf3OK8a09OlZrQdvx-_yXB0Mef-H9m64MQ",
+      "call_leg_id": "c3853076-ae50-11f1-9e75-02420a0df320",
+      "call_session_id": "c38213a0-ae50-11f1-a40a-02420a0df320",
+      "connection_id": "3044835743940740733"
+    },
+    "channel_mapping": {
+      "basis": "Telnyx outbound Call Control dual-channel recording: channel 0 is the remote destination/PGAI track and channel 1 is the bidirectional media patient track.",
+      "source_sha256": "6f043d36cb25542571e7addbeae97654fa8e4fa622164d01a2c52d624787a2db",
+      "speakers": {
+        "0": "PGAI Clinic Agent",
+        "1": "Patient / Meredith White"
+      },
+      "verified": true
+    },
+    "completed_at": "2026-09-12T02:26:13.778162+00:00",
+    "path": "transcript.txt",
+    "recognizer": {
+      "beam_size": 5,
+      "compute_type": "int8",
+      "condition_on_previous_text": false,
+      "cpu_threads": 4,
+      "decoder": "PyAV",
+      "decoder_version": "18.1.0",
+      "device": "cpu",
+      "engine": "faster-whisper",
+      "engine_version": "1.2.1",
+      "language": "en",
+      "model": "medium.en",
+      "model_directory": "/Users/sahar/Desktop/PGAI-Voice-Bot/.models/medium.en",
+      "model_files_sha256": {
+        "config.json": "4a1848ebabe7938d9797c15a2e8e4ce1d36e6fd4a43d096ae5955257c67c7962",
+        "model.bin": "11b220779aea4c6f3ce9d2549c8a95ea869ed84066864b999531ef53e594fe5b",
+        "tokenizer.json": "929c5252409436dce1b38a75d1abbcb5e132d170d8e324e4e04ed915fa2d22df"
+      },
+      "temperature": 0,
+      "vad_filter": false,
+      "word_timestamps": true
+    },
+    "recording_id": "a13b95dd-a783-48a3-8394-fac4c2b126bb",
+    "required_source": "recording.mp3",
+    "review_status": "needs_audio_review",
+    "segments": [
+      {
+        "channel_index": 0,
+        "end": 3.38,
+        "speaker": "PGAI Clinic Agent",
+        "start": 0.0,
+        "text": "This call may be recorded for quality and training purposes.",
+        "words": [
+          {
+            "end": 0.42,
+            "start": 0.0,
+            "text": " This"
+          },
+          {
+            "end": 0.66,
+            "start": 0.42,
+            "text": " call"
+          },
+          {
+            "end": 0.92,
+            "start": 0.66,
+            "text": " may"
+          },
+          {
+            "end": 1.08,
+            "start": 0.92,
+            "text": " be"
+          },
+          {
+            "end": 1.46,
+            "start": 1.08,
+            "text": " recorded"
+          },
+          {
+            "end": 1.72,
+            "start": 1.46,
+            "text": " for"
+          },
+          {
+            "end": 2.12,
+            "start": 1.72,
+            "text": " quality"
+          },
+          {
+            "end": 2.36,
+            "start": 2.12,
+            "text": " and"
+          },
+          {
+            "end": 2.74,
+            "start": 2.36,
+            "text": " training"
+          },
+          {
+            "end": 3.38,
+            "start": 2.74,
+            "text": " purposes."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 5.84,
+        "speaker": "PGAI Clinic Agent",
+        "start": 4.08,
+        "text": "Para espa\u00f1ol, o prima y zos.",
+        "words": [
+          {
+            "end": 4.22,
+            "start": 4.08,
+            "text": " Para"
+          },
+          {
+            "end": 4.86,
+            "start": 4.22,
+            "text": " espa\u00f1ol,"
+          },
+          {
+            "end": 5.14,
+            "start": 5.14,
+            "text": " o"
+          },
+          {
+            "end": 5.52,
+            "start": 5.14,
+            "text": " prima"
+          },
+          {
+            "end": 5.58,
+            "start": 5.52,
+            "text": " y"
+          },
+          {
+            "end": 5.84,
+            "start": 5.58,
+            "text": " zos."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 8.64,
+        "speaker": "PGAI Clinic Agent",
+        "start": 6.52,
+        "text": "Thanks for calling Pitha Point Orthopedics,",
+        "words": [
+          {
+            "end": 6.8,
+            "start": 6.52,
+            "text": " Thanks"
+          },
+          {
+            "end": 6.96,
+            "start": 6.8,
+            "text": " for"
+          },
+          {
+            "end": 7.26,
+            "start": 6.96,
+            "text": " calling"
+          },
+          {
+            "end": 7.6,
+            "start": 7.26,
+            "text": " Pitha"
+          },
+          {
+            "end": 7.78,
+            "start": 7.6,
+            "text": " Point"
+          },
+          {
+            "end": 8.64,
+            "start": 7.78,
+            "text": " Orthopedics,"
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 10.18,
+        "speaker": "PGAI Clinic Agent",
+        "start": 9.08,
+        "text": "part of Pretty Good AI.",
+        "words": [
+          {
+            "end": 9.22,
+            "start": 9.08,
+            "text": " part"
+          },
+          {
+            "end": 9.42,
+            "start": 9.22,
+            "text": " of"
+          },
+          {
+            "end": 9.62,
+            "start": 9.42,
+            "text": " Pretty"
+          },
+          {
+            "end": 9.82,
+            "start": 9.62,
+            "text": " Good"
+          },
+          {
+            "end": 10.18,
+            "start": 9.82,
+            "text": " AI."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 12.12,
+        "speaker": "PGAI Clinic Agent",
+        "start": 10.82,
+        "text": "How may I help you today?",
+        "words": [
+          {
+            "end": 10.92,
+            "start": 10.82,
+            "text": " How"
+          },
+          {
+            "end": 11.04,
+            "start": 10.92,
+            "text": " may"
+          },
+          {
+            "end": 11.14,
+            "start": 11.04,
+            "text": " I"
+          },
+          {
+            "end": 11.26,
+            "start": 11.14,
+            "text": " help"
+          },
+          {
+            "end": 11.4,
+            "start": 11.26,
+            "text": " you"
+          },
+          {
+            "end": 12.12,
+            "start": 11.4,
+            "text": " today?"
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 14.84,
+        "speaker": "Patient / Meredith White",
+        "start": 13.459999999999999,
+        "text": "Hi, this is Meredith White.",
+        "words": [
+          {
+            "end": 13.82,
+            "start": 13.459999999999999,
+            "text": " Hi,"
+          },
+          {
+            "end": 14.2,
+            "start": 13.98,
+            "text": " this"
+          },
+          {
+            "end": 14.36,
+            "start": 14.2,
+            "text": " is"
+          },
+          {
+            "end": 14.56,
+            "start": 14.36,
+            "text": " Meredith"
+          },
+          {
+            "end": 14.84,
+            "start": 14.56,
+            "text": " White."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 16.3,
+        "speaker": "Patient / Meredith White",
+        "start": 15.2,
+        "text": "I need help with a prescription.",
+        "words": [
+          {
+            "end": 15.24,
+            "start": 15.2,
+            "text": " I"
+          },
+          {
+            "end": 15.38,
+            "start": 15.24,
+            "text": " need"
+          },
+          {
+            "end": 15.54,
+            "start": 15.38,
+            "text": " help"
+          },
+          {
+            "end": 15.68,
+            "start": 15.54,
+            "text": " with"
+          },
+          {
+            "end": 15.8,
+            "start": 15.68,
+            "text": " a"
+          },
+          {
+            "end": 16.3,
+            "start": 15.8,
+            "text": " prescription."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 20.96,
+        "speaker": "PGAI Clinic Agent",
+        "start": 19.44,
+        "text": "Please provide your date of birth.",
+        "words": [
+          {
+            "end": 19.96,
+            "start": 19.44,
+            "text": " Please"
+          },
+          {
+            "end": 20.24,
+            "start": 19.96,
+            "text": " provide"
+          },
+          {
+            "end": 20.42,
+            "start": 20.24,
+            "text": " your"
+          },
+          {
+            "end": 20.58,
+            "start": 20.42,
+            "text": " date"
+          },
+          {
+            "end": 20.74,
+            "start": 20.58,
+            "text": " of"
+          },
+          {
+            "end": 20.96,
+            "start": 20.74,
+            "text": " birth."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 23.82,
+        "speaker": "Patient / Meredith White",
+        "start": 22.39999999999999,
+        "text": "November 3rd, 1987.",
+        "words": [
+          {
+            "end": 22.879999999999995,
+            "start": 22.39999999999999,
+            "text": " November"
+          },
+          {
+            "end": 23.36,
+            "start": 22.879999999999995,
+            "text": " 3rd,"
+          },
+          {
+            "end": 23.82,
+            "start": 23.36,
+            "text": " 1987."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 36.6,
+        "speaker": "PGAI Clinic Agent",
+        "start": 32.66,
+        "text": "Can you please spell your first and last name for me just to make sure I have it correct?",
+        "words": [
+          {
+            "end": 33.1,
+            "start": 32.66,
+            "text": " Can"
+          },
+          {
+            "end": 33.24,
+            "start": 33.1,
+            "text": " you"
+          },
+          {
+            "end": 33.44,
+            "start": 33.24,
+            "text": " please"
+          },
+          {
+            "end": 33.7,
+            "start": 33.44,
+            "text": " spell"
+          },
+          {
+            "end": 33.88,
+            "start": 33.7,
+            "text": " your"
+          },
+          {
+            "end": 34.16,
+            "start": 33.88,
+            "text": " first"
+          },
+          {
+            "end": 34.38,
+            "start": 34.16,
+            "text": " and"
+          },
+          {
+            "end": 34.56,
+            "start": 34.38,
+            "text": " last"
+          },
+          {
+            "end": 34.78,
+            "start": 34.56,
+            "text": " name"
+          },
+          {
+            "end": 35.02,
+            "start": 34.78,
+            "text": " for"
+          },
+          {
+            "end": 35.16,
+            "start": 35.02,
+            "text": " me"
+          },
+          {
+            "end": 35.34,
+            "start": 35.16,
+            "text": " just"
+          },
+          {
+            "end": 35.5,
+            "start": 35.34,
+            "text": " to"
+          },
+          {
+            "end": 35.6,
+            "start": 35.5,
+            "text": " make"
+          },
+          {
+            "end": 35.76,
+            "start": 35.6,
+            "text": " sure"
+          },
+          {
+            "end": 35.92,
+            "start": 35.76,
+            "text": " I"
+          },
+          {
+            "end": 36.04,
+            "start": 35.92,
+            "text": " have"
+          },
+          {
+            "end": 36.18,
+            "start": 36.04,
+            "text": " it"
+          },
+          {
+            "end": 36.6,
+            "start": 36.18,
+            "text": " correct?"
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 41.96,
+        "speaker": "Patient / Meredith White",
+        "start": 38.64,
+        "text": "Sure. M-E-R-E-D-I-T-H-W-H-I-T.",
+        "words": [
+          {
+            "end": 39.12,
+            "start": 38.64,
+            "text": " Sure."
+          },
+          {
+            "end": 39.56,
+            "start": 39.38,
+            "text": " M"
+          },
+          {
+            "end": 39.7,
+            "start": 39.56,
+            "text": "-E"
+          },
+          {
+            "end": 39.94,
+            "start": 39.7,
+            "text": "-R"
+          },
+          {
+            "end": 40.22,
+            "start": 39.94,
+            "text": "-E"
+          },
+          {
+            "end": 40.44,
+            "start": 40.22,
+            "text": "-D"
+          },
+          {
+            "end": 40.58,
+            "start": 40.44,
+            "text": "-I"
+          },
+          {
+            "end": 40.84,
+            "start": 40.58,
+            "text": "-T"
+          },
+          {
+            "end": 41.18,
+            "start": 40.84,
+            "text": "-H"
+          },
+          {
+            "end": 41.36,
+            "start": 41.18,
+            "text": "-W"
+          },
+          {
+            "end": 41.58,
+            "start": 41.36,
+            "text": "-H"
+          },
+          {
+            "end": 41.78,
+            "start": 41.58,
+            "text": "-I"
+          },
+          {
+            "end": 41.96,
+            "start": 41.78,
+            "text": "-T."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 44.76,
+        "speaker": "PGAI Clinic Agent",
+        "start": 44.32,
+        "text": "Thanks.",
+        "words": [
+          {
+            "end": 44.76,
+            "start": 44.32,
+            "text": " Thanks."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 50.9,
+        "speaker": "PGAI Clinic Agent",
+        "start": 45.18,
+        "text": "Just to confirm, I have your name as Meredith White and your date of birth as November 3rd, 1987.",
+        "words": [
+          {
+            "end": 45.4,
+            "start": 45.18,
+            "text": " Just"
+          },
+          {
+            "end": 45.56,
+            "start": 45.4,
+            "text": " to"
+          },
+          {
+            "end": 45.9,
+            "start": 45.56,
+            "text": " confirm,"
+          },
+          {
+            "end": 46.08,
+            "start": 45.92,
+            "text": " I"
+          },
+          {
+            "end": 46.22,
+            "start": 46.08,
+            "text": " have"
+          },
+          {
+            "end": 46.38,
+            "start": 46.22,
+            "text": " your"
+          },
+          {
+            "end": 46.6,
+            "start": 46.38,
+            "text": " name"
+          },
+          {
+            "end": 46.96,
+            "start": 46.6,
+            "text": " as"
+          },
+          {
+            "end": 47.24,
+            "start": 46.96,
+            "text": " Meredith"
+          },
+          {
+            "end": 47.56,
+            "start": 47.24,
+            "text": " White"
+          },
+          {
+            "end": 47.78,
+            "start": 47.56,
+            "text": " and"
+          },
+          {
+            "end": 47.94,
+            "start": 47.78,
+            "text": " your"
+          },
+          {
+            "end": 48.08,
+            "start": 47.94,
+            "text": " date"
+          },
+          {
+            "end": 48.22,
+            "start": 48.08,
+            "text": " of"
+          },
+          {
+            "end": 48.44,
+            "start": 48.22,
+            "text": " birth"
+          },
+          {
+            "end": 49.4,
+            "start": 48.44,
+            "text": " as"
+          },
+          {
+            "end": 49.74,
+            "start": 49.4,
+            "text": " November"
+          },
+          {
+            "end": 50.24,
+            "start": 49.74,
+            "text": " 3rd,"
+          },
+          {
+            "end": 50.9,
+            "start": 50.24,
+            "text": " 1987."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 65.58,
+        "speaker": "PGAI Clinic Agent",
+        "start": 50.9,
+        "text": "Is that correct? Could you please confirm your full date of birth, including the year?",
+        "words": [
+          {
+            "end": 51.76,
+            "start": 50.9,
+            "text": " Is"
+          },
+          {
+            "end": 51.92,
+            "start": 51.76,
+            "text": " that"
+          },
+          {
+            "end": 52.22,
+            "start": 51.92,
+            "text": " correct?"
+          },
+          {
+            "end": 62.22,
+            "start": 61.78,
+            "text": " Could"
+          },
+          {
+            "end": 62.4,
+            "start": 62.22,
+            "text": " you"
+          },
+          {
+            "end": 62.68,
+            "start": 62.4,
+            "text": " please"
+          },
+          {
+            "end": 63.16,
+            "start": 62.68,
+            "text": " confirm"
+          },
+          {
+            "end": 63.38,
+            "start": 63.16,
+            "text": " your"
+          },
+          {
+            "end": 63.64,
+            "start": 63.38,
+            "text": " full"
+          },
+          {
+            "end": 63.84,
+            "start": 63.64,
+            "text": " date"
+          },
+          {
+            "end": 64.0,
+            "start": 63.84,
+            "text": " of"
+          },
+          {
+            "end": 64.26,
+            "start": 64.0,
+            "text": " birth,"
+          },
+          {
+            "end": 65.18,
+            "start": 64.8,
+            "text": " including"
+          },
+          {
+            "end": 65.4,
+            "start": 65.18,
+            "text": " the"
+          },
+          {
+            "end": 65.58,
+            "start": 65.4,
+            "text": " year?"
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 56.26,
+        "speaker": "Patient / Meredith White",
+        "start": 54.86,
+        "text": "Yes, that's correct.",
+        "words": [
+          {
+            "end": 55.62,
+            "start": 54.86,
+            "text": " Yes,"
+          },
+          {
+            "end": 55.94,
+            "start": 55.78,
+            "text": " that's"
+          },
+          {
+            "end": 56.26,
+            "start": 55.94,
+            "text": " correct."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 59.28,
+        "speaker": "Patient / Meredith White",
+        "start": 57.04,
+        "text": "Meredith White, November 3rd, 1980.",
+        "words": [
+          {
+            "end": 57.26,
+            "start": 57.04,
+            "text": " Meredith"
+          },
+          {
+            "end": 57.66,
+            "start": 57.26,
+            "text": " White,"
+          },
+          {
+            "end": 58.42,
+            "start": 58.16,
+            "text": " November"
+          },
+          {
+            "end": 59.2,
+            "start": 58.42,
+            "text": " 3rd,"
+          },
+          {
+            "end": 59.28,
+            "start": 59.28,
+            "text": " 1980."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 77.8,
+        "speaker": "PGAI Clinic Agent",
+        "start": 66.12,
+        "text": "I heard November 3rd, but I need the full year as well. I have your name as Meredith",
+        "words": [
+          {
+            "end": 66.24,
+            "start": 66.12,
+            "text": " I"
+          },
+          {
+            "end": 66.38,
+            "start": 66.24,
+            "text": " heard"
+          },
+          {
+            "end": 66.74,
+            "start": 66.38,
+            "text": " November"
+          },
+          {
+            "end": 67.32,
+            "start": 66.74,
+            "text": " 3rd,"
+          },
+          {
+            "end": 67.38,
+            "start": 67.32,
+            "text": " but"
+          },
+          {
+            "end": 67.52,
+            "start": 67.38,
+            "text": " I"
+          },
+          {
+            "end": 67.64,
+            "start": 67.52,
+            "text": " need"
+          },
+          {
+            "end": 67.8,
+            "start": 67.64,
+            "text": " the"
+          },
+          {
+            "end": 67.98,
+            "start": 67.8,
+            "text": " full"
+          },
+          {
+            "end": 68.2,
+            "start": 67.98,
+            "text": " year"
+          },
+          {
+            "end": 68.42,
+            "start": 68.2,
+            "text": " as"
+          },
+          {
+            "end": 68.86,
+            "start": 68.42,
+            "text": " well."
+          },
+          {
+            "end": 76.72,
+            "start": 76.28,
+            "text": " I"
+          },
+          {
+            "end": 76.86,
+            "start": 76.72,
+            "text": " have"
+          },
+          {
+            "end": 77.02,
+            "start": 76.86,
+            "text": " your"
+          },
+          {
+            "end": 77.2,
+            "start": 77.02,
+            "text": " name"
+          },
+          {
+            "end": 77.48,
+            "start": 77.2,
+            "text": " as"
+          },
+          {
+            "end": 77.8,
+            "start": 77.48,
+            "text": " Meredith"
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 71.22,
+        "speaker": "Patient / Meredith White",
+        "start": 70.22,
+        "text": "November 3rd, 1980.",
+        "words": [
+          {
+            "end": 70.44,
+            "start": 70.06,
+            "text": " November"
+          },
+          {
+            "end": 70.92,
+            "start": 70.44,
+            "text": " 3rd,"
+          },
+          {
+            "end": 71.22,
+            "start": 70.92,
+            "text": " 1980."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 87.6,
+        "speaker": "PGAI Clinic Agent",
+        "start": 77.8,
+        "text": "White, your date of birth as November 3rd, 1980, and your phone number as 415-406-7004.",
+        "words": [
+          {
+            "end": 78.14,
+            "start": 77.8,
+            "text": " White,"
+          },
+          {
+            "end": 78.78,
+            "start": 78.66,
+            "text": " your"
+          },
+          {
+            "end": 78.94,
+            "start": 78.78,
+            "text": " date"
+          },
+          {
+            "end": 79.1,
+            "start": 78.94,
+            "text": " of"
+          },
+          {
+            "end": 79.38,
+            "start": 79.1,
+            "text": " birth"
+          },
+          {
+            "end": 80.08,
+            "start": 79.38,
+            "text": " as"
+          },
+          {
+            "end": 80.42,
+            "start": 80.08,
+            "text": " November"
+          },
+          {
+            "end": 81.02,
+            "start": 80.42,
+            "text": " 3rd,"
+          },
+          {
+            "end": 81.44,
+            "start": 81.02,
+            "text": " 1980,"
+          },
+          {
+            "end": 82.4,
+            "start": 82.28,
+            "text": " and"
+          },
+          {
+            "end": 82.54,
+            "start": 82.4,
+            "text": " your"
+          },
+          {
+            "end": 82.76,
+            "start": 82.54,
+            "text": " phone"
+          },
+          {
+            "end": 83.02,
+            "start": 82.76,
+            "text": " number"
+          },
+          {
+            "end": 83.22,
+            "start": 83.02,
+            "text": " as"
+          },
+          {
+            "end": 84.1,
+            "start": 83.22,
+            "text": " 415"
+          },
+          {
+            "end": 85.28,
+            "start": 84.1,
+            "text": "-406"
+          },
+          {
+            "end": 87.6,
+            "start": 85.28,
+            "text": "-7004."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 89.12,
+        "speaker": "PGAI Clinic Agent",
+        "start": 87.9,
+        "text": "Is all of that correct?",
+        "words": [
+          {
+            "end": 88.44,
+            "start": 87.9,
+            "text": " Is"
+          },
+          {
+            "end": 88.62,
+            "start": 88.44,
+            "text": " all"
+          },
+          {
+            "end": 88.76,
+            "start": 88.62,
+            "text": " of"
+          },
+          {
+            "end": 88.86,
+            "start": 88.76,
+            "text": " that"
+          },
+          {
+            "end": 89.12,
+            "start": 88.86,
+            "text": " correct?"
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 92.38,
+        "speaker": "Patient / Meredith White",
+        "start": 91.1,
+        "text": "No, that's not right.",
+        "words": [
+          {
+            "end": 91.56,
+            "start": 91.1,
+            "text": " No,"
+          },
+          {
+            "end": 92.02,
+            "start": 91.56,
+            "text": " that's"
+          },
+          {
+            "end": 92.12,
+            "start": 92.02,
+            "text": " not"
+          },
+          {
+            "end": 92.38,
+            "start": 92.12,
+            "text": " right."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 96.46,
+        "speaker": "Patient / Meredith White",
+        "start": 92.86,
+        "text": "My date of birth is November 3rd, 1987, not 1980.",
+        "words": [
+          {
+            "end": 92.98,
+            "start": 92.86,
+            "text": " My"
+          },
+          {
+            "end": 93.18,
+            "start": 92.98,
+            "text": " date"
+          },
+          {
+            "end": 93.36,
+            "start": 93.18,
+            "text": " of"
+          },
+          {
+            "end": 93.52,
+            "start": 93.36,
+            "text": " birth"
+          },
+          {
+            "end": 93.74,
+            "start": 93.52,
+            "text": " is"
+          },
+          {
+            "end": 94.04,
+            "start": 93.74,
+            "text": " November"
+          },
+          {
+            "end": 94.56,
+            "start": 94.04,
+            "text": " 3rd,"
+          },
+          {
+            "end": 95.26,
+            "start": 94.56,
+            "text": " 1987,"
+          },
+          {
+            "end": 95.8,
+            "start": 95.62,
+            "text": " not"
+          },
+          {
+            "end": 96.46,
+            "start": 95.8,
+            "text": " 1980."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 99.98,
+        "speaker": "Patient / Meredith White",
+        "start": 97.26,
+        "text": "The name and phone number sound correct, but the year is wrong.",
+        "words": [
+          {
+            "end": 97.48,
+            "start": 97.26,
+            "text": " The"
+          },
+          {
+            "end": 97.64,
+            "start": 97.48,
+            "text": " name"
+          },
+          {
+            "end": 97.86,
+            "start": 97.64,
+            "text": " and"
+          },
+          {
+            "end": 98.04,
+            "start": 97.86,
+            "text": " phone"
+          },
+          {
+            "end": 98.26,
+            "start": 98.04,
+            "text": " number"
+          },
+          {
+            "end": 98.54,
+            "start": 98.26,
+            "text": " sound"
+          },
+          {
+            "end": 98.9,
+            "start": 98.54,
+            "text": " correct,"
+          },
+          {
+            "end": 99.14,
+            "start": 99.02,
+            "text": " but"
+          },
+          {
+            "end": 99.3,
+            "start": 99.14,
+            "text": " the"
+          },
+          {
+            "end": 99.48,
+            "start": 99.3,
+            "text": " year"
+          },
+          {
+            "end": 99.72,
+            "start": 99.48,
+            "text": " is"
+          },
+          {
+            "end": 99.98,
+            "start": 99.72,
+            "text": " wrong."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 103.6,
+        "speaker": "Patient / Meredith White",
+        "start": 100.74,
+        "text": "Can you please correct that in the system so we can move forward?",
+        "words": [
+          {
+            "end": 101.16,
+            "start": 100.74,
+            "text": " Can"
+          },
+          {
+            "end": 101.34,
+            "start": 101.16,
+            "text": " you"
+          },
+          {
+            "end": 101.56,
+            "start": 101.34,
+            "text": " please"
+          },
+          {
+            "end": 101.84,
+            "start": 101.56,
+            "text": " correct"
+          },
+          {
+            "end": 102.06,
+            "start": 101.84,
+            "text": " that"
+          },
+          {
+            "end": 102.14,
+            "start": 102.06,
+            "text": " in"
+          },
+          {
+            "end": 102.32,
+            "start": 102.14,
+            "text": " the"
+          },
+          {
+            "end": 102.54,
+            "start": 102.32,
+            "text": " system"
+          },
+          {
+            "end": 102.74,
+            "start": 102.54,
+            "text": " so"
+          },
+          {
+            "end": 102.84,
+            "start": 102.74,
+            "text": " we"
+          },
+          {
+            "end": 102.98,
+            "start": 102.84,
+            "text": " can"
+          },
+          {
+            "end": 103.14,
+            "start": 102.98,
+            "text": " move"
+          },
+          {
+            "end": 103.6,
+            "start": 103.14,
+            "text": " forward?"
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 106.96,
+        "speaker": "PGAI Clinic Agent",
+        "start": 103.38,
+        "text": "I'm having trouble verifying your information in our system.",
+        "words": [
+          {
+            "end": 103.92,
+            "start": 103.38,
+            "text": " I'm"
+          },
+          {
+            "end": 104.1,
+            "start": 103.92,
+            "text": " having"
+          },
+          {
+            "end": 104.36,
+            "start": 104.1,
+            "text": " trouble"
+          },
+          {
+            "end": 104.88,
+            "start": 104.36,
+            "text": " verifying"
+          },
+          {
+            "end": 105.12,
+            "start": 104.88,
+            "text": " your"
+          },
+          {
+            "end": 105.64,
+            "start": 105.12,
+            "text": " information"
+          },
+          {
+            "end": 106.36,
+            "start": 105.64,
+            "text": " in"
+          },
+          {
+            "end": 106.56,
+            "start": 106.36,
+            "text": " our"
+          },
+          {
+            "end": 106.96,
+            "start": 106.56,
+            "text": " system."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 110.76,
+        "speaker": "PGAI Clinic Agent",
+        "start": 106.96,
+        "text": "I'll connect you to our patient support team. Please stay on the line.",
+        "words": [
+          {
+            "end": 107.68,
+            "start": 106.96,
+            "text": " I'll"
+          },
+          {
+            "end": 107.88,
+            "start": 107.68,
+            "text": " connect"
+          },
+          {
+            "end": 108.04,
+            "start": 107.88,
+            "text": " you"
+          },
+          {
+            "end": 108.18,
+            "start": 108.04,
+            "text": " to"
+          },
+          {
+            "end": 108.34,
+            "start": 108.18,
+            "text": " our"
+          },
+          {
+            "end": 108.56,
+            "start": 108.34,
+            "text": " patient"
+          },
+          {
+            "end": 108.92,
+            "start": 108.56,
+            "text": " support"
+          },
+          {
+            "end": 109.26,
+            "start": 108.92,
+            "text": " team."
+          },
+          {
+            "end": 110.0,
+            "start": 109.96,
+            "text": " Please"
+          },
+          {
+            "end": 110.24,
+            "start": 110.0,
+            "text": " stay"
+          },
+          {
+            "end": 110.34,
+            "start": 110.24,
+            "text": " on"
+          },
+          {
+            "end": 110.5,
+            "start": 110.34,
+            "text": " the"
+          },
+          {
+            "end": 110.76,
+            "start": 110.5,
+            "text": " line."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 112.7,
+        "speaker": "PGAI Clinic Agent",
+        "start": 111.44,
+        "text": "Transferring you now, thank you.",
+        "words": [
+          {
+            "end": 111.84,
+            "start": 111.44,
+            "text": " Transferring"
+          },
+          {
+            "end": 111.94,
+            "start": 111.84,
+            "text": " you"
+          },
+          {
+            "end": 112.12,
+            "start": 111.94,
+            "text": " now,"
+          },
+          {
+            "end": 112.32,
+            "start": 112.22,
+            "text": " thank"
+          },
+          {
+            "end": 112.7,
+            "start": 112.32,
+            "text": " you."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 117.96,
+        "speaker": "PGAI Clinic Agent",
+        "start": 114.38,
+        "text": "Hello, you've reached the pretty good AI test line. Goodbye.",
+        "words": [
+          {
+            "end": 114.86,
+            "start": 114.38,
+            "text": " Hello,"
+          },
+          {
+            "end": 115.56,
+            "start": 115.16,
+            "text": " you've"
+          },
+          {
+            "end": 115.72,
+            "start": 115.56,
+            "text": " reached"
+          },
+          {
+            "end": 115.96,
+            "start": 115.72,
+            "text": " the"
+          },
+          {
+            "end": 116.12,
+            "start": 115.96,
+            "text": " pretty"
+          },
+          {
+            "end": 116.34,
+            "start": 116.12,
+            "text": " good"
+          },
+          {
+            "end": 116.68,
+            "start": 116.34,
+            "text": " AI"
+          },
+          {
+            "end": 116.92,
+            "start": 116.68,
+            "text": " test"
+          },
+          {
+            "end": 117.3,
+            "start": 116.92,
+            "text": " line."
+          },
+          {
+            "end": 117.96,
+            "start": 117.72,
+            "text": " Goodbye."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 120.66,
+        "speaker": "Patient / Meredith White",
+        "start": 117.24,
+        "text": "Thank you for your help.",
+        "words": [
+          {
+            "end": 118.64,
+            "start": 117.24,
+            "text": " Thank"
+          },
+          {
+            "end": 120.04,
+            "start": 118.64,
+            "text": " you"
+          },
+          {
+            "end": 120.24,
+            "start": 120.04,
+            "text": " for"
+          },
+          {
+            "end": 120.4,
+            "start": 120.24,
+            "text": " your"
+          },
+          {
+            "end": 120.66,
+            "start": 120.4,
+            "text": " help."
+          }
+        ]
+      }
+    ],
+    "sha256": "b0cdc2a3de0995d4191a1268154e75409f94b2ec14969bf1b0b7ccab0e71089a",
+    "source_sha256": "6f043d36cb25542571e7addbeae97654fa8e4fa622164d01a2c52d624787a2db",
+    "status": "completed"
+  }
+}

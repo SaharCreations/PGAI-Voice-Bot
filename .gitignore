@@ -203,6 +203,15 @@ cython_debug/
 # Temporary file for partial code execution
 tempCodeRunnerFile.py
 
+# Evidence download credentials, locks, and temporary source files only.
+# Final recording.mp3, transcript.txt, and metadata.json remain trackable.
+evidence/**/.recording-source.json
+evidence/**/.lock
+evidence/**/*.tmp
+evidence/**/*.wav
+.models/
+debug_audio/
+
 # Ruff stuff:
 .ruff_cache/
 
@@ -216,3 +225,11 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Local macOS and assessment-development artifacts
+.DS_Store
+**/.DS_Store
+*.bak
+.*-backup.*/
+.submission-docs-backup.*/
+.evidence-submission.lock
