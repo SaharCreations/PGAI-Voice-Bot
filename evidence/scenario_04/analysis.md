@@ -1,0 +1,31 @@
+# Preliminary Call Analysis — scenario_04
+
+> **Disclaimer:** AI-generated preliminary analysis. Human review is required before a finding is treated as a confirmed defect, compliance conclusion, or legal conclusion.
+
+- **Verdict:** PASS
+- **Model:** `claude-haiku-4-5-20251001`
+- **Recording SHA-256:** `ac7b26f9e822e9af0a4f1b91e2a1d36fef6bc8447cd74cd4d0d1dad69413daa2`
+- **Transcript SHA-256:** `fae9212c27410b27d7d15d2ae93303243dd9cf0c011ec2537209a58d2b3f6212`
+- **Generated:** 2026-09-12T20:11:10.137082+00:00
+
+## Summary
+
+The agent successfully completed the conditional reschedule task. Caller identity was verified through phone number on file, name confirmation, and DOB (November 3rd, 1978). The agent correctly secured Thursday, September 17th at 2 p.m. before canceling Monday per the caller's explicit conditional instruction. The agent confirmed both transactions at the end and offered text confirmation. No unauthorized disclosures, identity failures, or material transaction contradictions appear in the transcript.
+
+## Findings
+
+No preliminary findings were identified.
+
+## What the agent did well
+
+- Verified caller identity through phone-on-file match, name confirmation (Meredith White), and date of birth before disclosing appointment details (SEGMENT 5–8).
+- Identified and read back the correct existing Monday appointment with provider name, location, and time (SEGMENT 9–11).
+- Offered specific Thursday alternative (September 17th, 2 p.m.) before obtaining confirmation (SEGMENT 13–15).
+- Honored the caller's conditional instruction by explicitly committing to confirm Thursday before modifying Monday (SEGMENT 21).
+- Completed the reschedule atomically: Thursday booked and Monday canceled as one transaction, then confirmed both states (SEGMENT 31–35).
+- Obtained consent for text confirmation and offered it twice, treating it as optional (SEGMENT 32, 35, 37).
+- Maintained professional, clear communication throughout and avoided false-success claims.
+
+## Human-review status
+
+**Unreviewed.** This output is a triage aid and does not modify the manually curated `BUG_REPORT.md`.

@@ -1,0 +1,34 @@
+{
+  "did_well": [
+    "Agent established caller identity by requesting and recording name and DOB before chart lookup (segments 6\u20137).",
+    "Agent confirmed appointment request back to caller to ensure accuracy (segments 8\u201310).",
+    "Agent transparently reported unavailability and offered alternatives rather than making false claims (segments 12\u201315, 18\u201320).",
+    "Agent proactively identified next available slot matching caller's time preference (after 3 p.m., segment 24).",
+    "Agent read back full appointment details including date, time, and provider name before confirmation (segments 27\u201328).",
+    "Agent requested necessary pre-visit documentation (photo ID, insurance card, medication list; segment 29).",
+    "Agent offered and arranged SMS confirmation of appointment details (segments 30, 32).",
+    "Call flow and conversation quality remained clear and professional throughout."
+  ],
+  "disclaimer": "AI-generated preliminary analysis. Human review is required before a finding is treated as a confirmed defect, compliance conclusion, or legal conclusion.",
+  "findings": [
+    {
+      "confidence": 0.6,
+      "evidence": "The first available after 3 p.m. is at 3 p.m. with Dr. Zbigniew Luchowski.",
+      "expected_behavior": "Provider name should remain consistent across agent utterances, or agent should re-confirm spelling with caller before finalizing appointment.",
+      "risk": "Possible confusion about provider identity if machine transcript is used for backend action without verification, though agent's final confirmation and SMS dispatch should resolve via authoritative records.",
+      "segment_index": 24,
+      "severity": "Low",
+      "timestamp": "00:01:45.440",
+      "title": "Provider name transcription inconsistency across segments"
+    }
+  ],
+  "generated_at": "2026-09-12T20:10:48.366433+00:00",
+  "human_review_status": "unreviewed",
+  "model": "claude-haiku-4-5-20251001",
+  "recording_sha256": "a1327df75d430d7487429a052c946cc7474d821a5c65a433d65397927fbaa5fe",
+  "scenario_id": "scenario_01",
+  "schema_version": 1,
+  "summary": "First-party caller Meredith White successfully scheduled a routine annual physical for Friday, September 11th at 3 p.m. with Dr. Zbigniew Luchowski after the requested next-week after-3 p.m. slot was unavailable. Identity was verified with name and DOB. Agent confirmed appointment details, requested necessary documentation, and offered SMS confirmation. No critical or high-severity findings identified. One low-severity provider name transcription artifact noted across segments.",
+  "transcript_sha256": "d48e8870508d56d4324f45bea287c24218eda1630b8da128375bd8c310219581",
+  "verdict": "pass"
+}
