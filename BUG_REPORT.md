@@ -1,10 +1,10 @@
 # 🐛 PGAI Voice-Agent Findings
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Critical-1-DC2626?style=for-the-badge" alt="1 critical">
-  <img src="https://img.shields.io/badge/High-4-EA580C?style=for-the-badge" alt="4 high">
+  <img src="https://img.shields.io/badge/Critical-1-A349A0?style=for-the-badge" alt="1 critical">
+  <img src="https://img.shields.io/badge/High-4-5E34A3?style=for-the-badge" alt="4 high">
   <img src="https://img.shields.io/badge/Medium-4-EAB308?style=for-the-badge" alt="4 medium">
-  <img src="https://img.shields.io/badge/Low_Quality_Observations-4-2563EB?style=for-the-badge" alt="4 low">
+  <img src="https://img.shields.io/badge/Low_Quality_Observations-4-5E34A3?style=for-the-badge" alt="4 low">
 </p>
 
 ## Scope and methodology

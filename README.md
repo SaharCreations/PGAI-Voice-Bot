@@ -3,19 +3,19 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Real_Calls-13-7C3AED?style=for-the-badge" alt="13 real calls">
-  <img src="https://img.shields.io/badge/Tests-133_Passed-10B981?style=for-the-badge" alt="133 tests passed">
-  <img src="https://img.shields.io/badge/Subtests-27_Passed-14B8A6?style=for-the-badge" alt="27 subtests passed">
-  <img src="https://img.shields.io/badge/Budget-Under_$20-F59E0B?style=for-the-badge" alt="Under 20 dollar budget">
+  <img src="https://img.shields.io/badge/Real_Calls-13-5E34A3?style=for-the-badge" alt="13 real calls">
+  <img src="https://img.shields.io/badge/Tests-133_Passed-A349A0?style=for-the-badge" alt="133 tests passed">
+  <img src="https://img.shields.io/badge/Subtests-27_Passed-AEA4D4?style=for-the-badge" alt="27 subtests passed">
+  <img src="https://img.shields.io/badge/Budget-Under_$20-3A1D54?style=for-the-badge" alt="Under 20 dollar budget">
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3.11+-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python">
-  <img src="https://img.shields.io/badge/FastAPI-Async_WebSockets-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI">
-  <img src="https://img.shields.io/badge/Telnyx-Call_Control-00E3AA?style=flat-square" alt="Telnyx">
-  <img src="https://img.shields.io/badge/Deepgram-Nova--3-13EF93?style=flat-square" alt="Deepgram">
-  <img src="https://img.shields.io/badge/Claude-Haiku_4.5-D97757?style=flat-square" alt="Claude">
-  <img src="https://img.shields.io/badge/ElevenLabs-Turbo_v2.5-111111?style=flat-square" alt="ElevenLabs">
+  <img src="https://img.shields.io/badge/Python-3.11+-5E34A3?style=flat-square&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/FastAPI-Async_WebSockets-AEA4D4?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI">
+  <img src="https://img.shields.io/badge/Telnyx-Call_Control-A349A0?style=flat-square" alt="Telnyx">
+  <img src="https://img.shields.io/badge/Deepgram-Nova--3-A349A0?style=flat-square" alt="Deepgram">
+  <img src="https://img.shields.io/badge/Claude-Haiku_4.5-A349A0?style=flat-square" alt="Claude">
+  <img src="https://img.shields.io/badge/ElevenLabs-Turbo_v2.5-040105?style=flat-square" alt="ElevenLabs">
 </p>
 
 <h1 align="center">🎙️ PGAI Voice Bot</h1>
@@ -287,8 +287,8 @@ After iteration:
 I completed the project for **$10.33 in direct paid services**, using only **51.65%** of the challenge’s $20 reimbursement allowance.
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Total_Paid-$10.33-10B981?style=for-the-badge" alt="Total paid: 10 dollars and 33 cents">
-  <img src="https://img.shields.io/badge/Budget_Remaining-$9.67-2563EB?style=for-the-badge" alt="Budget remaining: 9 dollars and 67 cents">
+  <img src="https://img.shields.io/badge/Total_Paid-$10.33-A349A0?style=for-the-badge" alt="Total paid: 10 dollars and 33 cents">
+  <img src="https://img.shields.io/badge/Budget_Remaining-$9.67-5E34A3?style=for-the-badge" alt="Budget remaining: 9 dollars and 67 cents">
 </p>
 
 | Service | Purpose | Plan or charge | Paid cost |

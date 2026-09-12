@@ -1,48 +1,113 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="440" viewBox="0 0 1200 440" role="img" aria-labelledby="title description">
   <title id="title">PGAI Voice Bot</title>
-  <desc id="desc">Automated adversarial healthcare voice agent testing</desc>
+  <desc id="description">An automated AI patient simulator for testing production voice agents.</desc>
+
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#111827"/>
-      <stop offset="0.48" stop-color="#312E81"/>
-      <stop offset="1" stop-color="#0F766E"/>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#040105"/>
+      <stop offset="58%" stop-color="#100719"/>
+      <stop offset="100%" stop-color="#240E38"/>
     </linearGradient>
-    <linearGradient id="wave" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#A78BFA"/>
-      <stop offset="0.5" stop-color="#22D3EE"/>
-      <stop offset="1" stop-color="#34D399"/>
+
+    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#AEA4D4"/>
+      <stop offset="45%" stop-color="#5E34A3"/>
+      <stop offset="100%" stop-color="#A349A0"/>
     </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="7" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+
+    <radialGradient id="orb" cx="38%" cy="30%" r="72%">
+      <stop offset="0%" stop-color="#D5D0E9"/>
+      <stop offset="25%" stop-color="#AEA4D4"/>
+      <stop offset="62%" stop-color="#5E34A3"/>
+      <stop offset="100%" stop-color="#3A1D54"/>
+    </radialGradient>
+
+    <radialGradient id="ambient">
+      <stop offset="0%" stop-color="#A349A0" stop-opacity=".34"/>
+      <stop offset="100%" stop-color="#A349A0" stop-opacity="0"/>
+    </radialGradient>
+
+    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
+      <path d="M42 0H0V42" fill="none" stroke="#AEA4D4" stroke-opacity=".055"/>
+    </pattern>
+
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000000" flood-opacity=".55"/>
     </filter>
   </defs>
 
-  <rect width="1200" height="360" rx="26" fill="url(#bg)"/>
-  <circle cx="90" cy="65" r="145" fill="#8B5CF6" opacity=".12"/>
-  <circle cx="1120" cy="325" r="210" fill="#14B8A6" opacity=".13"/>
+  <rect width="1200" height="440" rx="28" fill="url(#background)"/>
+  <rect width="1200" height="440" rx="28" fill="url(#grid)"/>
+  <circle cx="1015" cy="185" r="285" fill="url(#ambient)"/>
+  <circle cx="675" cy="470" r="250" fill="#5E34A3" opacity=".09"/>
 
-  <g transform="translate(82 79)" fill="none" stroke="url(#wave)" stroke-width="10" stroke-linecap="round" filter="url(#glow)">
-    <path d="M0 98 L22 98 L36 62 L52 135 L69 35 L87 156 L105 74 L123 121 L142 52 L160 145 L178 88 L200 98"/>
+  <g transform="translate(72 62)">
+    <rect width="190" height="34" rx="17" fill="#AEA4D4" fill-opacity=".10" stroke="#AEA4D4" stroke-opacity=".25"/>
+    <circle cx="18" cy="17" r="5" fill="#A349A0" filter="url(#glow)"/>
+    <text x="32" y="22" fill="#D5D0E9" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="1.5">
+      VOICE AGENT QA
+    </text>
+
+    <text x="0" y="100" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="58" font-weight="750" letter-spacing="-2">
+      PGAI Voice Bot
+    </text>
+
+    <text x="0" y="142" fill="#AEA4D4" font-family="Inter, Arial, sans-serif" font-size="21">
+      An autonomous patient simulator built to test
+    </text>
+    <text x="0" y="172" fill="#AEA4D4" font-family="Inter, Arial, sans-serif" font-size="21">
+      safety, identity handling, and conversational quality.
+    </text>
+
+    <g transform="translate(0 218)">
+      <rect width="150" height="72" rx="18" fill="#D5D0E9" fill-opacity=".07" stroke="#AEA4D4" stroke-opacity=".22"/>
+      <text x="20" y="33" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="25" font-weight="700">13</text>
+      <text x="20" y="55" fill="#9D98AD" font-family="Inter, Arial, sans-serif" font-size="13">REAL CALLS</text>
+
+      <rect x="166" width="150" height="72" rx="18" fill="#D5D0E9" fill-opacity=".07" stroke="#AEA4D4" stroke-opacity=".22"/>
+      <text x="186" y="33" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="25" font-weight="700">133</text>
+      <text x="186" y="55" fill="#9D98AD" font-family="Inter, Arial, sans-serif" font-size="13">TESTS PASSING</text>
+
+      <rect x="332" width="164" height="72" rx="18" fill="#D5D0E9" fill-opacity=".07" stroke="#AEA4D4" stroke-opacity=".22"/>
+      <text x="352" y="33" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="25" font-weight="700">$10.33</text>
+      <text x="352" y="55" fill="#9D98AD" font-family="Inter, Arial, sans-serif" font-size="13">TOTAL COST</text>
+    </g>
   </g>
 
-  <g transform="translate(325 0)">
-    <text x="0" y="118" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="700">PGAI Voice Bot</text>
-    <text x="2" y="169" fill="#C4B5FD" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="600">Adversarial testing for healthcare voice agents</text>
-    <text x="2" y="215" fill="#E5E7EB" font-family="Arial, Helvetica, sans-serif" font-size="19">Real calls • Natural conversation • Reproducible evidence</text>
+  <g transform="translate(790 45)" filter="url(#softShadow)">
+    <rect width="340" height="350" rx="38" fill="#D5D0E9" fill-opacity=".055" stroke="url(#neon)" stroke-opacity=".7"/>
+    <rect x="15" y="15" width="310" height="320" rx="30" fill="#040105" fill-opacity=".52" stroke="#AEA4D4" stroke-opacity=".12"/>
 
-    <g transform="translate(0 255)">
-      <rect width="155" height="43" rx="21" fill="#7C3AED"/>
-      <text x="77" y="28" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-size="16" font-weight="700">13 REAL CALLS</text>
+    <text x="28" y="45" fill="#9D98AD" font-family="Inter, Arial, sans-serif" font-size="12" letter-spacing="1.6">
+      LIVE CONVERSATION
+    </text>
+    <circle cx="296" cy="40" r="5" fill="#A349A0" filter="url(#glow)"/>
 
-      <rect x="170" width="175" height="43" rx="21" fill="#059669"/>
-      <text x="257" y="28" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-size="16" font-weight="700">133 TESTS PASSED</text>
+    <circle cx="170" cy="157" r="103" fill="none" stroke="#AEA4D4" stroke-opacity=".09"/>
+    <circle cx="170" cy="157" r="83" fill="none" stroke="#A349A0" stroke-opacity=".23"/>
+    <circle cx="170" cy="157" r="64" fill="url(#orb)" filter="url(#glow)"/>
 
-      <rect x="360" width="165" height="43" rx="21" fill="#D97706"/>
-      <text x="442" y="28" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-size="16" font-weight="700">UNDER $20</text>
-
-      <rect x="540" width="205" height="43" rx="21" fill="#0891B2"/>
-      <text x="642" y="28" text-anchor="middle" fill="#FFFFFF" font-family="Arial" font-size="16" font-weight="700">DUAL-CHANNEL AUDIO</text>
+    <g transform="translate(145 124)" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round">
+      <rect x="12" width="26" height="48" rx="13"/>
+      <path d="M2 36v3c0 20 46 20 46 0v-3"/>
+      <path d="M25 59v13"/>
+      <path d="M12 72h26"/>
     </g>
+
+    <g transform="translate(32 276)" fill="none" stroke="url(#neon)" stroke-width="4" stroke-linecap="round">
+      <path d="M0 17h12l8-11 10 24 11-20 10 13 10-6h12l9-13 10 27 10-18 11 9 10-5h12l8-10 10 22 11-18 10 11h13l8-7 10 16 10-20 11 14h12"/>
+    </g>
+
+    <text x="96" y="326" fill="#D5D0E9" font-family="Inter, Arial, sans-serif" font-size="13" letter-spacing="1">
+      LISTEN • REASON • RESPOND
+    </text>
   </g>
 </svg>
