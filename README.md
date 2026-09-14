@@ -749,3 +749,10 @@ That process—observe, measure, isolate, fix, and prove—is the strongest part
 
 See the [final submission checklist](SUBMISSION_CHECKLIST.md) for the remaining challenge-submission steps.
 <!-- LOOM_SECTION_END -->
+
+
+### Latest call evidence
+
+- [Scenario 13 recording](evidence/scenario_13/recording.mp3)
+- [Scenario 13 transcript](evidence/scenario_13/transcript.txt)
+- [Scenario 13 metadata](evidence/scenario_13/metadata.json)

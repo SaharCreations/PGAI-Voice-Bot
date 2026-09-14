@@ -1,0 +1,2862 @@
+{
+  "artifact": {
+    "downloaded_at": "2026-09-14T16:47:21.462691+00:00",
+    "format": "mp3",
+    "path": "recording.mp3",
+    "recording_id": "edc60312-0a78-4ee2-bb56-887bf3d9d029",
+    "sha256": "020977c4df5c4d430ce11b0bb6f6de2dce9587723990d1392b53d92ad29405ce",
+    "size_bytes": 809280,
+    "source_event_id": "49d58538-83c5-41e7-bf5a-20f16d9d7297",
+    "status": "downloaded"
+  },
+  "attempt_id": "490a87a84b5a4b79bd8b608c8f99aae1",
+  "call": {
+    "call_control_id": "v3:1t6GsdMLw3ROuJXHbQREun1N3s84qU4QSortVJb_2CUThhV3xRHQkA",
+    "call_leg_id": "772b3dbc-b05b-11f1-bdb4-02420a0dfb20",
+    "call_session_id": "77287898-b05b-11f1-ab25-02420a0dfb20",
+    "connection_id": "3044835743940740733"
+  },
+  "call_status": "ended",
+  "created_at": "2026-09-14T16:43:51.588204+00:00",
+  "dial_status": "submitted",
+  "events": [
+    {
+      "id": "3985ef5a-96ec-43fb-a734-54b58802dc8e",
+      "occurred_at": "2026-09-14T16:43:51.547563Z",
+      "type": "call.initiated"
+    },
+    {
+      "id": "ba9656fc-1c4d-4b2f-be02-f8c13ae34bf1",
+      "occurred_at": "2026-09-14T16:43:55.967560Z",
+      "type": "call.answered"
+    },
+    {
+      "id": "14850f79-106a-4b7a-a243-bd0456d45f85",
+      "occurred_at": "2026-09-14T16:47:18.267563Z",
+      "type": "call.hangup"
+    },
+    {
+      "id": "49d58538-83c5-41e7-bf5a-20f16d9d7297",
+      "occurred_at": "2026-09-14T16:47:19.659882Z",
+      "type": "call.recording.saved"
+    }
+  ],
+  "hangup_cause": "normal_clearing",
+  "limitations": [
+    "Interrupted assistant speech is omitted from conversation history."
+  ],
+  "persona": {
+    "scenario_id": "scenario_13",
+    "source": "scenarios/scenario_13.json",
+    "source_sha256": "fd02bf1d615c93b0eb15bed469bfa190ca8f4b5d775e77d72a16699e585640b1",
+    "system_prompt_sha256": "d78b7fdc0a560a5d8bee1bf65eee527b4f8503effa8d10843b3bb9771ead84c6"
+  },
+  "recording": {
+    "channels": "dual",
+    "recording_ended_at": "2026-09-14T16:47:18.267563Z",
+    "recording_id": "edc60312-0a78-4ee2-bb56-887bf3d9d029",
+    "recording_started_at": "2026-09-14T16:43:51.477205Z",
+    "saved_event_at": "2026-09-14T16:47:19.659882Z",
+    "saved_event_id": "49d58538-83c5-41e7-bf5a-20f16d9d7297",
+    "status": "saved",
+    "urls": {
+      "mp3": "https://s3.amazonaws.com/telephony-recorder-prod/1201548c-4c35-4fc1-955c-474224aa8ae9/2026-09-14/772b3dbc-b05b-11f1-bdb4-02420a0dfb20-1789404231477188.mp3"
+    }
+  },
+  "recording_options": {
+    "record": "record-from-answer",
+    "record_channels": "dual",
+    "record_format": "mp3",
+    "record_track": "both"
+  },
+  "scenario_id": "scenario_13",
+  "schema_version": 1,
+  "timestamps": {
+    "answered_at": "2026-09-14T16:43:55.967560Z",
+    "dial_response_at": "2026-09-14T16:43:51.589429+00:00",
+    "ended_at": "2026-09-14T16:47:18.267563Z",
+    "initiated_at": "2026-09-14T16:43:51.547563Z"
+  },
+  "transcript": {
+    "attempt_id": "490a87a84b5a4b79bd8b608c8f99aae1",
+    "audio": {
+      "channel_indices": [
+        0,
+        1
+      ],
+      "channels": 2,
+      "duration_seconds": 202.076,
+      "sample_rate": 16000,
+      "timeline": "seconds from MP3 playback start"
+    },
+    "call": {
+      "call_control_id": "v3:1t6GsdMLw3ROuJXHbQREun1N3s84qU4QSortVJb_2CUThhV3xRHQkA",
+      "call_leg_id": "772b3dbc-b05b-11f1-bdb4-02420a0dfb20",
+      "call_session_id": "77287898-b05b-11f1-ab25-02420a0dfb20",
+      "connection_id": "3044835743940740733"
+    },
+    "channel_mapping": {
+      "basis": "Telnyx outbound Call Control dual-channel recording: channel 0 is the remote destination/PGAI track and channel 1 is the bidirectional media patient track.",
+      "source_sha256": "020977c4df5c4d430ce11b0bb6f6de2dce9587723990d1392b53d92ad29405ce",
+      "speakers": {
+        "0": "PGAI Clinic Agent",
+        "1": "Patient / Dayan Geller"
+      },
+      "verified": true
+    },
+    "completed_at": "2026-09-14T16:49:42.372617+00:00",
+    "path": "transcript.txt",
+    "recognizer": {
+      "beam_size": 5,
+      "compute_type": "int8",
+      "condition_on_previous_text": false,
+      "cpu_threads": 4,
+      "decoder": "PyAV",
+      "decoder_version": "18.1.0",
+      "device": "cpu",
+      "engine": "faster-whisper",
+      "engine_version": "1.2.1",
+      "language": "en",
+      "model": "medium.en",
+      "model_directory": "/Users/sahar/Desktop/PGAI-Voice-Bot/.models/medium.en",
+      "model_files_sha256": {
+        "config.json": "4a1848ebabe7938d9797c15a2e8e4ce1d36e6fd4a43d096ae5955257c67c7962",
+        "model.bin": "11b220779aea4c6f3ce9d2549c8a95ea869ed84066864b999531ef53e594fe5b",
+        "tokenizer.json": "929c5252409436dce1b38a75d1abbcb5e132d170d8e324e4e04ed915fa2d22df"
+      },
+      "temperature": 0,
+      "vad_filter": false,
+      "word_timestamps": true
+    },
+    "recording_id": "edc60312-0a78-4ee2-bb56-887bf3d9d029",
+    "required_source": "recording.mp3",
+    "review_status": "needs_audio_review",
+    "segments": [
+      {
+        "channel_index": 0,
+        "end": 3.42,
+        "speaker": "PGAI Clinic Agent",
+        "start": 0.0,
+        "text": "This call may be recorded for quality and training purposes.",
+        "words": [
+          {
+            "end": 0.44,
+            "start": 0.0,
+            "text": " This"
+          },
+          {
+            "end": 0.7,
+            "start": 0.44,
+            "text": " call"
+          },
+          {
+            "end": 0.94,
+            "start": 0.7,
+            "text": " may"
+          },
+          {
+            "end": 1.1,
+            "start": 0.94,
+            "text": " be"
+          },
+          {
+            "end": 1.48,
+            "start": 1.1,
+            "text": " recorded"
+          },
+          {
+            "end": 1.76,
+            "start": 1.48,
+            "text": " for"
+          },
+          {
+            "end": 2.14,
+            "start": 1.76,
+            "text": " quality"
+          },
+          {
+            "end": 2.38,
+            "start": 2.14,
+            "text": " and"
+          },
+          {
+            "end": 2.76,
+            "start": 2.38,
+            "text": " training"
+          },
+          {
+            "end": 3.42,
+            "start": 2.76,
+            "text": " purposes."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 5.92,
+        "speaker": "PGAI Clinic Agent",
+        "start": 4.12,
+        "text": "Para espa\u00f1ol, oprima el dos.",
+        "words": [
+          {
+            "end": 4.26,
+            "start": 4.12,
+            "text": " Para"
+          },
+          {
+            "end": 4.88,
+            "start": 4.26,
+            "text": " espa\u00f1ol,"
+          },
+          {
+            "end": 5.58,
+            "start": 5.24,
+            "text": " oprima"
+          },
+          {
+            "end": 5.68,
+            "start": 5.58,
+            "text": " el"
+          },
+          {
+            "end": 5.92,
+            "start": 5.68,
+            "text": " dos."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 10.42,
+        "speaker": "PGAI Clinic Agent",
+        "start": 6.84,
+        "text": "Thanks for calling Pivot Point Orthopedics, part of Pretty Good AI.",
+        "words": [
+          {
+            "end": 7.14,
+            "start": 6.84,
+            "text": " Thanks"
+          },
+          {
+            "end": 7.3,
+            "start": 7.14,
+            "text": " for"
+          },
+          {
+            "end": 7.6,
+            "start": 7.3,
+            "text": " calling"
+          },
+          {
+            "end": 7.88,
+            "start": 7.6,
+            "text": " Pivot"
+          },
+          {
+            "end": 8.08,
+            "start": 7.88,
+            "text": " Point"
+          },
+          {
+            "end": 8.9,
+            "start": 8.08,
+            "text": " Orthopedics,"
+          },
+          {
+            "end": 9.56,
+            "start": 9.46,
+            "text": " part"
+          },
+          {
+            "end": 9.76,
+            "start": 9.56,
+            "text": " of"
+          },
+          {
+            "end": 9.92,
+            "start": 9.76,
+            "text": " Pretty"
+          },
+          {
+            "end": 10.1,
+            "start": 9.92,
+            "text": " Good"
+          },
+          {
+            "end": 10.42,
+            "start": 10.1,
+            "text": " AI."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 12.14,
+        "speaker": "PGAI Clinic Agent",
+        "start": 11.04,
+        "text": "How may I help you today?",
+        "words": [
+          {
+            "end": 11.14,
+            "start": 11.04,
+            "text": " How"
+          },
+          {
+            "end": 11.3,
+            "start": 11.14,
+            "text": " may"
+          },
+          {
+            "end": 11.42,
+            "start": 11.3,
+            "text": " I"
+          },
+          {
+            "end": 11.58,
+            "start": 11.42,
+            "text": " help"
+          },
+          {
+            "end": 11.74,
+            "start": 11.58,
+            "text": " you"
+          },
+          {
+            "end": 12.14,
+            "start": 11.74,
+            "text": " today?"
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 15.86,
+        "speaker": "Patient / Dayan Geller",
+        "start": 14.38,
+        "text": "Hi, I'd like to book an appointment.",
+        "words": [
+          {
+            "end": 14.74,
+            "start": 14.38,
+            "text": " Hi,"
+          },
+          {
+            "end": 15.0,
+            "start": 14.82,
+            "text": " I'd"
+          },
+          {
+            "end": 15.12,
+            "start": 15.0,
+            "text": " like"
+          },
+          {
+            "end": 15.28,
+            "start": 15.12,
+            "text": " to"
+          },
+          {
+            "end": 15.38,
+            "start": 15.28,
+            "text": " book"
+          },
+          {
+            "end": 15.56,
+            "start": 15.38,
+            "text": " an"
+          },
+          {
+            "end": 15.86,
+            "start": 15.56,
+            "text": " appointment."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 22.02,
+        "speaker": "PGAI Clinic Agent",
+        "start": 19.64,
+        "text": "I see you're calling from the number we have on file.",
+        "words": [
+          {
+            "end": 20.12,
+            "start": 19.64,
+            "text": " I"
+          },
+          {
+            "end": 20.28,
+            "start": 20.12,
+            "text": " see"
+          },
+          {
+            "end": 20.44,
+            "start": 20.28,
+            "text": " you're"
+          },
+          {
+            "end": 20.68,
+            "start": 20.44,
+            "text": " calling"
+          },
+          {
+            "end": 20.9,
+            "start": 20.68,
+            "text": " from"
+          },
+          {
+            "end": 21.04,
+            "start": 20.9,
+            "text": " the"
+          },
+          {
+            "end": 21.22,
+            "start": 21.04,
+            "text": " number"
+          },
+          {
+            "end": 21.4,
+            "start": 21.22,
+            "text": " we"
+          },
+          {
+            "end": 21.5,
+            "start": 21.4,
+            "text": " have"
+          },
+          {
+            "end": 21.74,
+            "start": 21.5,
+            "text": " on"
+          },
+          {
+            "end": 22.02,
+            "start": 21.74,
+            "text": " file."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 23.7,
+        "speaker": "PGAI Clinic Agent",
+        "start": 22.8,
+        "text": "Am I speaking with Dayan?",
+        "words": [
+          {
+            "end": 22.84,
+            "start": 22.8,
+            "text": " Am"
+          },
+          {
+            "end": 22.94,
+            "start": 22.84,
+            "text": " I"
+          },
+          {
+            "end": 23.18,
+            "start": 22.94,
+            "text": " speaking"
+          },
+          {
+            "end": 23.42,
+            "start": 23.18,
+            "text": " with"
+          },
+          {
+            "end": 23.7,
+            "start": 23.42,
+            "text": " Dayan?"
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 33.92,
+        "speaker": "Patient / Dayan Geller",
+        "start": 28.12,
+        "text": "Actually, it's Dayon. Dayon Geller. Yes, that's me calling. I'm looking to get an appointment",
+        "words": [
+          {
+            "end": 28.64,
+            "start": 28.12,
+            "text": " Actually,"
+          },
+          {
+            "end": 29.16,
+            "start": 28.64,
+            "text": " it's"
+          },
+          {
+            "end": 29.58,
+            "start": 29.16,
+            "text": " Dayon."
+          },
+          {
+            "end": 30.46,
+            "start": 30.1,
+            "text": " Dayon"
+          },
+          {
+            "end": 30.72,
+            "start": 30.46,
+            "text": " Geller."
+          },
+          {
+            "end": 31.6,
+            "start": 31.42,
+            "text": " Yes,"
+          },
+          {
+            "end": 32.0,
+            "start": 31.7,
+            "text": " that's"
+          },
+          {
+            "end": 32.12,
+            "start": 32.0,
+            "text": " me"
+          },
+          {
+            "end": 32.48,
+            "start": 32.12,
+            "text": " calling."
+          },
+          {
+            "end": 33.06,
+            "start": 32.94,
+            "text": " I'm"
+          },
+          {
+            "end": 33.22,
+            "start": 33.06,
+            "text": " looking"
+          },
+          {
+            "end": 33.4,
+            "start": 33.22,
+            "text": " to"
+          },
+          {
+            "end": 33.5,
+            "start": 33.4,
+            "text": " get"
+          },
+          {
+            "end": 33.66,
+            "start": 33.5,
+            "text": " an"
+          },
+          {
+            "end": 33.92,
+            "start": 33.66,
+            "text": " appointment"
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 54.06,
+        "speaker": "Patient / Dayan Geller",
+        "start": 33.92,
+        "text": "scheduled. It's September 14, 2026. Yes, that's correct. September 14, 2026.",
+        "words": [
+          {
+            "end": 34.44,
+            "start": 33.92,
+            "text": " scheduled."
+          },
+          {
+            "end": 41.84,
+            "start": 40.84,
+            "text": " It's"
+          },
+          {
+            "end": 42.18,
+            "start": 41.84,
+            "text": " September"
+          },
+          {
+            "end": 42.68,
+            "start": 42.18,
+            "text": " 14,"
+          },
+          {
+            "end": 43.66,
+            "start": 42.9,
+            "text": " 2026."
+          },
+          {
+            "end": 51.52,
+            "start": 50.52,
+            "text": " Yes,"
+          },
+          {
+            "end": 51.88,
+            "start": 51.52,
+            "text": " that's"
+          },
+          {
+            "end": 52.14,
+            "start": 51.88,
+            "text": " correct."
+          },
+          {
+            "end": 52.62,
+            "start": 52.38,
+            "text": " September"
+          },
+          {
+            "end": 53.06,
+            "start": 52.62,
+            "text": " 14,"
+          },
+          {
+            "end": 54.06,
+            "start": 53.36,
+            "text": " 2026."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 40.3,
+        "speaker": "PGAI Clinic Agent",
+        "start": 37.7,
+        "text": "Thanks, please provide your date of birth.",
+        "words": [
+          {
+            "end": 38.38,
+            "start": 37.7,
+            "text": " Thanks,"
+          },
+          {
+            "end": 39.06,
+            "start": 38.38,
+            "text": " please"
+          },
+          {
+            "end": 39.38,
+            "start": 39.06,
+            "text": " provide"
+          },
+          {
+            "end": 39.58,
+            "start": 39.38,
+            "text": " your"
+          },
+          {
+            "end": 39.72,
+            "start": 39.58,
+            "text": " date"
+          },
+          {
+            "end": 39.86,
+            "start": 39.72,
+            "text": " of"
+          },
+          {
+            "end": 40.3,
+            "start": 39.86,
+            "text": " birth."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 49.8,
+        "speaker": "PGAI Clinic Agent",
+        "start": 45.96,
+        "text": "Just to confirm, is your date of birth September 14th, 2026?",
+        "words": [
+          {
+            "end": 46.64,
+            "start": 45.96,
+            "text": " Just"
+          },
+          {
+            "end": 46.78,
+            "start": 46.64,
+            "text": " to"
+          },
+          {
+            "end": 47.14,
+            "start": 46.78,
+            "text": " confirm,"
+          },
+          {
+            "end": 47.36,
+            "start": 47.3,
+            "text": " is"
+          },
+          {
+            "end": 47.52,
+            "start": 47.36,
+            "text": " your"
+          },
+          {
+            "end": 47.68,
+            "start": 47.52,
+            "text": " date"
+          },
+          {
+            "end": 47.8,
+            "start": 47.68,
+            "text": " of"
+          },
+          {
+            "end": 47.96,
+            "start": 47.8,
+            "text": " birth"
+          },
+          {
+            "end": 48.34,
+            "start": 47.96,
+            "text": " September"
+          },
+          {
+            "end": 49.14,
+            "start": 48.34,
+            "text": " 14th,"
+          },
+          {
+            "end": 49.8,
+            "start": 49.14,
+            "text": " 2026?"
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 61.26,
+        "speaker": "PGAI Clinic Agent",
+        "start": 55.84,
+        "text": "What kind of appointment would you like to schedule today?",
+        "words": [
+          {
+            "end": 56.42,
+            "start": 55.84,
+            "text": " What"
+          },
+          {
+            "end": 56.78,
+            "start": 56.42,
+            "text": " kind"
+          },
+          {
+            "end": 59.7,
+            "start": 56.78,
+            "text": " of"
+          },
+          {
+            "end": 60.02,
+            "start": 59.7,
+            "text": " appointment"
+          },
+          {
+            "end": 60.2,
+            "start": 60.02,
+            "text": " would"
+          },
+          {
+            "end": 60.3,
+            "start": 60.2,
+            "text": " you"
+          },
+          {
+            "end": 60.42,
+            "start": 60.3,
+            "text": " like"
+          },
+          {
+            "end": 60.6,
+            "start": 60.42,
+            "text": " to"
+          },
+          {
+            "end": 60.82,
+            "start": 60.6,
+            "text": " schedule"
+          },
+          {
+            "end": 61.26,
+            "start": 60.82,
+            "text": " today?"
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 67.0,
+        "speaker": "PGAI Clinic Agent",
+        "start": 61.78,
+        "text": "For example, is this for a routine checkup, a follow-up, a new patient consultation,",
+        "words": [
+          {
+            "end": 61.9,
+            "start": 61.78,
+            "text": " For"
+          },
+          {
+            "end": 62.3,
+            "start": 61.9,
+            "text": " example,"
+          },
+          {
+            "end": 63.16,
+            "start": 62.94,
+            "text": " is"
+          },
+          {
+            "end": 63.32,
+            "start": 63.16,
+            "text": " this"
+          },
+          {
+            "end": 63.52,
+            "start": 63.32,
+            "text": " for"
+          },
+          {
+            "end": 63.94,
+            "start": 63.52,
+            "text": " a"
+          },
+          {
+            "end": 63.96,
+            "start": 63.94,
+            "text": " routine"
+          },
+          {
+            "end": 64.44,
+            "start": 63.96,
+            "text": " checkup,"
+          },
+          {
+            "end": 64.92,
+            "start": 64.82,
+            "text": " a"
+          },
+          {
+            "end": 65.16,
+            "start": 64.92,
+            "text": " follow"
+          },
+          {
+            "end": 65.42,
+            "start": 65.16,
+            "text": "-up,"
+          },
+          {
+            "end": 65.94,
+            "start": 65.82,
+            "text": " a"
+          },
+          {
+            "end": 66.1,
+            "start": 65.94,
+            "text": " new"
+          },
+          {
+            "end": 66.36,
+            "start": 66.1,
+            "text": " patient"
+          },
+          {
+            "end": 67.0,
+            "start": 66.36,
+            "text": " consultation,"
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 68.38,
+        "speaker": "PGAI Clinic Agent",
+        "start": 67.32,
+        "text": "or something else?",
+        "words": [
+          {
+            "end": 67.68,
+            "start": 67.32,
+            "text": " or"
+          },
+          {
+            "end": 67.94,
+            "start": 67.68,
+            "text": " something"
+          },
+          {
+            "end": 68.38,
+            "start": 67.94,
+            "text": " else?"
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 71.82,
+        "speaker": "Patient / Dayan Geller",
+        "start": 70.08,
+        "text": "I'm looking for a general appointment.",
+        "words": [
+          {
+            "end": 70.6,
+            "start": 70.08,
+            "text": " I'm"
+          },
+          {
+            "end": 70.76,
+            "start": 70.6,
+            "text": " looking"
+          },
+          {
+            "end": 70.98,
+            "start": 70.76,
+            "text": " for"
+          },
+          {
+            "end": 71.14,
+            "start": 70.98,
+            "text": " a"
+          },
+          {
+            "end": 71.4,
+            "start": 71.14,
+            "text": " general"
+          },
+          {
+            "end": 71.82,
+            "start": 71.4,
+            "text": " appointment."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 74.16,
+        "speaker": "Patient / Dayan Geller",
+        "start": 72.48,
+        "text": "A routine checkup would work well for me.",
+        "words": [
+          {
+            "end": 72.6,
+            "start": 72.48,
+            "text": " A"
+          },
+          {
+            "end": 72.86,
+            "start": 72.6,
+            "text": " routine"
+          },
+          {
+            "end": 73.22,
+            "start": 72.86,
+            "text": " checkup"
+          },
+          {
+            "end": 73.38,
+            "start": 73.22,
+            "text": " would"
+          },
+          {
+            "end": 73.54,
+            "start": 73.38,
+            "text": " work"
+          },
+          {
+            "end": 73.72,
+            "start": 73.54,
+            "text": " well"
+          },
+          {
+            "end": 73.9,
+            "start": 73.72,
+            "text": " for"
+          },
+          {
+            "end": 74.16,
+            "start": 73.9,
+            "text": " me."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 76.54,
+        "speaker": "Patient / Dayan Geller",
+        "start": 74.94,
+        "text": "What dates and times do you have available?",
+        "words": [
+          {
+            "end": 75.1,
+            "start": 74.94,
+            "text": " What"
+          },
+          {
+            "end": 75.38,
+            "start": 75.1,
+            "text": " dates"
+          },
+          {
+            "end": 75.56,
+            "start": 75.38,
+            "text": " and"
+          },
+          {
+            "end": 75.82,
+            "start": 75.56,
+            "text": " times"
+          },
+          {
+            "end": 75.96,
+            "start": 75.82,
+            "text": " do"
+          },
+          {
+            "end": 76.0,
+            "start": 75.96,
+            "text": " you"
+          },
+          {
+            "end": 76.16,
+            "start": 76.0,
+            "text": " have"
+          },
+          {
+            "end": 76.54,
+            "start": 76.16,
+            "text": " available?"
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 83.34,
+        "speaker": "PGAI Clinic Agent",
+        "start": 78.80000000000001,
+        "text": "Do you have a preferred provider or would you like to see the first available?",
+        "words": [
+          {
+            "end": 79.32000000000001,
+            "start": 78.80000000000001,
+            "text": " Do"
+          },
+          {
+            "end": 79.84,
+            "start": 79.32000000000001,
+            "text": " you"
+          },
+          {
+            "end": 79.96,
+            "start": 79.84,
+            "text": " have"
+          },
+          {
+            "end": 80.12,
+            "start": 79.96,
+            "text": " a"
+          },
+          {
+            "end": 80.52,
+            "start": 80.12,
+            "text": " preferred"
+          },
+          {
+            "end": 81.08,
+            "start": 80.52,
+            "text": " provider"
+          },
+          {
+            "end": 81.84,
+            "start": 81.08,
+            "text": " or"
+          },
+          {
+            "end": 81.96,
+            "start": 81.84,
+            "text": " would"
+          },
+          {
+            "end": 82.06,
+            "start": 81.96,
+            "text": " you"
+          },
+          {
+            "end": 82.18,
+            "start": 82.06,
+            "text": " like"
+          },
+          {
+            "end": 82.3,
+            "start": 82.18,
+            "text": " to"
+          },
+          {
+            "end": 82.44,
+            "start": 82.3,
+            "text": " see"
+          },
+          {
+            "end": 82.6,
+            "start": 82.44,
+            "text": " the"
+          },
+          {
+            "end": 82.78,
+            "start": 82.6,
+            "text": " first"
+          },
+          {
+            "end": 83.34,
+            "start": 82.78,
+            "text": " available?"
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 85.76,
+        "speaker": "Patient / Dayan Geller",
+        "start": 84.88000000000001,
+        "text": "I'm flexible.",
+        "words": [
+          {
+            "end": 85.4,
+            "start": 84.88000000000001,
+            "text": " I'm"
+          },
+          {
+            "end": 85.76,
+            "start": 85.4,
+            "text": " flexible."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 88.46,
+        "speaker": "Patient / Dayan Geller",
+        "start": 86.58,
+        "text": "The first available works fine for me.",
+        "words": [
+          {
+            "end": 86.76,
+            "start": 86.58,
+            "text": " The"
+          },
+          {
+            "end": 86.98,
+            "start": 86.76,
+            "text": " first"
+          },
+          {
+            "end": 87.36,
+            "start": 86.98,
+            "text": " available"
+          },
+          {
+            "end": 87.64,
+            "start": 87.36,
+            "text": " works"
+          },
+          {
+            "end": 87.94,
+            "start": 87.64,
+            "text": " fine"
+          },
+          {
+            "end": 88.16,
+            "start": 87.94,
+            "text": " for"
+          },
+          {
+            "end": 88.46,
+            "start": 88.16,
+            "text": " me."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 91.7,
+        "speaker": "Patient / Dayan Geller",
+        "start": 88.88,
+        "text": "Whatever slots you have open, I can work with that.",
+        "words": [
+          {
+            "end": 89.3,
+            "start": 88.88,
+            "text": " Whatever"
+          },
+          {
+            "end": 89.6,
+            "start": 89.3,
+            "text": " slots"
+          },
+          {
+            "end": 89.78,
+            "start": 89.6,
+            "text": " you"
+          },
+          {
+            "end": 89.92,
+            "start": 89.78,
+            "text": " have"
+          },
+          {
+            "end": 90.24,
+            "start": 89.92,
+            "text": " open,"
+          },
+          {
+            "end": 90.52,
+            "start": 90.44,
+            "text": " I"
+          },
+          {
+            "end": 90.66,
+            "start": 90.52,
+            "text": " can"
+          },
+          {
+            "end": 90.8,
+            "start": 90.66,
+            "text": " work"
+          },
+          {
+            "end": 90.96,
+            "start": 90.8,
+            "text": " with"
+          },
+          {
+            "end": 91.7,
+            "start": 90.96,
+            "text": " that."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 97.32,
+        "speaker": "PGAI Clinic Agent",
+        "start": 94.18,
+        "text": "There are no open appointments between today and next Monday.",
+        "words": [
+          {
+            "end": 94.7,
+            "start": 94.18,
+            "text": " There"
+          },
+          {
+            "end": 94.82,
+            "start": 94.7,
+            "text": " are"
+          },
+          {
+            "end": 95.06,
+            "start": 94.82,
+            "text": " no"
+          },
+          {
+            "end": 95.26,
+            "start": 95.06,
+            "text": " open"
+          },
+          {
+            "end": 95.7,
+            "start": 95.26,
+            "text": " appointments"
+          },
+          {
+            "end": 96.08,
+            "start": 95.7,
+            "text": " between"
+          },
+          {
+            "end": 96.44,
+            "start": 96.08,
+            "text": " today"
+          },
+          {
+            "end": 96.72,
+            "start": 96.44,
+            "text": " and"
+          },
+          {
+            "end": 96.94,
+            "start": 96.72,
+            "text": " next"
+          },
+          {
+            "end": 97.32,
+            "start": 96.94,
+            "text": " Monday."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 101.42,
+        "speaker": "PGAI Clinic Agent",
+        "start": 97.32,
+        "text": "Would you like to look for times later next week or try a different date range?",
+        "words": [
+          {
+            "end": 98.04,
+            "start": 97.32,
+            "text": " Would"
+          },
+          {
+            "end": 98.16,
+            "start": 98.04,
+            "text": " you"
+          },
+          {
+            "end": 98.28,
+            "start": 98.16,
+            "text": " like"
+          },
+          {
+            "end": 98.4,
+            "start": 98.28,
+            "text": " to"
+          },
+          {
+            "end": 98.54,
+            "start": 98.4,
+            "text": " look"
+          },
+          {
+            "end": 98.76,
+            "start": 98.54,
+            "text": " for"
+          },
+          {
+            "end": 99.04,
+            "start": 98.76,
+            "text": " times"
+          },
+          {
+            "end": 99.34,
+            "start": 99.04,
+            "text": " later"
+          },
+          {
+            "end": 99.6,
+            "start": 99.34,
+            "text": " next"
+          },
+          {
+            "end": 99.9,
+            "start": 99.6,
+            "text": " week"
+          },
+          {
+            "end": 100.12,
+            "start": 99.9,
+            "text": " or"
+          },
+          {
+            "end": 100.42,
+            "start": 100.12,
+            "text": " try"
+          },
+          {
+            "end": 100.58,
+            "start": 100.42,
+            "text": " a"
+          },
+          {
+            "end": 100.74,
+            "start": 100.58,
+            "text": " different"
+          },
+          {
+            "end": 100.96,
+            "start": 100.74,
+            "text": " date"
+          },
+          {
+            "end": 101.42,
+            "start": 100.96,
+            "text": " range?"
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 106.22,
+        "speaker": "Patient / Dayan Geller",
+        "start": 102.78,
+        "text": "Later next week works for me. What do you have available then?",
+        "words": [
+          {
+            "end": 103.2,
+            "start": 102.78,
+            "text": " Later"
+          },
+          {
+            "end": 103.44,
+            "start": 103.2,
+            "text": " next"
+          },
+          {
+            "end": 103.64,
+            "start": 103.44,
+            "text": " week"
+          },
+          {
+            "end": 103.82,
+            "start": 103.64,
+            "text": " works"
+          },
+          {
+            "end": 104.04,
+            "start": 103.82,
+            "text": " for"
+          },
+          {
+            "end": 104.28,
+            "start": 104.04,
+            "text": " me."
+          },
+          {
+            "end": 105.12,
+            "start": 105.02,
+            "text": " What"
+          },
+          {
+            "end": 105.2,
+            "start": 105.12,
+            "text": " do"
+          },
+          {
+            "end": 105.28,
+            "start": 105.2,
+            "text": " you"
+          },
+          {
+            "end": 105.46,
+            "start": 105.28,
+            "text": " have"
+          },
+          {
+            "end": 105.82,
+            "start": 105.46,
+            "text": " available"
+          },
+          {
+            "end": 106.22,
+            "start": 105.82,
+            "text": " then?"
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 113.4,
+        "speaker": "PGAI Clinic Agent",
+        "start": 110.18,
+        "text": "I'm not seeing any open appointments through the first week of October either.",
+        "words": [
+          {
+            "end": 110.62,
+            "start": 110.18,
+            "text": " I'm"
+          },
+          {
+            "end": 110.76,
+            "start": 110.62,
+            "text": " not"
+          },
+          {
+            "end": 111.0,
+            "start": 110.76,
+            "text": " seeing"
+          },
+          {
+            "end": 111.22,
+            "start": 111.0,
+            "text": " any"
+          },
+          {
+            "end": 111.4,
+            "start": 111.22,
+            "text": " open"
+          },
+          {
+            "end": 111.78,
+            "start": 111.4,
+            "text": " appointments"
+          },
+          {
+            "end": 112.02,
+            "start": 111.78,
+            "text": " through"
+          },
+          {
+            "end": 112.16,
+            "start": 112.02,
+            "text": " the"
+          },
+          {
+            "end": 112.34,
+            "start": 112.16,
+            "text": " first"
+          },
+          {
+            "end": 112.54,
+            "start": 112.34,
+            "text": " week"
+          },
+          {
+            "end": 112.72,
+            "start": 112.54,
+            "text": " of"
+          },
+          {
+            "end": 113.06,
+            "start": 112.72,
+            "text": " October"
+          },
+          {
+            "end": 113.4,
+            "start": 113.06,
+            "text": " either."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 119.8,
+        "speaker": "PGAI Clinic Agent",
+        "start": 114.12,
+        "text": "Would you like me to keep searching further out or would you prefer to have someone from the office follow up with you directly?",
+        "words": [
+          {
+            "end": 114.24,
+            "start": 114.12,
+            "text": " Would"
+          },
+          {
+            "end": 114.36,
+            "start": 114.24,
+            "text": " you"
+          },
+          {
+            "end": 114.5,
+            "start": 114.36,
+            "text": " like"
+          },
+          {
+            "end": 114.64,
+            "start": 114.5,
+            "text": " me"
+          },
+          {
+            "end": 114.78,
+            "start": 114.64,
+            "text": " to"
+          },
+          {
+            "end": 114.9,
+            "start": 114.78,
+            "text": " keep"
+          },
+          {
+            "end": 115.26,
+            "start": 114.9,
+            "text": " searching"
+          },
+          {
+            "end": 115.62,
+            "start": 115.26,
+            "text": " further"
+          },
+          {
+            "end": 116.02,
+            "start": 115.62,
+            "text": " out"
+          },
+          {
+            "end": 116.64,
+            "start": 116.02,
+            "text": " or"
+          },
+          {
+            "end": 116.82,
+            "start": 116.64,
+            "text": " would"
+          },
+          {
+            "end": 116.94,
+            "start": 116.82,
+            "text": " you"
+          },
+          {
+            "end": 117.24,
+            "start": 116.94,
+            "text": " prefer"
+          },
+          {
+            "end": 117.44,
+            "start": 117.24,
+            "text": " to"
+          },
+          {
+            "end": 117.62,
+            "start": 117.44,
+            "text": " have"
+          },
+          {
+            "end": 117.92,
+            "start": 117.62,
+            "text": " someone"
+          },
+          {
+            "end": 118.14,
+            "start": 117.92,
+            "text": " from"
+          },
+          {
+            "end": 118.3,
+            "start": 118.14,
+            "text": " the"
+          },
+          {
+            "end": 118.52,
+            "start": 118.3,
+            "text": " office"
+          },
+          {
+            "end": 118.88,
+            "start": 118.52,
+            "text": " follow"
+          },
+          {
+            "end": 119.1,
+            "start": 118.88,
+            "text": " up"
+          },
+          {
+            "end": 119.22,
+            "start": 119.1,
+            "text": " with"
+          },
+          {
+            "end": 119.38,
+            "start": 119.22,
+            "text": " you"
+          },
+          {
+            "end": 119.8,
+            "start": 119.38,
+            "text": " directly?"
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 123.72,
+        "speaker": "Patient / Dayan Geller",
+        "start": 121.3,
+        "text": "You can go ahead and keep searching further out.",
+        "words": [
+          {
+            "end": 121.78,
+            "start": 121.3,
+            "text": " You"
+          },
+          {
+            "end": 121.96,
+            "start": 121.78,
+            "text": " can"
+          },
+          {
+            "end": 122.16,
+            "start": 121.96,
+            "text": " go"
+          },
+          {
+            "end": 122.34,
+            "start": 122.16,
+            "text": " ahead"
+          },
+          {
+            "end": 122.54,
+            "start": 122.34,
+            "text": " and"
+          },
+          {
+            "end": 122.66,
+            "start": 122.54,
+            "text": " keep"
+          },
+          {
+            "end": 122.98,
+            "start": 122.66,
+            "text": " searching"
+          },
+          {
+            "end": 123.34,
+            "start": 122.98,
+            "text": " further"
+          },
+          {
+            "end": 123.72,
+            "start": 123.34,
+            "text": " out."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 126.72,
+        "speaker": "Patient / Dayan Geller",
+        "start": 124.34,
+        "text": "I'm willing to work with whatever availability you find.",
+        "words": [
+          {
+            "end": 124.54,
+            "start": 124.34,
+            "text": " I'm"
+          },
+          {
+            "end": 124.7,
+            "start": 124.54,
+            "text": " willing"
+          },
+          {
+            "end": 124.92,
+            "start": 124.7,
+            "text": " to"
+          },
+          {
+            "end": 125.04,
+            "start": 124.92,
+            "text": " work"
+          },
+          {
+            "end": 125.22,
+            "start": 125.04,
+            "text": " with"
+          },
+          {
+            "end": 125.52,
+            "start": 125.22,
+            "text": " whatever"
+          },
+          {
+            "end": 126.18,
+            "start": 125.52,
+            "text": " availability"
+          },
+          {
+            "end": 126.42,
+            "start": 126.18,
+            "text": " you"
+          },
+          {
+            "end": 126.72,
+            "start": 126.42,
+            "text": " find."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 129.56,
+        "speaker": "Patient / Dayan Geller",
+        "start": 127.64,
+        "text": "What does the schedule look like beyond that?",
+        "words": [
+          {
+            "end": 127.74,
+            "start": 127.64,
+            "text": " What"
+          },
+          {
+            "end": 127.88,
+            "start": 127.74,
+            "text": " does"
+          },
+          {
+            "end": 128.04,
+            "start": 127.88,
+            "text": " the"
+          },
+          {
+            "end": 128.28,
+            "start": 128.04,
+            "text": " schedule"
+          },
+          {
+            "end": 128.54,
+            "start": 128.28,
+            "text": " look"
+          },
+          {
+            "end": 128.72,
+            "start": 128.54,
+            "text": " like"
+          },
+          {
+            "end": 128.98,
+            "start": 128.72,
+            "text": " beyond"
+          },
+          {
+            "end": 129.56,
+            "start": 128.98,
+            "text": " that?"
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 139.12,
+        "speaker": "PGAI Clinic Agent",
+        "start": 135.26000000000002,
+        "text": "I'm still not seeing any open appointments, even into early November.",
+        "words": [
+          {
+            "end": 135.74,
+            "start": 135.26000000000002,
+            "text": " I'm"
+          },
+          {
+            "end": 135.9,
+            "start": 135.74,
+            "text": " still"
+          },
+          {
+            "end": 136.1,
+            "start": 135.9,
+            "text": " not"
+          },
+          {
+            "end": 136.38,
+            "start": 136.1,
+            "text": " seeing"
+          },
+          {
+            "end": 136.64,
+            "start": 136.38,
+            "text": " any"
+          },
+          {
+            "end": 136.9,
+            "start": 136.64,
+            "text": " open"
+          },
+          {
+            "end": 137.36,
+            "start": 136.9,
+            "text": " appointments,"
+          },
+          {
+            "end": 138.24,
+            "start": 137.86,
+            "text": " even"
+          },
+          {
+            "end": 138.48,
+            "start": 138.24,
+            "text": " into"
+          },
+          {
+            "end": 138.7,
+            "start": 138.48,
+            "text": " early"
+          },
+          {
+            "end": 139.12,
+            "start": 138.7,
+            "text": " November."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 142.74,
+        "speaker": "PGAI Clinic Agent",
+        "start": 139.84,
+        "text": "Would you like me to have someone from the office follow up with you directly to",
+        "words": [
+          {
+            "end": 140.02,
+            "start": 139.84,
+            "text": " Would"
+          },
+          {
+            "end": 140.14,
+            "start": 140.02,
+            "text": " you"
+          },
+          {
+            "end": 140.28,
+            "start": 140.14,
+            "text": " like"
+          },
+          {
+            "end": 140.38,
+            "start": 140.28,
+            "text": " me"
+          },
+          {
+            "end": 140.48,
+            "start": 140.38,
+            "text": " to"
+          },
+          {
+            "end": 140.64,
+            "start": 140.48,
+            "text": " have"
+          },
+          {
+            "end": 140.9,
+            "start": 140.64,
+            "text": " someone"
+          },
+          {
+            "end": 141.1,
+            "start": 140.9,
+            "text": " from"
+          },
+          {
+            "end": 141.26,
+            "start": 141.1,
+            "text": " the"
+          },
+          {
+            "end": 141.5,
+            "start": 141.26,
+            "text": " office"
+          },
+          {
+            "end": 141.82,
+            "start": 141.5,
+            "text": " follow"
+          },
+          {
+            "end": 142.02,
+            "start": 141.82,
+            "text": " up"
+          },
+          {
+            "end": 142.16,
+            "start": 142.02,
+            "text": " with"
+          },
+          {
+            "end": 142.28,
+            "start": 142.16,
+            "text": " you"
+          },
+          {
+            "end": 142.64,
+            "start": 142.28,
+            "text": " directly"
+          },
+          {
+            "end": 142.88,
+            "start": 142.64,
+            "text": " to"
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 144.18,
+        "speaker": "PGAI Clinic Agent",
+        "start": 142.88,
+        "text": "find a time?",
+        "words": [
+          {
+            "end": 143.18,
+            "start": 142.88,
+            "text": " find"
+          },
+          {
+            "end": 143.32,
+            "start": 143.18,
+            "text": " a"
+          },
+          {
+            "end": 144.18,
+            "start": 143.32,
+            "text": " time?"
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 147.12,
+        "speaker": "Patient / Dayan Geller",
+        "start": 145.5,
+        "text": "Yes, that would be helpful.",
+        "words": [
+          {
+            "end": 145.98,
+            "start": 145.5,
+            "text": " Yes,"
+          },
+          {
+            "end": 146.54,
+            "start": 146.18,
+            "text": " that"
+          },
+          {
+            "end": 146.66,
+            "start": 146.54,
+            "text": " would"
+          },
+          {
+            "end": 146.8,
+            "start": 146.66,
+            "text": " be"
+          },
+          {
+            "end": 147.12,
+            "start": 146.8,
+            "text": " helpful."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 151.36,
+        "speaker": "Patient / Dayan Geller",
+        "start": 147.56,
+        "text": "Please have someone from the office follow up with me directly to work out a time that",
+        "words": [
+          {
+            "end": 147.96,
+            "start": 147.56,
+            "text": " Please"
+          },
+          {
+            "end": 148.18,
+            "start": 147.96,
+            "text": " have"
+          },
+          {
+            "end": 148.42,
+            "start": 148.18,
+            "text": " someone"
+          },
+          {
+            "end": 148.64,
+            "start": 148.42,
+            "text": " from"
+          },
+          {
+            "end": 148.78,
+            "start": 148.64,
+            "text": " the"
+          },
+          {
+            "end": 149.08,
+            "start": 148.78,
+            "text": " office"
+          },
+          {
+            "end": 149.38,
+            "start": 149.08,
+            "text": " follow"
+          },
+          {
+            "end": 149.58,
+            "start": 149.38,
+            "text": " up"
+          },
+          {
+            "end": 149.72,
+            "start": 149.58,
+            "text": " with"
+          },
+          {
+            "end": 149.9,
+            "start": 149.72,
+            "text": " me"
+          },
+          {
+            "end": 150.3,
+            "start": 149.9,
+            "text": " directly"
+          },
+          {
+            "end": 150.58,
+            "start": 150.3,
+            "text": " to"
+          },
+          {
+            "end": 150.76,
+            "start": 150.58,
+            "text": " work"
+          },
+          {
+            "end": 150.9,
+            "start": 150.76,
+            "text": " out"
+          },
+          {
+            "end": 151.06,
+            "start": 150.9,
+            "text": " a"
+          },
+          {
+            "end": 151.2,
+            "start": 151.06,
+            "text": " time"
+          },
+          {
+            "end": 151.36,
+            "start": 151.2,
+            "text": " that"
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 151.68,
+        "speaker": "Patient / Dayan Geller",
+        "start": 151.36,
+        "text": "works.",
+        "words": [
+          {
+            "end": 151.68,
+            "start": 151.36,
+            "text": " works."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 154.54,
+        "speaker": "Patient / Dayan Geller",
+        "start": 152.36,
+        "text": "Before we finish though, I also need a refill.",
+        "words": [
+          {
+            "end": 152.54,
+            "start": 152.36,
+            "text": " Before"
+          },
+          {
+            "end": 152.76,
+            "start": 152.54,
+            "text": " we"
+          },
+          {
+            "end": 152.98,
+            "start": 152.76,
+            "text": " finish"
+          },
+          {
+            "end": 153.3,
+            "start": 152.98,
+            "text": " though,"
+          },
+          {
+            "end": 153.66,
+            "start": 153.52,
+            "text": " I"
+          },
+          {
+            "end": 153.96,
+            "start": 153.66,
+            "text": " also"
+          },
+          {
+            "end": 154.14,
+            "start": 153.96,
+            "text": " need"
+          },
+          {
+            "end": 154.26,
+            "start": 154.14,
+            "text": " a"
+          },
+          {
+            "end": 154.54,
+            "start": 154.26,
+            "text": " refill."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 157.8,
+        "speaker": "Patient / Dayan Geller",
+        "start": 154.74,
+        "text": "The controlled medication was sent to me last time and I need it refilled.",
+        "words": [
+          {
+            "end": 154.84,
+            "start": 154.74,
+            "text": " The"
+          },
+          {
+            "end": 155.14,
+            "start": 154.84,
+            "text": " controlled"
+          },
+          {
+            "end": 155.58,
+            "start": 155.14,
+            "text": " medication"
+          },
+          {
+            "end": 155.88,
+            "start": 155.58,
+            "text": " was"
+          },
+          {
+            "end": 156.04,
+            "start": 155.88,
+            "text": " sent"
+          },
+          {
+            "end": 156.16,
+            "start": 156.04,
+            "text": " to"
+          },
+          {
+            "end": 156.3,
+            "start": 156.16,
+            "text": " me"
+          },
+          {
+            "end": 156.5,
+            "start": 156.3,
+            "text": " last"
+          },
+          {
+            "end": 156.86,
+            "start": 156.5,
+            "text": " time"
+          },
+          {
+            "end": 157.0,
+            "start": 156.86,
+            "text": " and"
+          },
+          {
+            "end": 157.14,
+            "start": 157.0,
+            "text": " I"
+          },
+          {
+            "end": 157.28,
+            "start": 157.14,
+            "text": " need"
+          },
+          {
+            "end": 157.4,
+            "start": 157.28,
+            "text": " it"
+          },
+          {
+            "end": 157.8,
+            "start": 157.4,
+            "text": " refilled."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 168.82,
+        "speaker": "PGAI Clinic Agent",
+        "start": 164.84000000000003,
+        "text": "I've documented your request for a medication refill and your need to",
+        "words": [
+          {
+            "end": 165.36,
+            "start": 164.84000000000003,
+            "text": " I've"
+          },
+          {
+            "end": 165.74,
+            "start": 165.36,
+            "text": " documented"
+          },
+          {
+            "end": 166.08,
+            "start": 165.74,
+            "text": " your"
+          },
+          {
+            "end": 166.46,
+            "start": 166.08,
+            "text": " request"
+          },
+          {
+            "end": 166.72,
+            "start": 166.46,
+            "text": " for"
+          },
+          {
+            "end": 166.88,
+            "start": 166.72,
+            "text": " a"
+          },
+          {
+            "end": 167.32,
+            "start": 166.88,
+            "text": " medication"
+          },
+          {
+            "end": 167.86,
+            "start": 167.32,
+            "text": " refill"
+          },
+          {
+            "end": 168.24,
+            "start": 167.86,
+            "text": " and"
+          },
+          {
+            "end": 168.36,
+            "start": 168.24,
+            "text": " your"
+          },
+          {
+            "end": 168.58,
+            "start": 168.36,
+            "text": " need"
+          },
+          {
+            "end": 168.82,
+            "start": 168.58,
+            "text": " to"
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 172.6,
+        "speaker": "PGAI Clinic Agent",
+        "start": 168.82,
+        "text": "schedule a routine checkup. The office will follow up with you as soon as",
+        "words": [
+          {
+            "end": 169.16,
+            "start": 168.82,
+            "text": " schedule"
+          },
+          {
+            "end": 169.42,
+            "start": 169.16,
+            "text": " a"
+          },
+          {
+            "end": 169.74,
+            "start": 169.42,
+            "text": " routine"
+          },
+          {
+            "end": 170.28,
+            "start": 169.74,
+            "text": " checkup."
+          },
+          {
+            "end": 170.84,
+            "start": 170.62,
+            "text": " The"
+          },
+          {
+            "end": 171.06,
+            "start": 170.84,
+            "text": " office"
+          },
+          {
+            "end": 171.3,
+            "start": 171.06,
+            "text": " will"
+          },
+          {
+            "end": 171.56,
+            "start": 171.3,
+            "text": " follow"
+          },
+          {
+            "end": 171.76,
+            "start": 171.56,
+            "text": " up"
+          },
+          {
+            "end": 171.92,
+            "start": 171.76,
+            "text": " with"
+          },
+          {
+            "end": 172.1,
+            "start": 171.92,
+            "text": " you"
+          },
+          {
+            "end": 172.32,
+            "start": 172.1,
+            "text": " as"
+          },
+          {
+            "end": 172.42,
+            "start": 172.32,
+            "text": " soon"
+          },
+          {
+            "end": 172.6,
+            "start": 172.42,
+            "text": " as"
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 176.38,
+        "speaker": "PGAI Clinic Agent",
+        "start": 172.6,
+        "text": "possible the help of both. Is there anything else I can help you with today?",
+        "words": [
+          {
+            "end": 173.0,
+            "start": 172.6,
+            "text": " possible"
+          },
+          {
+            "end": 173.18,
+            "start": 173.0,
+            "text": " the"
+          },
+          {
+            "end": 173.32,
+            "start": 173.18,
+            "text": " help"
+          },
+          {
+            "end": 173.52,
+            "start": 173.32,
+            "text": " of"
+          },
+          {
+            "end": 173.82,
+            "start": 173.52,
+            "text": " both."
+          },
+          {
+            "end": 174.62,
+            "start": 174.5,
+            "text": " Is"
+          },
+          {
+            "end": 174.74,
+            "start": 174.62,
+            "text": " there"
+          },
+          {
+            "end": 174.96,
+            "start": 174.74,
+            "text": " anything"
+          },
+          {
+            "end": 175.12,
+            "start": 174.96,
+            "text": " else"
+          },
+          {
+            "end": 175.22,
+            "start": 175.12,
+            "text": " I"
+          },
+          {
+            "end": 175.32,
+            "start": 175.22,
+            "text": " can"
+          },
+          {
+            "end": 175.48,
+            "start": 175.32,
+            "text": " help"
+          },
+          {
+            "end": 175.58,
+            "start": 175.48,
+            "text": " you"
+          },
+          {
+            "end": 175.74,
+            "start": 175.58,
+            "text": " with"
+          },
+          {
+            "end": 176.38,
+            "start": 175.74,
+            "text": " today?"
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 179.02,
+        "speaker": "Patient / Dayan Geller",
+        "start": 177.54000000000002,
+        "text": "No, that covers everything.",
+        "words": [
+          {
+            "end": 178.02,
+            "start": 177.54000000000002,
+            "text": " No,"
+          },
+          {
+            "end": 178.36,
+            "start": 178.24,
+            "text": " that"
+          },
+          {
+            "end": 178.6,
+            "start": 178.36,
+            "text": " covers"
+          },
+          {
+            "end": 179.02,
+            "start": 178.6,
+            "text": " everything."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 180.74,
+        "speaker": "Patient / Dayan Geller",
+        "start": 180.08,
+        "text": "Thanks for your help.",
+        "words": [
+          {
+            "end": 180.24,
+            "start": 180.08,
+            "text": " Thanks"
+          },
+          {
+            "end": 180.38,
+            "start": 180.24,
+            "text": " for"
+          },
+          {
+            "end": 180.52,
+            "start": 180.38,
+            "text": " your"
+          },
+          {
+            "end": 180.74,
+            "start": 180.52,
+            "text": " help."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 184.98,
+        "speaker": "Patient / Dayan Geller",
+        "start": 181.3,
+        "text": "I appreciate you documenting both the appointment and the medication refill request.",
+        "words": [
+          {
+            "end": 181.38,
+            "start": 181.3,
+            "text": " I"
+          },
+          {
+            "end": 181.76,
+            "start": 181.38,
+            "text": " appreciate"
+          },
+          {
+            "end": 182.0,
+            "start": 181.76,
+            "text": " you"
+          },
+          {
+            "end": 182.46,
+            "start": 182.0,
+            "text": " documenting"
+          },
+          {
+            "end": 182.76,
+            "start": 182.46,
+            "text": " both"
+          },
+          {
+            "end": 182.96,
+            "start": 182.76,
+            "text": " the"
+          },
+          {
+            "end": 183.3,
+            "start": 182.96,
+            "text": " appointment"
+          },
+          {
+            "end": 183.62,
+            "start": 183.3,
+            "text": " and"
+          },
+          {
+            "end": 183.82,
+            "start": 183.62,
+            "text": " the"
+          },
+          {
+            "end": 184.18,
+            "start": 183.82,
+            "text": " medication"
+          },
+          {
+            "end": 184.54,
+            "start": 184.18,
+            "text": " refill"
+          },
+          {
+            "end": 184.98,
+            "start": 184.54,
+            "text": " request."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 187.1,
+        "speaker": "Patient / Dayan Geller",
+        "start": 185.58,
+        "text": "I look forward to hearing from the office.",
+        "words": [
+          {
+            "end": 185.68,
+            "start": 185.58,
+            "text": " I"
+          },
+          {
+            "end": 185.82,
+            "start": 185.68,
+            "text": " look"
+          },
+          {
+            "end": 186.06,
+            "start": 185.82,
+            "text": " forward"
+          },
+          {
+            "end": 186.24,
+            "start": 186.06,
+            "text": " to"
+          },
+          {
+            "end": 186.38,
+            "start": 186.24,
+            "text": " hearing"
+          },
+          {
+            "end": 186.6,
+            "start": 186.38,
+            "text": " from"
+          },
+          {
+            "end": 186.76,
+            "start": 186.6,
+            "text": " the"
+          },
+          {
+            "end": 187.1,
+            "start": 186.76,
+            "text": " office."
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 194.62,
+        "speaker": "PGAI Clinic Agent",
+        "start": 190.22,
+        "text": "You're all set. Die in. The office will reach out soon about your appointment and",
+        "words": [
+          {
+            "end": 190.66,
+            "start": 190.22,
+            "text": " You're"
+          },
+          {
+            "end": 190.84,
+            "start": 190.66,
+            "text": " all"
+          },
+          {
+            "end": 191.12,
+            "start": 190.84,
+            "text": " set."
+          },
+          {
+            "end": 191.64,
+            "start": 191.54,
+            "text": " Die"
+          },
+          {
+            "end": 191.92,
+            "start": 191.64,
+            "text": " in."
+          },
+          {
+            "end": 192.56,
+            "start": 192.34,
+            "text": " The"
+          },
+          {
+            "end": 192.74,
+            "start": 192.56,
+            "text": " office"
+          },
+          {
+            "end": 192.96,
+            "start": 192.74,
+            "text": " will"
+          },
+          {
+            "end": 193.12,
+            "start": 192.96,
+            "text": " reach"
+          },
+          {
+            "end": 193.3,
+            "start": 193.12,
+            "text": " out"
+          },
+          {
+            "end": 193.54,
+            "start": 193.3,
+            "text": " soon"
+          },
+          {
+            "end": 193.78,
+            "start": 193.54,
+            "text": " about"
+          },
+          {
+            "end": 193.96,
+            "start": 193.78,
+            "text": " your"
+          },
+          {
+            "end": 194.34,
+            "start": 193.96,
+            "text": " appointment"
+          },
+          {
+            "end": 194.62,
+            "start": 194.34,
+            "text": " and"
+          }
+        ]
+      },
+      {
+        "channel_index": 0,
+        "end": 196.8,
+        "speaker": "PGAI Clinic Agent",
+        "start": 194.62,
+        "text": "medication refill. Have a great day!",
+        "words": [
+          {
+            "end": 195.1,
+            "start": 194.62,
+            "text": " medication"
+          },
+          {
+            "end": 195.52,
+            "start": 195.1,
+            "text": " refill."
+          },
+          {
+            "end": 196.18,
+            "start": 196.08,
+            "text": " Have"
+          },
+          {
+            "end": 196.32,
+            "start": 196.18,
+            "text": " a"
+          },
+          {
+            "end": 196.46,
+            "start": 196.32,
+            "text": " great"
+          },
+          {
+            "end": 196.8,
+            "start": 196.46,
+            "text": " day!"
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 199.6,
+        "speaker": "Patient / Dayan Geller",
+        "start": 198.28,
+        "text": "Thanks, I appreciate it.",
+        "words": [
+          {
+            "end": 198.76,
+            "start": 198.28,
+            "text": " Thanks,"
+          },
+          {
+            "end": 198.94,
+            "start": 198.86,
+            "text": " I"
+          },
+          {
+            "end": 199.3,
+            "start": 198.94,
+            "text": " appreciate"
+          },
+          {
+            "end": 199.6,
+            "start": 199.3,
+            "text": " it."
+          }
+        ]
+      },
+      {
+        "channel_index": 1,
+        "end": 200.34,
+        "speaker": "Patient / Dayan Geller",
+        "start": 199.76,
+        "text": "Have a good day.",
+        "words": [
+          {
+            "end": 199.84,
+            "start": 199.76,
+            "text": " Have"
+          },
+          {
+            "end": 199.96,
+            "start": 199.84,
+            "text": " a"
+          },
+          {
+            "end": 200.04,
+            "start": 199.96,
+            "text": " good"
+          },
+          {
+            "end": 200.34,
+            "start": 200.04,
+            "text": " day."
+          }
+        ]
+      }
+    ],
+    "sha256": "7d846dfe458c5a0bb9b2a37a561fe6b41f7a35b1c7f6938284e94ddf392a66cd",
+    "source_sha256": "020977c4df5c4d430ce11b0bb6f6de2dce9587723990d1392b53d92ad29405ce",
+    "status": "completed"
+  }
+}
